@@ -1,0 +1,42 @@
+{
+  "4C5A": {
+    "command": "4C5A",
+    "commandName": "HeartBeat",
+    "request": {
+      "length": 10,
+      "fields": [
+        {"field": "controllerNo", "length": 6, "type": "string"},
+        {"field": "heartBeatSeq", "length": 4, "type": "integer"}
+      ]
+    },
+    "response": {
+      "length": 11,
+      "fields": [
+        {"field": "controllerNo", "length": 6, "type": "string"},
+        {"field": "heartBeatSeq", "length": 4, "type": "string"},
+        {"field": "answer", "length": 1, "type": "byte", "match": "59"}
+      ]
+    }
+  },
+  "4CE6": {
+    "command": "4CE6",
+    "commandName": "OpenGate",
+    "request": {
+      "length": 104,
+      "fields": [
+        {"field": "serialNo", "length": 36, "type": "string"},
+        {"field": "projectNo", "length": 36, "type": "string"},
+        {"field": "location", "length": 1, "type": "byte"},
+        {"field": "operationType", "length": 1, "type": "byte"},
+        {"field": "comment", "length": 30, "type": "string"}
+      ]
+    },
+    "response": {
+      "length": 37,
+      "fields": [
+        {"field": "serialNo", "length": 36, "type": "string"},
+        {"field": "answer", "length": 1, "type": "byte", "match": "59"}
+      ]
+    }
+  }
+}

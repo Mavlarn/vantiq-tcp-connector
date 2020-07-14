@@ -1,0 +1,1319 @@
+2020-07-10 10:08:37,917 DEBUG [main] ConnectorConfig: Connector Config finish for name: test_connector
+2020-07-10 10:08:39,257 INFO  [OkHttp https://dev.vantiq.com.cn/...] ExtensionWebSocketListener#test_connector: WebSocket open
+2020-07-10 10:08:39,363 DEBUG [OkHttp https://dev.vantiq.com.cn/...] ExtensionWebSocketListener#test_connector: Auth received with no handler set
+2020-07-10 10:08:39,591 DEBUG [OkHttp https://dev.vantiq.com.cn/...] ExtensionWebSocketListener#test_connector: Http response received with no handler set
+2020-07-10 10:08:39,593 DEBUG [OkHttp https://dev.vantiq.com.cn/...] ExtensionWebSocketListener#test_connector: Map of the received message: {op=configureExtension, resourceName=sources, isSystemResource=true, resourceId=test_connector, parameters={}, object={mapId=3044892b-3a8f-49aa-8871-88a19b48e4ab, config={tcp_server_port=6001}}, sessionId=972dee25e3bc64725630248995f466ea, contentType=application/json, responseType=application/json, skipMonitoring=false, isExternal=false, address=782a1f7a-a310-4ea5-99cb-7fe13d687957, messageHeaders={}}
+2020-07-10 10:08:39,593 INFO  [OkHttp https://dev.vantiq.com.cn/...] ExtensionWebSocketListener#test_connector: Successful connection to test_connector
+2020-07-10 10:08:39,593 INFO  [OkHttp https://dev.vantiq.com.cn/...] ConfigHandler: Configuration for source:test_connector
+2020-07-10 10:08:39,608 DEBUG [OkHttp https://dev.vantiq.com.cn/...] InternalLoggerFactory: Using SLF4J as the default logging framework
+2020-07-10 10:08:39,609 DEBUG [OkHttp https://dev.vantiq.com.cn/...] MultithreadEventLoopGroup: -Dio.netty.eventLoopThreads: 16
+2020-07-10 10:08:39,630 DEBUG [OkHttp https://dev.vantiq.com.cn/...] InternalThreadLocalMap: -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+2020-07-10 10:08:39,632 DEBUG [OkHttp https://dev.vantiq.com.cn/...] InternalThreadLocalMap: -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+2020-07-10 10:08:39,641 DEBUG [OkHttp https://dev.vantiq.com.cn/...] NioEventLoop: -Dio.netty.noKeySetOptimization: false
+2020-07-10 10:08:39,642 DEBUG [OkHttp https://dev.vantiq.com.cn/...] NioEventLoop: -Dio.netty.selectorAutoRebuildThreshold: 512
+2020-07-10 10:08:39,656 DEBUG [OkHttp https://dev.vantiq.com.cn/...] PlatformDependent: Platform: MacOS
+2020-07-10 10:08:39,658 DEBUG [OkHttp https://dev.vantiq.com.cn/...] PlatformDependent0: -Dio.netty.noUnsafe: false
+2020-07-10 10:08:39,658 DEBUG [OkHttp https://dev.vantiq.com.cn/...] PlatformDependent0: Java version: 8
+2020-07-10 10:08:39,659 DEBUG [OkHttp https://dev.vantiq.com.cn/...] PlatformDependent0: sun.misc.Unsafe.theUnsafe: available
+2020-07-10 10:08:39,660 DEBUG [OkHttp https://dev.vantiq.com.cn/...] PlatformDependent0: sun.misc.Unsafe.copyMemory: available
+2020-07-10 10:08:39,660 DEBUG [OkHttp https://dev.vantiq.com.cn/...] PlatformDependent0: java.nio.Buffer.address: available
+2020-07-10 10:08:39,661 DEBUG [OkHttp https://dev.vantiq.com.cn/...] PlatformDependent0: direct buffer constructor: available
+2020-07-10 10:08:39,661 DEBUG [OkHttp https://dev.vantiq.com.cn/...] PlatformDependent0: java.nio.Bits.unaligned: available, true
+2020-07-10 10:08:39,661 DEBUG [OkHttp https://dev.vantiq.com.cn/...] PlatformDependent0: jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9
+2020-07-10 10:08:39,661 DEBUG [OkHttp https://dev.vantiq.com.cn/...] PlatformDependent0: java.nio.DirectByteBuffer.<init>(long, int): available
+2020-07-10 10:08:39,661 DEBUG [OkHttp https://dev.vantiq.com.cn/...] PlatformDependent: sun.misc.Unsafe: available
+2020-07-10 10:08:39,662 DEBUG [OkHttp https://dev.vantiq.com.cn/...] PlatformDependent: -Dio.netty.tmpdir: /var/folders/f1/8c8bz_w13rj684f43n3b4k8w0000gp/T (java.io.tmpdir)
+2020-07-10 10:08:39,662 DEBUG [OkHttp https://dev.vantiq.com.cn/...] PlatformDependent: -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2020-07-10 10:08:39,663 DEBUG [OkHttp https://dev.vantiq.com.cn/...] PlatformDependent: -Dio.netty.maxDirectMemory: 3817865216 bytes
+2020-07-10 10:08:39,663 DEBUG [OkHttp https://dev.vantiq.com.cn/...] PlatformDependent: -Dio.netty.uninitializedArrayAllocationThreshold: -1
+2020-07-10 10:08:39,664 DEBUG [OkHttp https://dev.vantiq.com.cn/...] CleanerJava6: java.nio.ByteBuffer.cleaner(): available
+2020-07-10 10:08:39,664 DEBUG [OkHttp https://dev.vantiq.com.cn/...] PlatformDependent: -Dio.netty.noPreferDirect: false
+2020-07-10 10:08:39,672 DEBUG [OkHttp https://dev.vantiq.com.cn/...] PlatformDependent: org.jctools-core.MpscChunkedArrayQueue: available
+2020-07-10 10:08:39,716 DEBUG [OkHttp https://dev.vantiq.com.cn/...] DefaultChannelId: -Dio.netty.processId: 61263 (auto-detected)
+2020-07-10 10:08:39,719 DEBUG [OkHttp https://dev.vantiq.com.cn/...] NetUtil: -Djava.net.preferIPv4Stack: false
+2020-07-10 10:08:39,719 DEBUG [OkHttp https://dev.vantiq.com.cn/...] NetUtil: -Djava.net.preferIPv6Addresses: false
+2020-07-10 10:08:39,721 DEBUG [OkHttp https://dev.vantiq.com.cn/...] NetUtil: Loopback interface: lo0 (lo0, 0:0:0:0:0:0:0:1)
+2020-07-10 10:08:39,721 DEBUG [OkHttp https://dev.vantiq.com.cn/...] NetUtil: Failed to get SOMAXCONN from sysctl and file /proc/sys/net/core/somaxconn. Default: 128
+2020-07-10 10:08:39,724 DEBUG [OkHttp https://dev.vantiq.com.cn/...] DefaultChannelId: -Dio.netty.machineId: ac:de:48:ff:fe:00:11:22 (auto-detected)
+2020-07-10 10:08:39,735 DEBUG [OkHttp https://dev.vantiq.com.cn/...] ResourceLeakDetector: -Dio.netty.leakDetection.level: simple
+2020-07-10 10:08:39,735 DEBUG [OkHttp https://dev.vantiq.com.cn/...] ResourceLeakDetector: -Dio.netty.leakDetection.targetRecords: 4
+2020-07-10 10:08:39,762 DEBUG [OkHttp https://dev.vantiq.com.cn/...] PooledByteBufAllocator: -Dio.netty.allocator.numHeapArenas: 16
+2020-07-10 10:08:39,762 DEBUG [OkHttp https://dev.vantiq.com.cn/...] PooledByteBufAllocator: -Dio.netty.allocator.numDirectArenas: 16
+2020-07-10 10:08:39,763 DEBUG [OkHttp https://dev.vantiq.com.cn/...] PooledByteBufAllocator: -Dio.netty.allocator.pageSize: 8192
+2020-07-10 10:08:39,763 DEBUG [OkHttp https://dev.vantiq.com.cn/...] PooledByteBufAllocator: -Dio.netty.allocator.maxOrder: 11
+2020-07-10 10:08:39,763 DEBUG [OkHttp https://dev.vantiq.com.cn/...] PooledByteBufAllocator: -Dio.netty.allocator.chunkSize: 16777216
+2020-07-10 10:08:39,763 DEBUG [OkHttp https://dev.vantiq.com.cn/...] PooledByteBufAllocator: -Dio.netty.allocator.tinyCacheSize: 512
+2020-07-10 10:08:39,763 DEBUG [OkHttp https://dev.vantiq.com.cn/...] PooledByteBufAllocator: -Dio.netty.allocator.smallCacheSize: 256
+2020-07-10 10:08:39,763 DEBUG [OkHttp https://dev.vantiq.com.cn/...] PooledByteBufAllocator: -Dio.netty.allocator.normalCacheSize: 64
+2020-07-10 10:08:39,763 DEBUG [OkHttp https://dev.vantiq.com.cn/...] PooledByteBufAllocator: -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+2020-07-10 10:08:39,763 DEBUG [OkHttp https://dev.vantiq.com.cn/...] PooledByteBufAllocator: -Dio.netty.allocator.cacheTrimInterval: 8192
+2020-07-10 10:08:39,763 DEBUG [OkHttp https://dev.vantiq.com.cn/...] PooledByteBufAllocator: -Dio.netty.allocator.cacheTrimIntervalMillis: 0
+2020-07-10 10:08:39,763 DEBUG [OkHttp https://dev.vantiq.com.cn/...] PooledByteBufAllocator: -Dio.netty.allocator.useCacheForAllThreads: true
+2020-07-10 10:08:39,764 DEBUG [OkHttp https://dev.vantiq.com.cn/...] PooledByteBufAllocator: -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+2020-07-10 10:08:39,777 DEBUG [OkHttp https://dev.vantiq.com.cn/...] ByteBufUtil: -Dio.netty.allocator.type: pooled
+2020-07-10 10:08:39,778 DEBUG [OkHttp https://dev.vantiq.com.cn/...] ByteBufUtil: -Dio.netty.threadLocalDirectBufferSize: 0
+2020-07-10 10:08:39,778 DEBUG [OkHttp https://dev.vantiq.com.cn/...] ByteBufUtil: -Dio.netty.maxThreadLocalCharBufferSize: 16384
+2020-07-10 10:08:39,792 DEBUG [OkHttp https://dev.vantiq.com.cn/...] ConfigHandler: TCP Server started on port:6001
+2020-07-10 10:08:53,545 DEBUG [main] DataConverter: Command Config finished:{4C5A=io.vantiq.ext.tcp.protocol.CommandDef@45d84a20, 4C5Ass=io.vantiq.ext.tcp.protocol.CommandDef@52f27fbd, 4CE6=io.vantiq.ext.tcp.protocol.CommandDef@4c163e3, 4CE6ss=io.vantiq.ext.tcp.protocol.CommandDef@4a8355dd}
+2020-07-10 10:08:53,556 DEBUG [main] DataConverter: Package Config finished:[PacketField{field='head', fixCode='78B6', length=2, type='byte'}, PacketField{field='command', fixCode='', length=2, type='byte'}, PacketField{field='direction', fixCode='', length=1, type='byte'}, PacketField{field='location', fixCode='', length=1, type='byte'}, PacketField{field='dataLength', fixCode='', length=2, type='integer'}, PacketField{field='data', fixCode='', length=0, type='data'}, PacketField{field='checkSum', fixCode='', length=1, type='byte'}, PacketField{field='end', fixCode='21D3', length=2, type='byte'}]
+2020-07-10 10:08:53,567 INFO  [main] PacketConverterTest: Heartbeat data:{head=[B@5b38c1ec, data={controllerNo=GTLAND, heartBeatSeq=1}, dataLength=10, checkSum=17, location=[B@338fc1d8, end=[B@4722ef0c, command=[B@48e1f6c7, direction=[B@55cb6996}
+2020-07-10 10:08:53,590 DEBUG [main] InternalLoggerFactory: Using SLF4J as the default logging framework
+2020-07-10 10:08:53,594 DEBUG [main] InternalThreadLocalMap: -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+2020-07-10 10:08:53,595 DEBUG [main] InternalThreadLocalMap: -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+2020-07-10 10:08:53,623 DEBUG [main] PlatformDependent: Platform: MacOS
+2020-07-10 10:08:53,626 DEBUG [main] PlatformDependent0: -Dio.netty.noUnsafe: false
+2020-07-10 10:08:53,626 DEBUG [main] PlatformDependent0: Java version: 8
+2020-07-10 10:08:53,628 DEBUG [main] PlatformDependent0: sun.misc.Unsafe.theUnsafe: available
+2020-07-10 10:08:53,630 DEBUG [main] PlatformDependent0: sun.misc.Unsafe.copyMemory: available
+2020-07-10 10:08:53,632 DEBUG [main] PlatformDependent0: java.nio.Buffer.address: available
+2020-07-10 10:08:53,634 DEBUG [main] PlatformDependent0: direct buffer constructor: available
+2020-07-10 10:08:53,636 DEBUG [main] PlatformDependent0: java.nio.Bits.unaligned: available, true
+2020-07-10 10:08:53,636 DEBUG [main] PlatformDependent0: jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9
+2020-07-10 10:08:53,636 DEBUG [main] PlatformDependent0: java.nio.DirectByteBuffer.<init>(long, int): available
+2020-07-10 10:08:53,636 DEBUG [main] PlatformDependent: sun.misc.Unsafe: available
+2020-07-10 10:08:53,637 DEBUG [main] PlatformDependent: -Dio.netty.tmpdir: /var/folders/f1/8c8bz_w13rj684f43n3b4k8w0000gp/T (java.io.tmpdir)
+2020-07-10 10:08:53,637 DEBUG [main] PlatformDependent: -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2020-07-10 10:08:53,639 DEBUG [main] PlatformDependent: -Dio.netty.maxDirectMemory: 3817865216 bytes
+2020-07-10 10:08:53,639 DEBUG [main] PlatformDependent: -Dio.netty.uninitializedArrayAllocationThreshold: -1
+2020-07-10 10:08:53,642 DEBUG [main] CleanerJava6: java.nio.ByteBuffer.cleaner(): available
+2020-07-10 10:08:53,643 DEBUG [main] PlatformDependent: -Dio.netty.noPreferDirect: false
+2020-07-10 10:08:53,673 DEBUG [main] ResourceLeakDetector: -Dio.netty.leakDetection.level: simple
+2020-07-10 10:08:53,673 DEBUG [main] ResourceLeakDetector: -Dio.netty.leakDetection.targetRecords: 4
+2020-07-10 10:08:53,677 DEBUG [main] PooledByteBufAllocator: -Dio.netty.allocator.numHeapArenas: 16
+2020-07-10 10:08:53,678 DEBUG [main] PooledByteBufAllocator: -Dio.netty.allocator.numDirectArenas: 16
+2020-07-10 10:08:53,678 DEBUG [main] PooledByteBufAllocator: -Dio.netty.allocator.pageSize: 8192
+2020-07-10 10:08:53,678 DEBUG [main] PooledByteBufAllocator: -Dio.netty.allocator.maxOrder: 11
+2020-07-10 10:08:53,678 DEBUG [main] PooledByteBufAllocator: -Dio.netty.allocator.chunkSize: 16777216
+2020-07-10 10:08:53,678 DEBUG [main] PooledByteBufAllocator: -Dio.netty.allocator.tinyCacheSize: 512
+2020-07-10 10:08:53,678 DEBUG [main] PooledByteBufAllocator: -Dio.netty.allocator.smallCacheSize: 256
+2020-07-10 10:08:53,678 DEBUG [main] PooledByteBufAllocator: -Dio.netty.allocator.normalCacheSize: 64
+2020-07-10 10:08:53,678 DEBUG [main] PooledByteBufAllocator: -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+2020-07-10 10:08:53,678 DEBUG [main] PooledByteBufAllocator: -Dio.netty.allocator.cacheTrimInterval: 8192
+2020-07-10 10:08:53,678 DEBUG [main] PooledByteBufAllocator: -Dio.netty.allocator.cacheTrimIntervalMillis: 0
+2020-07-10 10:08:53,679 DEBUG [main] PooledByteBufAllocator: -Dio.netty.allocator.useCacheForAllThreads: true
+2020-07-10 10:08:53,680 DEBUG [main] PooledByteBufAllocator: -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+2020-07-10 10:08:53,697 DEBUG [main] ByteBufUtil: -Dio.netty.allocator.type: pooled
+2020-07-10 10:08:53,697 DEBUG [main] ByteBufUtil: -Dio.netty.threadLocalDirectBufferSize: 0
+2020-07-10 10:08:53,697 DEBUG [main] ByteBufUtil: -Dio.netty.maxThreadLocalCharBufferSize: 16384
+2020-07-10 10:08:53,704 DEBUG [main] Recycler: -Dio.netty.recycler.maxCapacityPerThread: 4096
+2020-07-10 10:08:53,704 DEBUG [main] Recycler: -Dio.netty.recycler.maxSharedCapacityFactor: 2
+2020-07-10 10:08:53,704 DEBUG [main] Recycler: -Dio.netty.recycler.linkCapacity: 16
+2020-07-10 10:08:53,704 DEBUG [main] Recycler: -Dio.netty.recycler.ratio: 8
+2020-07-10 10:08:53,704 DEBUG [main] Recycler: -Dio.netty.recycler.delayedQueue.ratio: 8
+2020-07-10 10:08:53,719 DEBUG [main] AbstractByteBuf: -Dio.netty.buffer.checkAccessible: true
+2020-07-10 10:08:53,719 DEBUG [main] AbstractByteBuf: -Dio.netty.buffer.checkBounds: true
+2020-07-10 10:08:53,720 DEBUG [main] ResourceLeakDetectorFactory: Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@39a2bb97
+2020-07-10 10:09:25,882 DEBUG [main] DataConverter: Encode:{head=[B@5b38c1ec, data={controllerNo=GTLAND, heartBeatSeq=1}, dataLength=10, checkSum=17, location=[B@338fc1d8, end=[B@4722ef0c, command=[B@48e1f6c7, direction=[B@55cb6996}
+to:78b64c5a0101000a47544c414e440000000121d3
+2020-07-10 11:34:12,986 DEBUG [main] DataConverter: Command Config finished:{4C5A=io.vantiq.ext.tcp.protocol.CommandDef@45d84a20, 4C5Ass=io.vantiq.ext.tcp.protocol.CommandDef@52f27fbd, 4CE6=io.vantiq.ext.tcp.protocol.CommandDef@4c163e3, 4CE6ss=io.vantiq.ext.tcp.protocol.CommandDef@4a8355dd}
+2020-07-10 11:34:12,999 DEBUG [main] DataConverter: Package Config finished:[PacketField{field='head', fixCode='78B6', length=2, type='byte'}, PacketField{field='command', fixCode='', length=2, type='byte'}, PacketField{field='direction', fixCode='', length=1, type='byte'}, PacketField{field='location', fixCode='', length=1, type='byte'}, PacketField{field='dataLength', fixCode='', length=2, type='integer'}, PacketField{field='data', fixCode='', length=0, type='data'}, PacketField{field='checkSum', fixCode='', length=1, type='byte'}, PacketField{field='end', fixCode='21D3', length=2, type='byte'}]
+2020-07-10 11:34:13,006 INFO  [main] PacketConverterTest: Heartbeat data:{head=[B@5b38c1ec, data={controllerNo=GTLAND, heartBeatSeq=1}, dataLength=10, checkSum=17, location=[B@338fc1d8, end=[B@4722ef0c, command=[B@48e1f6c7, direction=[B@55cb6996}
+2020-07-10 11:34:13,023 DEBUG [main] InternalLoggerFactory: Using SLF4J as the default logging framework
+2020-07-10 11:34:13,026 DEBUG [main] InternalThreadLocalMap: -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+2020-07-10 11:34:13,027 DEBUG [main] InternalThreadLocalMap: -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+2020-07-10 11:34:13,056 DEBUG [main] PlatformDependent: Platform: MacOS
+2020-07-10 11:34:13,060 DEBUG [main] PlatformDependent0: -Dio.netty.noUnsafe: false
+2020-07-10 11:34:13,060 DEBUG [main] PlatformDependent0: Java version: 8
+2020-07-10 11:34:13,062 DEBUG [main] PlatformDependent0: sun.misc.Unsafe.theUnsafe: available
+2020-07-10 11:34:13,063 DEBUG [main] PlatformDependent0: sun.misc.Unsafe.copyMemory: available
+2020-07-10 11:34:13,064 DEBUG [main] PlatformDependent0: java.nio.Buffer.address: available
+2020-07-10 11:34:13,065 DEBUG [main] PlatformDependent0: direct buffer constructor: available
+2020-07-10 11:34:13,066 DEBUG [main] PlatformDependent0: java.nio.Bits.unaligned: available, true
+2020-07-10 11:34:13,066 DEBUG [main] PlatformDependent0: jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9
+2020-07-10 11:34:13,066 DEBUG [main] PlatformDependent0: java.nio.DirectByteBuffer.<init>(long, int): available
+2020-07-10 11:34:13,067 DEBUG [main] PlatformDependent: sun.misc.Unsafe: available
+2020-07-10 11:34:13,067 DEBUG [main] PlatformDependent: -Dio.netty.tmpdir: /var/folders/f1/8c8bz_w13rj684f43n3b4k8w0000gp/T (java.io.tmpdir)
+2020-07-10 11:34:13,068 DEBUG [main] PlatformDependent: -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2020-07-10 11:34:13,069 DEBUG [main] PlatformDependent: -Dio.netty.maxDirectMemory: 3817865216 bytes
+2020-07-10 11:34:13,070 DEBUG [main] PlatformDependent: -Dio.netty.uninitializedArrayAllocationThreshold: -1
+2020-07-10 11:34:13,072 DEBUG [main] CleanerJava6: java.nio.ByteBuffer.cleaner(): available
+2020-07-10 11:34:13,072 DEBUG [main] PlatformDependent: -Dio.netty.noPreferDirect: false
+2020-07-10 11:34:13,099 DEBUG [main] ResourceLeakDetector: -Dio.netty.leakDetection.level: simple
+2020-07-10 11:34:13,099 DEBUG [main] ResourceLeakDetector: -Dio.netty.leakDetection.targetRecords: 4
+2020-07-10 11:34:13,103 DEBUG [main] PooledByteBufAllocator: -Dio.netty.allocator.numHeapArenas: 16
+2020-07-10 11:34:13,103 DEBUG [main] PooledByteBufAllocator: -Dio.netty.allocator.numDirectArenas: 16
+2020-07-10 11:34:13,103 DEBUG [main] PooledByteBufAllocator: -Dio.netty.allocator.pageSize: 8192
+2020-07-10 11:34:13,105 DEBUG [main] PooledByteBufAllocator: -Dio.netty.allocator.maxOrder: 11
+2020-07-10 11:34:13,106 DEBUG [main] PooledByteBufAllocator: -Dio.netty.allocator.chunkSize: 16777216
+2020-07-10 11:34:13,106 DEBUG [main] PooledByteBufAllocator: -Dio.netty.allocator.tinyCacheSize: 512
+2020-07-10 11:34:13,106 DEBUG [main] PooledByteBufAllocator: -Dio.netty.allocator.smallCacheSize: 256
+2020-07-10 11:34:13,106 DEBUG [main] PooledByteBufAllocator: -Dio.netty.allocator.normalCacheSize: 64
+2020-07-10 11:34:13,106 DEBUG [main] PooledByteBufAllocator: -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+2020-07-10 11:34:13,106 DEBUG [main] PooledByteBufAllocator: -Dio.netty.allocator.cacheTrimInterval: 8192
+2020-07-10 11:34:13,106 DEBUG [main] PooledByteBufAllocator: -Dio.netty.allocator.cacheTrimIntervalMillis: 0
+2020-07-10 11:34:13,106 DEBUG [main] PooledByteBufAllocator: -Dio.netty.allocator.useCacheForAllThreads: true
+2020-07-10 11:34:13,106 DEBUG [main] PooledByteBufAllocator: -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+2020-07-10 11:34:13,119 DEBUG [main] ByteBufUtil: -Dio.netty.allocator.type: pooled
+2020-07-10 11:34:13,120 DEBUG [main] ByteBufUtil: -Dio.netty.threadLocalDirectBufferSize: 0
+2020-07-10 11:34:13,120 DEBUG [main] ByteBufUtil: -Dio.netty.maxThreadLocalCharBufferSize: 16384
+2020-07-10 11:34:13,127 DEBUG [main] Recycler: -Dio.netty.recycler.maxCapacityPerThread: 4096
+2020-07-10 11:34:13,127 DEBUG [main] Recycler: -Dio.netty.recycler.maxSharedCapacityFactor: 2
+2020-07-10 11:34:13,127 DEBUG [main] Recycler: -Dio.netty.recycler.linkCapacity: 16
+2020-07-10 11:34:13,127 DEBUG [main] Recycler: -Dio.netty.recycler.ratio: 8
+2020-07-10 11:34:13,127 DEBUG [main] Recycler: -Dio.netty.recycler.delayedQueue.ratio: 8
+2020-07-10 11:34:13,140 DEBUG [main] AbstractByteBuf: -Dio.netty.buffer.checkAccessible: true
+2020-07-10 11:34:13,140 DEBUG [main] AbstractByteBuf: -Dio.netty.buffer.checkBounds: true
+2020-07-10 11:34:13,141 DEBUG [main] ResourceLeakDetectorFactory: Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@38aa816f
+2020-07-10 11:37:11,267 DEBUG [main] DataConverter: Encode:{head=[B@5b38c1ec, data={controllerNo=GTLAND, heartBeatSeq=1}, dataLength=10, checkSum=17, location=[B@338fc1d8, end=[B@4722ef0c, command=[B@48e1f6c7, direction=[B@55cb6996}
+to:78b64c5a0101000a47544c414e440000000121d3
+2020-07-10 11:39:20,153 DEBUG [main] DataConverter: Command Config finished:{4C5A=io.vantiq.ext.tcp.protocol.CommandDef@45d84a20, 4C5Ass=io.vantiq.ext.tcp.protocol.CommandDef@52f27fbd, 4CE6=io.vantiq.ext.tcp.protocol.CommandDef@4c163e3, 4CE6ss=io.vantiq.ext.tcp.protocol.CommandDef@4a8355dd}
+2020-07-10 11:39:20,163 DEBUG [main] DataConverter: Package Config finished:[PacketField{field='head', fixCode='78B6', length=2, type='byte'}, PacketField{field='command', fixCode='', length=2, type='byte'}, PacketField{field='direction', fixCode='', length=1, type='byte'}, PacketField{field='location', fixCode='', length=1, type='byte'}, PacketField{field='dataLength', fixCode='', length=2, type='integer'}, PacketField{field='data', fixCode='', length=0, type='data'}, PacketField{field='checkSum', fixCode='', length=1, type='byte'}, PacketField{field='end', fixCode='21D3', length=2, type='byte'}]
+2020-07-10 11:39:46,119 INFO  [main] PacketConverterTest: Heartbeat data:{head=[B@5b38c1ec, data={controllerNo=GTLAND, heartBeatSeq=1}, dataLength=10, checkSum=17, location=[B@338fc1d8, end=[B@4722ef0c, command=[B@48e1f6c7, direction=[B@55cb6996}
+2020-07-10 11:39:46,138 DEBUG [main] InternalLoggerFactory: Using SLF4J as the default logging framework
+2020-07-10 11:39:46,140 DEBUG [main] InternalThreadLocalMap: -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+2020-07-10 11:39:46,140 DEBUG [main] InternalThreadLocalMap: -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+2020-07-10 11:39:46,161 DEBUG [main] PlatformDependent: Platform: MacOS
+2020-07-10 11:39:46,163 DEBUG [main] PlatformDependent0: -Dio.netty.noUnsafe: false
+2020-07-10 11:39:46,163 DEBUG [main] PlatformDependent0: Java version: 8
+2020-07-10 11:39:46,165 DEBUG [main] PlatformDependent0: sun.misc.Unsafe.theUnsafe: available
+2020-07-10 11:39:46,166 DEBUG [main] PlatformDependent0: sun.misc.Unsafe.copyMemory: available
+2020-07-10 11:39:46,167 DEBUG [main] PlatformDependent0: java.nio.Buffer.address: available
+2020-07-10 11:39:46,168 DEBUG [main] PlatformDependent0: direct buffer constructor: available
+2020-07-10 11:39:46,170 DEBUG [main] PlatformDependent0: java.nio.Bits.unaligned: available, true
+2020-07-10 11:39:46,171 DEBUG [main] PlatformDependent0: jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9
+2020-07-10 11:39:46,171 DEBUG [main] PlatformDependent0: java.nio.DirectByteBuffer.<init>(long, int): available
+2020-07-10 11:39:46,171 DEBUG [main] PlatformDependent: sun.misc.Unsafe: available
+2020-07-10 11:39:46,172 DEBUG [main] PlatformDependent: -Dio.netty.tmpdir: /var/folders/f1/8c8bz_w13rj684f43n3b4k8w0000gp/T (java.io.tmpdir)
+2020-07-10 11:39:46,173 DEBUG [main] PlatformDependent: -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2020-07-10 11:39:46,175 DEBUG [main] PlatformDependent: -Dio.netty.maxDirectMemory: 3817865216 bytes
+2020-07-10 11:39:46,175 DEBUG [main] PlatformDependent: -Dio.netty.uninitializedArrayAllocationThreshold: -1
+2020-07-10 11:39:46,177 DEBUG [main] CleanerJava6: java.nio.ByteBuffer.cleaner(): available
+2020-07-10 11:39:46,178 DEBUG [main] PlatformDependent: -Dio.netty.noPreferDirect: false
+2020-07-10 11:39:46,208 DEBUG [main] ResourceLeakDetector: -Dio.netty.leakDetection.level: simple
+2020-07-10 11:39:46,208 DEBUG [main] ResourceLeakDetector: -Dio.netty.leakDetection.targetRecords: 4
+2020-07-10 11:39:46,214 DEBUG [main] PooledByteBufAllocator: -Dio.netty.allocator.numHeapArenas: 16
+2020-07-10 11:39:46,214 DEBUG [main] PooledByteBufAllocator: -Dio.netty.allocator.numDirectArenas: 16
+2020-07-10 11:39:46,214 DEBUG [main] PooledByteBufAllocator: -Dio.netty.allocator.pageSize: 8192
+2020-07-10 11:39:46,219 DEBUG [main] PooledByteBufAllocator: -Dio.netty.allocator.maxOrder: 11
+2020-07-10 11:39:46,219 DEBUG [main] PooledByteBufAllocator: -Dio.netty.allocator.chunkSize: 16777216
+2020-07-10 11:39:46,219 DEBUG [main] PooledByteBufAllocator: -Dio.netty.allocator.tinyCacheSize: 512
+2020-07-10 11:39:46,219 DEBUG [main] PooledByteBufAllocator: -Dio.netty.allocator.smallCacheSize: 256
+2020-07-10 11:39:46,219 DEBUG [main] PooledByteBufAllocator: -Dio.netty.allocator.normalCacheSize: 64
+2020-07-10 11:39:46,219 DEBUG [main] PooledByteBufAllocator: -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+2020-07-10 11:39:46,220 DEBUG [main] PooledByteBufAllocator: -Dio.netty.allocator.cacheTrimInterval: 8192
+2020-07-10 11:39:46,220 DEBUG [main] PooledByteBufAllocator: -Dio.netty.allocator.cacheTrimIntervalMillis: 0
+2020-07-10 11:39:46,220 DEBUG [main] PooledByteBufAllocator: -Dio.netty.allocator.useCacheForAllThreads: true
+2020-07-10 11:39:46,220 DEBUG [main] PooledByteBufAllocator: -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+2020-07-10 11:39:46,237 DEBUG [main] ByteBufUtil: -Dio.netty.allocator.type: pooled
+2020-07-10 11:39:46,238 DEBUG [main] ByteBufUtil: -Dio.netty.threadLocalDirectBufferSize: 0
+2020-07-10 11:39:46,238 DEBUG [main] ByteBufUtil: -Dio.netty.maxThreadLocalCharBufferSize: 16384
+2020-07-10 11:39:46,244 DEBUG [main] Recycler: -Dio.netty.recycler.maxCapacityPerThread: 4096
+2020-07-10 11:39:46,245 DEBUG [main] Recycler: -Dio.netty.recycler.maxSharedCapacityFactor: 2
+2020-07-10 11:39:46,245 DEBUG [main] Recycler: -Dio.netty.recycler.linkCapacity: 16
+2020-07-10 11:39:46,245 DEBUG [main] Recycler: -Dio.netty.recycler.ratio: 8
+2020-07-10 11:39:46,245 DEBUG [main] Recycler: -Dio.netty.recycler.delayedQueue.ratio: 8
+2020-07-10 11:39:46,261 DEBUG [main] AbstractByteBuf: -Dio.netty.buffer.checkAccessible: true
+2020-07-10 11:39:46,262 DEBUG [main] AbstractByteBuf: -Dio.netty.buffer.checkBounds: true
+2020-07-10 11:39:46,263 DEBUG [main] ResourceLeakDetectorFactory: Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@39a2bb97
+2020-07-10 11:40:17,136 DEBUG [main] DataConverter: Encode:{head=[B@5b38c1ec, data={controllerNo=GTLAND, heartBeatSeq=1}, dataLength=10, checkSum=17, location=[B@338fc1d8, end=[B@4722ef0c, command=[B@48e1f6c7, direction=[B@55cb6996}
+to:78b64c5a0101000a47544c414e44000000011121d3
+2020-07-10 11:40:17,137 DEBUG [main] DataConverter: Decode:
+to:{head=78B6, data={controllerNo=GTLAND, heartBeatSeq=1}, dataLength=10, checkSum=11, location=01, end=21D3, command=4C5A, direction=01}
+2020-07-10 11:51:31,141 DEBUG [main] DataConverter: Command Config finished:{4C5A=io.vantiq.ext.tcp.protocol.CommandDef@2aa5fe93, 4C5Ass=io.vantiq.ext.tcp.protocol.CommandDef@5c1a8622, 4CE6=io.vantiq.ext.tcp.protocol.CommandDef@5ad851c9, 4CE6ss=io.vantiq.ext.tcp.protocol.CommandDef@6156496}
+2020-07-10 11:51:31,150 DEBUG [main] DataConverter: Package Config finished:[PacketField{field='head', fixCode='78B6', length=2, type='byte'}, PacketField{field='command', fixCode='', length=2, type='byte'}, PacketField{field='direction', fixCode='', length=1, type='byte'}, PacketField{field='location', fixCode='', length=1, type='byte'}, PacketField{field='dataLength', fixCode='', length=2, type='integer'}, PacketField{field='data', fixCode='', length=0, type='data'}, PacketField{field='checkSum', fixCode='', length=1, type='byte'}, PacketField{field='end', fixCode='21D3', length=2, type='byte'}]
+2020-07-10 11:51:31,153 INFO  [main] PacketConverterTest: Heartbeat data:{head=78B6, data={controllerNo=GTLAND, heartBeatSeq=1}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=01}
+2020-07-10 11:51:31,167 DEBUG [main] InternalLoggerFactory: Using SLF4J as the default logging framework
+2020-07-10 11:51:31,169 DEBUG [main] InternalThreadLocalMap: -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+2020-07-10 11:51:31,169 DEBUG [main] InternalThreadLocalMap: -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+2020-07-10 11:51:31,191 DEBUG [main] PlatformDependent: Platform: MacOS
+2020-07-10 11:51:31,194 DEBUG [main] PlatformDependent0: -Dio.netty.noUnsafe: false
+2020-07-10 11:51:31,194 DEBUG [main] PlatformDependent0: Java version: 8
+2020-07-10 11:51:31,197 DEBUG [main] PlatformDependent0: sun.misc.Unsafe.theUnsafe: available
+2020-07-10 11:51:31,198 DEBUG [main] PlatformDependent0: sun.misc.Unsafe.copyMemory: available
+2020-07-10 11:51:31,199 DEBUG [main] PlatformDependent0: java.nio.Buffer.address: available
+2020-07-10 11:51:31,200 DEBUG [main] PlatformDependent0: direct buffer constructor: available
+2020-07-10 11:51:31,203 DEBUG [main] PlatformDependent0: java.nio.Bits.unaligned: available, true
+2020-07-10 11:51:31,203 DEBUG [main] PlatformDependent0: jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9
+2020-07-10 11:51:31,204 DEBUG [main] PlatformDependent0: java.nio.DirectByteBuffer.<init>(long, int): available
+2020-07-10 11:51:31,204 DEBUG [main] PlatformDependent: sun.misc.Unsafe: available
+2020-07-10 11:51:31,205 DEBUG [main] PlatformDependent: -Dio.netty.tmpdir: /var/folders/f1/8c8bz_w13rj684f43n3b4k8w0000gp/T (java.io.tmpdir)
+2020-07-10 11:51:31,206 DEBUG [main] PlatformDependent: -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2020-07-10 11:51:31,209 DEBUG [main] PlatformDependent: -Dio.netty.maxDirectMemory: 3817865216 bytes
+2020-07-10 11:51:31,209 DEBUG [main] PlatformDependent: -Dio.netty.uninitializedArrayAllocationThreshold: -1
+2020-07-10 11:51:31,212 DEBUG [main] CleanerJava6: java.nio.ByteBuffer.cleaner(): available
+2020-07-10 11:51:31,213 DEBUG [main] PlatformDependent: -Dio.netty.noPreferDirect: false
+2020-07-10 11:51:31,237 DEBUG [main] ResourceLeakDetector: -Dio.netty.leakDetection.level: simple
+2020-07-10 11:51:31,237 DEBUG [main] ResourceLeakDetector: -Dio.netty.leakDetection.targetRecords: 4
+2020-07-10 11:51:31,240 DEBUG [main] PooledByteBufAllocator: -Dio.netty.allocator.numHeapArenas: 16
+2020-07-10 11:51:31,241 DEBUG [main] PooledByteBufAllocator: -Dio.netty.allocator.numDirectArenas: 16
+2020-07-10 11:51:31,246 DEBUG [main] PooledByteBufAllocator: -Dio.netty.allocator.pageSize: 8192
+2020-07-10 11:51:31,246 DEBUG [main] PooledByteBufAllocator: -Dio.netty.allocator.maxOrder: 11
+2020-07-10 11:51:31,246 DEBUG [main] PooledByteBufAllocator: -Dio.netty.allocator.chunkSize: 16777216
+2020-07-10 11:51:31,246 DEBUG [main] PooledByteBufAllocator: -Dio.netty.allocator.tinyCacheSize: 512
+2020-07-10 11:51:31,247 DEBUG [main] PooledByteBufAllocator: -Dio.netty.allocator.smallCacheSize: 256
+2020-07-10 11:51:31,247 DEBUG [main] PooledByteBufAllocator: -Dio.netty.allocator.normalCacheSize: 64
+2020-07-10 11:51:31,247 DEBUG [main] PooledByteBufAllocator: -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+2020-07-10 11:51:31,247 DEBUG [main] PooledByteBufAllocator: -Dio.netty.allocator.cacheTrimInterval: 8192
+2020-07-10 11:51:31,247 DEBUG [main] PooledByteBufAllocator: -Dio.netty.allocator.cacheTrimIntervalMillis: 0
+2020-07-10 11:51:31,247 DEBUG [main] PooledByteBufAllocator: -Dio.netty.allocator.useCacheForAllThreads: true
+2020-07-10 11:51:31,248 DEBUG [main] PooledByteBufAllocator: -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+2020-07-10 11:51:31,264 DEBUG [main] ByteBufUtil: -Dio.netty.allocator.type: pooled
+2020-07-10 11:51:31,264 DEBUG [main] ByteBufUtil: -Dio.netty.threadLocalDirectBufferSize: 0
+2020-07-10 11:51:31,264 DEBUG [main] ByteBufUtil: -Dio.netty.maxThreadLocalCharBufferSize: 16384
+2020-07-10 11:51:31,276 DEBUG [main] Recycler: -Dio.netty.recycler.maxCapacityPerThread: 4096
+2020-07-10 11:51:31,276 DEBUG [main] Recycler: -Dio.netty.recycler.maxSharedCapacityFactor: 2
+2020-07-10 11:51:31,277 DEBUG [main] Recycler: -Dio.netty.recycler.linkCapacity: 16
+2020-07-10 11:51:31,277 DEBUG [main] Recycler: -Dio.netty.recycler.ratio: 8
+2020-07-10 11:51:31,278 DEBUG [main] Recycler: -Dio.netty.recycler.delayedQueue.ratio: 8
+2020-07-10 11:51:31,296 DEBUG [main] AbstractByteBuf: -Dio.netty.buffer.checkAccessible: true
+2020-07-10 11:51:31,296 DEBUG [main] AbstractByteBuf: -Dio.netty.buffer.checkBounds: true
+2020-07-10 11:51:31,300 DEBUG [main] ResourceLeakDetectorFactory: Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@56620197
+2020-07-10 11:51:31,316 DEBUG [main] DataConverter: Encode error:java.lang.String cannot be cast to [B
+java.lang.ClassCastException: java.lang.String cannot be cast to [B
+	at io.vantiq.ext.tcp.protocol.PacketConverter.encode(PacketConverter.java:90)
+	at io.vantiq.ext.tcp.protocol.PacketConverterTest.testHeartBeat(PacketConverterTest.java:50)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+2020-07-10 11:52:22,708 DEBUG [main] DataConverter: Command Config finished:{4C5A=io.vantiq.ext.tcp.protocol.CommandDef@2aa5fe93, 4C5Ass=io.vantiq.ext.tcp.protocol.CommandDef@5c1a8622, 4CE6=io.vantiq.ext.tcp.protocol.CommandDef@5ad851c9, 4CE6ss=io.vantiq.ext.tcp.protocol.CommandDef@6156496}
+2020-07-10 11:52:22,715 DEBUG [main] DataConverter: Package Config finished:[PacketField{field='head', fixCode='78B6', length=2, type='byte'}, PacketField{field='command', fixCode='', length=2, type='byte'}, PacketField{field='direction', fixCode='', length=1, type='byte'}, PacketField{field='location', fixCode='', length=1, type='byte'}, PacketField{field='dataLength', fixCode='', length=2, type='integer'}, PacketField{field='data', fixCode='', length=0, type='data'}, PacketField{field='checkSum', fixCode='', length=1, type='byte'}, PacketField{field='end', fixCode='21D3', length=2, type='byte'}]
+2020-07-10 11:52:22,720 INFO  [main] PacketConverterTest: Heartbeat data:{head=78B6, data={controllerNo=GTLAND, heartBeatSeq=1}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=01}
+2020-07-10 11:52:22,730 DEBUG [main] InternalLoggerFactory: Using SLF4J as the default logging framework
+2020-07-10 11:52:22,733 DEBUG [main] InternalThreadLocalMap: -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+2020-07-10 11:52:22,734 DEBUG [main] InternalThreadLocalMap: -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+2020-07-10 11:52:22,755 DEBUG [main] PlatformDependent: Platform: MacOS
+2020-07-10 11:52:22,757 DEBUG [main] PlatformDependent0: -Dio.netty.noUnsafe: false
+2020-07-10 11:52:22,758 DEBUG [main] PlatformDependent0: Java version: 8
+2020-07-10 11:52:22,760 DEBUG [main] PlatformDependent0: sun.misc.Unsafe.theUnsafe: available
+2020-07-10 11:52:22,761 DEBUG [main] PlatformDependent0: sun.misc.Unsafe.copyMemory: available
+2020-07-10 11:52:22,762 DEBUG [main] PlatformDependent0: java.nio.Buffer.address: available
+2020-07-10 11:52:22,762 DEBUG [main] PlatformDependent0: direct buffer constructor: available
+2020-07-10 11:52:22,763 DEBUG [main] PlatformDependent0: java.nio.Bits.unaligned: available, true
+2020-07-10 11:52:22,763 DEBUG [main] PlatformDependent0: jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9
+2020-07-10 11:52:22,763 DEBUG [main] PlatformDependent0: java.nio.DirectByteBuffer.<init>(long, int): available
+2020-07-10 11:52:22,763 DEBUG [main] PlatformDependent: sun.misc.Unsafe: available
+2020-07-10 11:52:22,764 DEBUG [main] PlatformDependent: -Dio.netty.tmpdir: /var/folders/f1/8c8bz_w13rj684f43n3b4k8w0000gp/T (java.io.tmpdir)
+2020-07-10 11:52:22,764 DEBUG [main] PlatformDependent: -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2020-07-10 11:52:22,765 DEBUG [main] PlatformDependent: -Dio.netty.maxDirectMemory: 3817865216 bytes
+2020-07-10 11:52:22,766 DEBUG [main] PlatformDependent: -Dio.netty.uninitializedArrayAllocationThreshold: -1
+2020-07-10 11:52:22,767 DEBUG [main] CleanerJava6: java.nio.ByteBuffer.cleaner(): available
+2020-07-10 11:52:22,767 DEBUG [main] PlatformDependent: -Dio.netty.noPreferDirect: false
+2020-07-10 11:52:22,784 DEBUG [main] ResourceLeakDetector: -Dio.netty.leakDetection.level: simple
+2020-07-10 11:52:22,784 DEBUG [main] ResourceLeakDetector: -Dio.netty.leakDetection.targetRecords: 4
+2020-07-10 11:52:22,788 DEBUG [main] PooledByteBufAllocator: -Dio.netty.allocator.numHeapArenas: 16
+2020-07-10 11:52:22,788 DEBUG [main] PooledByteBufAllocator: -Dio.netty.allocator.numDirectArenas: 16
+2020-07-10 11:52:22,791 DEBUG [main] PooledByteBufAllocator: -Dio.netty.allocator.pageSize: 8192
+2020-07-10 11:52:22,791 DEBUG [main] PooledByteBufAllocator: -Dio.netty.allocator.maxOrder: 11
+2020-07-10 11:52:22,791 DEBUG [main] PooledByteBufAllocator: -Dio.netty.allocator.chunkSize: 16777216
+2020-07-10 11:52:22,791 DEBUG [main] PooledByteBufAllocator: -Dio.netty.allocator.tinyCacheSize: 512
+2020-07-10 11:52:22,792 DEBUG [main] PooledByteBufAllocator: -Dio.netty.allocator.smallCacheSize: 256
+2020-07-10 11:52:22,792 DEBUG [main] PooledByteBufAllocator: -Dio.netty.allocator.normalCacheSize: 64
+2020-07-10 11:52:22,792 DEBUG [main] PooledByteBufAllocator: -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+2020-07-10 11:52:22,792 DEBUG [main] PooledByteBufAllocator: -Dio.netty.allocator.cacheTrimInterval: 8192
+2020-07-10 11:52:22,792 DEBUG [main] PooledByteBufAllocator: -Dio.netty.allocator.cacheTrimIntervalMillis: 0
+2020-07-10 11:52:22,792 DEBUG [main] PooledByteBufAllocator: -Dio.netty.allocator.useCacheForAllThreads: true
+2020-07-10 11:52:22,792 DEBUG [main] PooledByteBufAllocator: -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+2020-07-10 11:52:22,806 DEBUG [main] ByteBufUtil: -Dio.netty.allocator.type: pooled
+2020-07-10 11:52:22,807 DEBUG [main] ByteBufUtil: -Dio.netty.threadLocalDirectBufferSize: 0
+2020-07-10 11:52:22,807 DEBUG [main] ByteBufUtil: -Dio.netty.maxThreadLocalCharBufferSize: 16384
+2020-07-10 11:52:22,813 DEBUG [main] Recycler: -Dio.netty.recycler.maxCapacityPerThread: 4096
+2020-07-10 11:52:22,813 DEBUG [main] Recycler: -Dio.netty.recycler.maxSharedCapacityFactor: 2
+2020-07-10 11:52:22,813 DEBUG [main] Recycler: -Dio.netty.recycler.linkCapacity: 16
+2020-07-10 11:52:22,813 DEBUG [main] Recycler: -Dio.netty.recycler.ratio: 8
+2020-07-10 11:52:22,813 DEBUG [main] Recycler: -Dio.netty.recycler.delayedQueue.ratio: 8
+2020-07-10 11:52:22,824 DEBUG [main] AbstractByteBuf: -Dio.netty.buffer.checkAccessible: true
+2020-07-10 11:52:22,824 DEBUG [main] AbstractByteBuf: -Dio.netty.buffer.checkBounds: true
+2020-07-10 11:52:22,826 DEBUG [main] ResourceLeakDetectorFactory: Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@56620197
+2020-07-10 11:52:22,845 DEBUG [main] DataConverter: Encode:{head=78B6, data={controllerNo=GTLAND, heartBeatSeq=1}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=01}
+to:78b64c5a0101000a47544c414e44000000011721d3
+2020-07-10 11:52:22,846 DEBUG [main] DataConverter: Decode:
+to:{head=78B6, data={controllerNo=GTLAND, heartBeatSeq=1}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=01}
+2020-07-10 12:04:22,136 DEBUG [main] ConnectorConfig: Connector Config finish for name: test_connector
+2020-07-10 12:04:23,053 INFO  [OkHttp https://dev.vantiq.com.cn/...] ExtensionWebSocketListener#test_connector: WebSocket open
+2020-07-10 12:04:23,162 DEBUG [OkHttp https://dev.vantiq.com.cn/...] ExtensionWebSocketListener#test_connector: Auth received with no handler set
+2020-07-10 12:04:23,408 DEBUG [OkHttp https://dev.vantiq.com.cn/...] ExtensionWebSocketListener#test_connector: Http response received with no handler set
+2020-07-10 12:04:23,410 DEBUG [OkHttp https://dev.vantiq.com.cn/...] ExtensionWebSocketListener#test_connector: Map of the received message: {op=configureExtension, resourceName=sources, isSystemResource=true, resourceId=test_connector, parameters={}, object={mapId=5525722d-d0ec-4b85-9641-f8740567206d, config={tcp_server_port=6001}}, sessionId=eaf47a0302132b16d9694a454d108de8, contentType=application/json, responseType=application/json, skipMonitoring=false, isExternal=false, address=2ef24622-570c-488a-b555-ba86e93b87ca, messageHeaders={}}
+2020-07-10 12:04:23,411 INFO  [OkHttp https://dev.vantiq.com.cn/...] ExtensionWebSocketListener#test_connector: Successful connection to test_connector
+2020-07-10 12:04:23,411 INFO  [OkHttp https://dev.vantiq.com.cn/...] ConfigHandler: Configuration for source:test_connector
+2020-07-10 12:04:23,430 DEBUG [OkHttp https://dev.vantiq.com.cn/...] InternalLoggerFactory: Using SLF4J as the default logging framework
+2020-07-10 12:04:23,431 DEBUG [OkHttp https://dev.vantiq.com.cn/...] MultithreadEventLoopGroup: -Dio.netty.eventLoopThreads: 16
+2020-07-10 12:04:23,450 DEBUG [OkHttp https://dev.vantiq.com.cn/...] InternalThreadLocalMap: -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+2020-07-10 12:04:23,453 DEBUG [OkHttp https://dev.vantiq.com.cn/...] InternalThreadLocalMap: -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+2020-07-10 12:04:23,462 DEBUG [OkHttp https://dev.vantiq.com.cn/...] NioEventLoop: -Dio.netty.noKeySetOptimization: false
+2020-07-10 12:04:23,462 DEBUG [OkHttp https://dev.vantiq.com.cn/...] NioEventLoop: -Dio.netty.selectorAutoRebuildThreshold: 512
+2020-07-10 12:04:23,477 DEBUG [OkHttp https://dev.vantiq.com.cn/...] PlatformDependent: Platform: MacOS
+2020-07-10 12:04:23,479 DEBUG [OkHttp https://dev.vantiq.com.cn/...] PlatformDependent0: -Dio.netty.noUnsafe: false
+2020-07-10 12:04:23,479 DEBUG [OkHttp https://dev.vantiq.com.cn/...] PlatformDependent0: Java version: 8
+2020-07-10 12:04:23,480 DEBUG [OkHttp https://dev.vantiq.com.cn/...] PlatformDependent0: sun.misc.Unsafe.theUnsafe: available
+2020-07-10 12:04:23,481 DEBUG [OkHttp https://dev.vantiq.com.cn/...] PlatformDependent0: sun.misc.Unsafe.copyMemory: available
+2020-07-10 12:04:23,481 DEBUG [OkHttp https://dev.vantiq.com.cn/...] PlatformDependent0: java.nio.Buffer.address: available
+2020-07-10 12:04:23,482 DEBUG [OkHttp https://dev.vantiq.com.cn/...] PlatformDependent0: direct buffer constructor: available
+2020-07-10 12:04:23,483 DEBUG [OkHttp https://dev.vantiq.com.cn/...] PlatformDependent0: java.nio.Bits.unaligned: available, true
+2020-07-10 12:04:23,483 DEBUG [OkHttp https://dev.vantiq.com.cn/...] PlatformDependent0: jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9
+2020-07-10 12:04:23,483 DEBUG [OkHttp https://dev.vantiq.com.cn/...] PlatformDependent0: java.nio.DirectByteBuffer.<init>(long, int): available
+2020-07-10 12:04:23,483 DEBUG [OkHttp https://dev.vantiq.com.cn/...] PlatformDependent: sun.misc.Unsafe: available
+2020-07-10 12:04:23,483 DEBUG [OkHttp https://dev.vantiq.com.cn/...] PlatformDependent: -Dio.netty.tmpdir: /var/folders/f1/8c8bz_w13rj684f43n3b4k8w0000gp/T (java.io.tmpdir)
+2020-07-10 12:04:23,483 DEBUG [OkHttp https://dev.vantiq.com.cn/...] PlatformDependent: -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2020-07-10 12:04:23,484 DEBUG [OkHttp https://dev.vantiq.com.cn/...] PlatformDependent: -Dio.netty.maxDirectMemory: 3817865216 bytes
+2020-07-10 12:04:23,485 DEBUG [OkHttp https://dev.vantiq.com.cn/...] PlatformDependent: -Dio.netty.uninitializedArrayAllocationThreshold: -1
+2020-07-10 12:04:23,486 DEBUG [OkHttp https://dev.vantiq.com.cn/...] CleanerJava6: java.nio.ByteBuffer.cleaner(): available
+2020-07-10 12:04:23,486 DEBUG [OkHttp https://dev.vantiq.com.cn/...] PlatformDependent: -Dio.netty.noPreferDirect: false
+2020-07-10 12:04:23,495 DEBUG [OkHttp https://dev.vantiq.com.cn/...] PlatformDependent: org.jctools-core.MpscChunkedArrayQueue: available
+2020-07-10 12:04:23,544 DEBUG [OkHttp https://dev.vantiq.com.cn/...] DefaultChannelId: -Dio.netty.processId: 62372 (auto-detected)
+2020-07-10 12:04:23,547 DEBUG [OkHttp https://dev.vantiq.com.cn/...] NetUtil: -Djava.net.preferIPv4Stack: false
+2020-07-10 12:04:23,547 DEBUG [OkHttp https://dev.vantiq.com.cn/...] NetUtil: -Djava.net.preferIPv6Addresses: false
+2020-07-10 12:04:23,549 DEBUG [OkHttp https://dev.vantiq.com.cn/...] NetUtil: Loopback interface: lo0 (lo0, 0:0:0:0:0:0:0:1)
+2020-07-10 12:04:23,549 DEBUG [OkHttp https://dev.vantiq.com.cn/...] NetUtil: Failed to get SOMAXCONN from sysctl and file /proc/sys/net/core/somaxconn. Default: 128
+2020-07-10 12:04:23,552 DEBUG [OkHttp https://dev.vantiq.com.cn/...] DefaultChannelId: -Dio.netty.machineId: ac:de:48:ff:fe:00:11:22 (auto-detected)
+2020-07-10 12:04:23,563 DEBUG [OkHttp https://dev.vantiq.com.cn/...] ResourceLeakDetector: -Dio.netty.leakDetection.level: simple
+2020-07-10 12:04:23,563 DEBUG [OkHttp https://dev.vantiq.com.cn/...] ResourceLeakDetector: -Dio.netty.leakDetection.targetRecords: 4
+2020-07-10 12:04:23,591 DEBUG [OkHttp https://dev.vantiq.com.cn/...] PooledByteBufAllocator: -Dio.netty.allocator.numHeapArenas: 16
+2020-07-10 12:04:23,591 DEBUG [OkHttp https://dev.vantiq.com.cn/...] PooledByteBufAllocator: -Dio.netty.allocator.numDirectArenas: 16
+2020-07-10 12:04:23,591 DEBUG [OkHttp https://dev.vantiq.com.cn/...] PooledByteBufAllocator: -Dio.netty.allocator.pageSize: 8192
+2020-07-10 12:04:23,591 DEBUG [OkHttp https://dev.vantiq.com.cn/...] PooledByteBufAllocator: -Dio.netty.allocator.maxOrder: 11
+2020-07-10 12:04:23,591 DEBUG [OkHttp https://dev.vantiq.com.cn/...] PooledByteBufAllocator: -Dio.netty.allocator.chunkSize: 16777216
+2020-07-10 12:04:23,591 DEBUG [OkHttp https://dev.vantiq.com.cn/...] PooledByteBufAllocator: -Dio.netty.allocator.tinyCacheSize: 512
+2020-07-10 12:04:23,591 DEBUG [OkHttp https://dev.vantiq.com.cn/...] PooledByteBufAllocator: -Dio.netty.allocator.smallCacheSize: 256
+2020-07-10 12:04:23,591 DEBUG [OkHttp https://dev.vantiq.com.cn/...] PooledByteBufAllocator: -Dio.netty.allocator.normalCacheSize: 64
+2020-07-10 12:04:23,591 DEBUG [OkHttp https://dev.vantiq.com.cn/...] PooledByteBufAllocator: -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+2020-07-10 12:04:23,591 DEBUG [OkHttp https://dev.vantiq.com.cn/...] PooledByteBufAllocator: -Dio.netty.allocator.cacheTrimInterval: 8192
+2020-07-10 12:04:23,591 DEBUG [OkHttp https://dev.vantiq.com.cn/...] PooledByteBufAllocator: -Dio.netty.allocator.cacheTrimIntervalMillis: 0
+2020-07-10 12:04:23,591 DEBUG [OkHttp https://dev.vantiq.com.cn/...] PooledByteBufAllocator: -Dio.netty.allocator.useCacheForAllThreads: true
+2020-07-10 12:04:23,591 DEBUG [OkHttp https://dev.vantiq.com.cn/...] PooledByteBufAllocator: -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+2020-07-10 12:04:23,600 DEBUG [OkHttp https://dev.vantiq.com.cn/...] ByteBufUtil: -Dio.netty.allocator.type: pooled
+2020-07-10 12:04:23,600 DEBUG [OkHttp https://dev.vantiq.com.cn/...] ByteBufUtil: -Dio.netty.threadLocalDirectBufferSize: 0
+2020-07-10 12:04:23,600 DEBUG [OkHttp https://dev.vantiq.com.cn/...] ByteBufUtil: -Dio.netty.maxThreadLocalCharBufferSize: 16384
+2020-07-10 12:04:23,609 DEBUG [OkHttp https://dev.vantiq.com.cn/...] ConfigHandler: TCP Server started on port:6001
+2020-07-10 12:04:46,767 DEBUG [main] InternalLoggerFactory: Using SLF4J as the default logging framework
+2020-07-10 12:04:46,774 DEBUG [main] MultithreadEventLoopGroup: -Dio.netty.eventLoopThreads: 16
+2020-07-10 12:04:46,798 DEBUG [main] InternalThreadLocalMap: -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+2020-07-10 12:04:46,799 DEBUG [main] InternalThreadLocalMap: -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+2020-07-10 12:04:46,807 DEBUG [main] NioEventLoop: -Dio.netty.noKeySetOptimization: false
+2020-07-10 12:04:46,807 DEBUG [main] NioEventLoop: -Dio.netty.selectorAutoRebuildThreshold: 512
+2020-07-10 12:04:46,832 DEBUG [main] PlatformDependent: Platform: MacOS
+2020-07-10 12:04:46,835 DEBUG [main] PlatformDependent0: -Dio.netty.noUnsafe: false
+2020-07-10 12:04:46,835 DEBUG [main] PlatformDependent0: Java version: 8
+2020-07-10 12:04:46,836 DEBUG [main] PlatformDependent0: sun.misc.Unsafe.theUnsafe: available
+2020-07-10 12:04:46,837 DEBUG [main] PlatformDependent0: sun.misc.Unsafe.copyMemory: available
+2020-07-10 12:04:46,838 DEBUG [main] PlatformDependent0: java.nio.Buffer.address: available
+2020-07-10 12:04:46,839 DEBUG [main] PlatformDependent0: direct buffer constructor: available
+2020-07-10 12:04:46,840 DEBUG [main] PlatformDependent0: java.nio.Bits.unaligned: available, true
+2020-07-10 12:04:46,841 DEBUG [main] PlatformDependent0: jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9
+2020-07-10 12:04:46,841 DEBUG [main] PlatformDependent0: java.nio.DirectByteBuffer.<init>(long, int): available
+2020-07-10 12:04:46,841 DEBUG [main] PlatformDependent: sun.misc.Unsafe: available
+2020-07-10 12:04:46,842 DEBUG [main] PlatformDependent: -Dio.netty.tmpdir: /var/folders/f1/8c8bz_w13rj684f43n3b4k8w0000gp/T (java.io.tmpdir)
+2020-07-10 12:04:46,842 DEBUG [main] PlatformDependent: -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2020-07-10 12:04:46,845 DEBUG [main] PlatformDependent: -Dio.netty.maxDirectMemory: 3817865216 bytes
+2020-07-10 12:04:46,845 DEBUG [main] PlatformDependent: -Dio.netty.uninitializedArrayAllocationThreshold: -1
+2020-07-10 12:04:46,847 DEBUG [main] CleanerJava6: java.nio.ByteBuffer.cleaner(): available
+2020-07-10 12:04:46,847 DEBUG [main] PlatformDependent: -Dio.netty.noPreferDirect: false
+2020-07-10 12:04:46,861 DEBUG [main] PlatformDependent: org.jctools-core.MpscChunkedArrayQueue: available
+2020-07-10 12:04:46,922 DEBUG [main] DefaultChannelId: -Dio.netty.processId: 62381 (auto-detected)
+2020-07-10 12:04:46,924 DEBUG [main] NetUtil: -Djava.net.preferIPv4Stack: false
+2020-07-10 12:04:46,925 DEBUG [main] NetUtil: -Djava.net.preferIPv6Addresses: false
+2020-07-10 12:04:46,927 DEBUG [main] NetUtil: Loopback interface: lo0 (lo0, 0:0:0:0:0:0:0:1)
+2020-07-10 12:04:46,928 DEBUG [main] NetUtil: Failed to get SOMAXCONN from sysctl and file /proc/sys/net/core/somaxconn. Default: 128
+2020-07-10 12:04:46,931 DEBUG [main] DefaultChannelId: -Dio.netty.machineId: ac:de:48:ff:fe:00:11:22 (auto-detected)
+2020-07-10 12:04:46,946 DEBUG [main] ResourceLeakDetector: -Dio.netty.leakDetection.level: simple
+2020-07-10 12:04:46,946 DEBUG [main] ResourceLeakDetector: -Dio.netty.leakDetection.targetRecords: 4
+2020-07-10 12:04:46,973 DEBUG [main] PooledByteBufAllocator: -Dio.netty.allocator.numHeapArenas: 16
+2020-07-10 12:04:46,973 DEBUG [main] PooledByteBufAllocator: -Dio.netty.allocator.numDirectArenas: 16
+2020-07-10 12:04:46,973 DEBUG [main] PooledByteBufAllocator: -Dio.netty.allocator.pageSize: 8192
+2020-07-10 12:04:46,973 DEBUG [main] PooledByteBufAllocator: -Dio.netty.allocator.maxOrder: 11
+2020-07-10 12:04:46,973 DEBUG [main] PooledByteBufAllocator: -Dio.netty.allocator.chunkSize: 16777216
+2020-07-10 12:04:46,973 DEBUG [main] PooledByteBufAllocator: -Dio.netty.allocator.tinyCacheSize: 512
+2020-07-10 12:04:46,973 DEBUG [main] PooledByteBufAllocator: -Dio.netty.allocator.smallCacheSize: 256
+2020-07-10 12:04:46,973 DEBUG [main] PooledByteBufAllocator: -Dio.netty.allocator.normalCacheSize: 64
+2020-07-10 12:04:46,974 DEBUG [main] PooledByteBufAllocator: -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+2020-07-10 12:04:46,974 DEBUG [main] PooledByteBufAllocator: -Dio.netty.allocator.cacheTrimInterval: 8192
+2020-07-10 12:04:46,974 DEBUG [main] PooledByteBufAllocator: -Dio.netty.allocator.cacheTrimIntervalMillis: 0
+2020-07-10 12:04:46,974 DEBUG [main] PooledByteBufAllocator: -Dio.netty.allocator.useCacheForAllThreads: true
+2020-07-10 12:04:46,974 DEBUG [main] PooledByteBufAllocator: -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+2020-07-10 12:04:46,983 DEBUG [main] ByteBufUtil: -Dio.netty.allocator.type: pooled
+2020-07-10 12:04:46,983 DEBUG [main] ByteBufUtil: -Dio.netty.threadLocalDirectBufferSize: 0
+2020-07-10 12:04:46,983 DEBUG [main] ByteBufUtil: -Dio.netty.maxThreadLocalCharBufferSize: 16384
+2020-07-10 12:04:47,139 DEBUG [nioEventLoopGroup-3-1] HeartBeatTimerHandler: HeartBeat Timer activated
+2020-07-10 12:05:02,152 DEBUG [nioEventLoopGroup-3-1] Recycler: -Dio.netty.recycler.maxCapacityPerThread: 4096
+2020-07-10 12:05:02,152 DEBUG [nioEventLoopGroup-3-1] Recycler: -Dio.netty.recycler.maxSharedCapacityFactor: 2
+2020-07-10 12:05:02,152 DEBUG [nioEventLoopGroup-3-1] Recycler: -Dio.netty.recycler.linkCapacity: 16
+2020-07-10 12:05:02,152 DEBUG [nioEventLoopGroup-3-1] Recycler: -Dio.netty.recycler.ratio: 8
+2020-07-10 12:05:02,152 DEBUG [nioEventLoopGroup-3-1] Recycler: -Dio.netty.recycler.delayedQueue.ratio: 8
+2020-07-10 12:05:02,163 DEBUG [nioEventLoopGroup-3-1] AbstractByteBuf: -Dio.netty.buffer.checkAccessible: true
+2020-07-10 12:05:02,163 DEBUG [nioEventLoopGroup-3-1] AbstractByteBuf: -Dio.netty.buffer.checkBounds: true
+2020-07-10 12:05:02,164 DEBUG [nioEventLoopGroup-3-1] ResourceLeakDetectorFactory: Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@54b0814e
+2020-07-10 12:05:02,196 DEBUG [nioEventLoopGroup-3-1] DataConverter: Command Config finished:{4C5A=io.vantiq.ext.tcp.protocol.CommandDef@1352823b, 4C5Ass=io.vantiq.ext.tcp.protocol.CommandDef@62ba6ec4, 4CE6=io.vantiq.ext.tcp.protocol.CommandDef@1f884712, 4CE6ss=io.vantiq.ext.tcp.protocol.CommandDef@17f61bb2}
+2020-07-10 12:05:02,199 DEBUG [nioEventLoopGroup-3-1] DataConverter: Package Config finished:[PacketField{field='head', fixCode='78B6', length=2, type='byte'}, PacketField{field='command', fixCode='', length=2, type='byte'}, PacketField{field='direction', fixCode='', length=1, type='byte'}, PacketField{field='location', fixCode='', length=1, type='byte'}, PacketField{field='dataLength', fixCode='', length=2, type='integer'}, PacketField{field='data', fixCode='', length=0, type='data'}, PacketField{field='checkSum', fixCode='', length=1, type='byte'}, PacketField{field='end', fixCode='21D3', length=2, type='byte'}]
+2020-07-10 12:05:04,916 DEBUG [nioEventLoopGroup-3-1] DataConverter: Encode:{head=78B6, data={controllerNo=GTLAND, heartBeatSeq=1}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=01}
+to:78b64c5a0101000a47544c414e44000000011721d3
+2020-07-10 12:05:04,932 DEBUG [nioEventLoopGroup-2-1] Recycler: -Dio.netty.recycler.maxCapacityPerThread: 4096
+2020-07-10 12:05:04,933 DEBUG [nioEventLoopGroup-2-1] Recycler: -Dio.netty.recycler.maxSharedCapacityFactor: 2
+2020-07-10 12:05:04,933 DEBUG [nioEventLoopGroup-2-1] Recycler: -Dio.netty.recycler.linkCapacity: 16
+2020-07-10 12:05:04,933 DEBUG [nioEventLoopGroup-2-1] Recycler: -Dio.netty.recycler.ratio: 8
+2020-07-10 12:05:04,933 DEBUG [nioEventLoopGroup-2-1] Recycler: -Dio.netty.recycler.delayedQueue.ratio: 8
+2020-07-10 12:05:04,945 DEBUG [nioEventLoopGroup-2-1] AbstractByteBuf: -Dio.netty.buffer.checkAccessible: true
+2020-07-10 12:05:04,945 DEBUG [nioEventLoopGroup-2-1] AbstractByteBuf: -Dio.netty.buffer.checkBounds: true
+2020-07-10 12:05:04,946 DEBUG [nioEventLoopGroup-2-1] ResourceLeakDetectorFactory: Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@7468448
+2020-07-10 12:05:05,286 DEBUG [nioEventLoopGroup-2-1] DataConverter: Command Config finished:{4C5A=io.vantiq.ext.tcp.protocol.CommandDef@6ef764c6, 4C5Ass=io.vantiq.ext.tcp.protocol.CommandDef@275fe77, 4CE6=io.vantiq.ext.tcp.protocol.CommandDef@5015b75, 4CE6ss=io.vantiq.ext.tcp.protocol.CommandDef@59d84e15}
+2020-07-10 12:05:05,291 DEBUG [nioEventLoopGroup-2-1] DataConverter: Package Config finished:[PacketField{field='head', fixCode='78B6', length=2, type='byte'}, PacketField{field='command', fixCode='', length=2, type='byte'}, PacketField{field='direction', fixCode='', length=1, type='byte'}, PacketField{field='location', fixCode='', length=1, type='byte'}, PacketField{field='dataLength', fixCode='', length=2, type='integer'}, PacketField{field='data', fixCode='', length=0, type='data'}, PacketField{field='checkSum', fixCode='', length=1, type='byte'}, PacketField{field='end', fixCode='21D3', length=2, type='byte'}]
+2020-07-10 12:05:05,304 DEBUG [nioEventLoopGroup-2-1] DataConverter: Decode:
+to:{head=78B6, data={controllerNo=GTLAND, heartBeatSeq=1}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=01}
+2020-07-10 12:05:05,305 DEBUG [nioEventLoopGroup-2-1] DefaultChannelPipeline: Discarded inbound message {head=78B6, data={controllerNo=GTLAND, heartBeatSeq=1}, answer=59, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=01} that reached at the tail of the pipeline. Please check your pipeline configuration.
+2020-07-10 12:05:05,306 DEBUG [nioEventLoopGroup-2-1] DefaultChannelPipeline: Discarded message pipeline : [PacketDecoder#0, HeartBeatRespondHandler#0, PacketEncoder#0, DefaultChannelPipeline$TailContext#0]. Channel : [id: 0x710ff7e7, L:/127.0.0.1:59026 - R:localhost/127.0.0.1:6001].
+2020-07-10 12:05:19,928 DEBUG [nioEventLoopGroup-3-1] DataConverter: Encode:{head=78B6, data={controllerNo=GTLAND, heartBeatSeq=2}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=01}
+to:78b64c5a0101000a47544c414e44000000021721d3
+2020-07-10 12:05:19,929 DEBUG [nioEventLoopGroup-2-1] DataConverter: Decode:
+to:{head=78B6, data={controllerNo=GTLAND, heartBeatSeq=2}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=01}
+2020-07-10 12:05:19,930 DEBUG [nioEventLoopGroup-2-1] DefaultChannelPipeline: Discarded inbound message {head=78B6, data={controllerNo=GTLAND, heartBeatSeq=2}, answer=59, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=01} that reached at the tail of the pipeline. Please check your pipeline configuration.
+2020-07-10 12:05:19,930 DEBUG [nioEventLoopGroup-2-1] DefaultChannelPipeline: Discarded message pipeline : [PacketDecoder#0, HeartBeatRespondHandler#0, PacketEncoder#0, DefaultChannelPipeline$TailContext#0]. Channel : [id: 0x710ff7e7, L:/127.0.0.1:59026 - R:localhost/127.0.0.1:6001].
+2020-07-10 12:05:34,934 DEBUG [nioEventLoopGroup-3-1] DataConverter: Encode:{head=78B6, data={controllerNo=GTLAND, heartBeatSeq=3}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=01}
+to:78b64c5a0101000a47544c414e44000000031721d3
+2020-07-10 12:05:34,935 DEBUG [nioEventLoopGroup-2-1] DataConverter: Decode:
+to:{head=78B6, data={controllerNo=GTLAND, heartBeatSeq=3}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=01}
+2020-07-10 12:05:34,936 DEBUG [nioEventLoopGroup-2-1] DefaultChannelPipeline: Discarded inbound message {head=78B6, data={controllerNo=GTLAND, heartBeatSeq=3}, answer=59, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=01} that reached at the tail of the pipeline. Please check your pipeline configuration.
+2020-07-10 12:05:34,936 DEBUG [nioEventLoopGroup-2-1] DefaultChannelPipeline: Discarded message pipeline : [PacketDecoder#0, HeartBeatRespondHandler#0, PacketEncoder#0, DefaultChannelPipeline$TailContext#0]. Channel : [id: 0x710ff7e7, L:/127.0.0.1:59026 - R:localhost/127.0.0.1:6001].
+2020-07-10 12:05:49,939 DEBUG [nioEventLoopGroup-3-1] DataConverter: Encode:{head=78B6, data={controllerNo=GTLAND, heartBeatSeq=4}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=01}
+to:78b64c5a0101000a47544c414e44000000041721d3
+2020-07-10 12:05:49,941 DEBUG [nioEventLoopGroup-2-1] DataConverter: Decode:
+to:{head=78B6, data={controllerNo=GTLAND, heartBeatSeq=4}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=01}
+2020-07-10 12:05:49,941 DEBUG [nioEventLoopGroup-2-1] DefaultChannelPipeline: Discarded inbound message {head=78B6, data={controllerNo=GTLAND, heartBeatSeq=4}, answer=59, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=01} that reached at the tail of the pipeline. Please check your pipeline configuration.
+2020-07-10 12:05:49,948 DEBUG [nioEventLoopGroup-2-1] DefaultChannelPipeline: Discarded message pipeline : [PacketDecoder#0, HeartBeatRespondHandler#0, PacketEncoder#0, DefaultChannelPipeline$TailContext#0]. Channel : [id: 0x710ff7e7, L:/127.0.0.1:59026 - R:localhost/127.0.0.1:6001].
+2020-07-10 12:06:04,941 DEBUG [nioEventLoopGroup-3-1] DataConverter: Encode:{head=78B6, data={controllerNo=GTLAND, heartBeatSeq=5}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=01}
+to:78b64c5a0101000a47544c414e44000000051721d3
+2020-07-10 12:06:04,942 DEBUG [nioEventLoopGroup-2-1] DataConverter: Decode:
+to:{head=78B6, data={controllerNo=GTLAND, heartBeatSeq=5}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=01}
+2020-07-10 12:06:04,942 DEBUG [nioEventLoopGroup-2-1] DefaultChannelPipeline: Discarded inbound message {head=78B6, data={controllerNo=GTLAND, heartBeatSeq=5}, answer=59, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=01} that reached at the tail of the pipeline. Please check your pipeline configuration.
+2020-07-10 12:06:04,942 DEBUG [nioEventLoopGroup-2-1] DefaultChannelPipeline: Discarded message pipeline : [PacketDecoder#0, HeartBeatRespondHandler#0, PacketEncoder#0, DefaultChannelPipeline$TailContext#0]. Channel : [id: 0x710ff7e7, L:/127.0.0.1:59026 - R:localhost/127.0.0.1:6001].
+2020-07-10 12:06:19,944 DEBUG [nioEventLoopGroup-3-1] DataConverter: Encode:{head=78B6, data={controllerNo=GTLAND, heartBeatSeq=6}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=01}
+to:78b64c5a0101000a47544c414e44000000061721d3
+2020-07-10 12:06:19,945 DEBUG [nioEventLoopGroup-2-1] DataConverter: Decode:
+to:{head=78B6, data={controllerNo=GTLAND, heartBeatSeq=6}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=01}
+2020-07-10 12:06:19,945 DEBUG [nioEventLoopGroup-2-1] DefaultChannelPipeline: Discarded inbound message {head=78B6, data={controllerNo=GTLAND, heartBeatSeq=6}, answer=59, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=01} that reached at the tail of the pipeline. Please check your pipeline configuration.
+2020-07-10 12:06:19,945 DEBUG [nioEventLoopGroup-2-1] DefaultChannelPipeline: Discarded message pipeline : [PacketDecoder#0, HeartBeatRespondHandler#0, PacketEncoder#0, DefaultChannelPipeline$TailContext#0]. Channel : [id: 0x710ff7e7, L:/127.0.0.1:59026 - R:localhost/127.0.0.1:6001].
+2020-07-10 12:06:34,948 DEBUG [nioEventLoopGroup-3-1] DataConverter: Encode:{head=78B6, data={controllerNo=GTLAND, heartBeatSeq=7}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=01}
+to:78b64c5a0101000a47544c414e44000000071721d3
+2020-07-10 12:06:34,949 DEBUG [nioEventLoopGroup-2-1] DataConverter: Decode:
+to:{head=78B6, data={controllerNo=GTLAND, heartBeatSeq=7}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=01}
+2020-07-10 12:06:34,949 DEBUG [nioEventLoopGroup-2-1] DefaultChannelPipeline: Discarded inbound message {head=78B6, data={controllerNo=GTLAND, heartBeatSeq=7}, answer=59, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=01} that reached at the tail of the pipeline. Please check your pipeline configuration.
+2020-07-10 12:06:34,949 DEBUG [nioEventLoopGroup-2-1] DefaultChannelPipeline: Discarded message pipeline : [PacketDecoder#0, HeartBeatRespondHandler#0, PacketEncoder#0, DefaultChannelPipeline$TailContext#0]. Channel : [id: 0x710ff7e7, L:/127.0.0.1:59026 - R:localhost/127.0.0.1:6001].
+2020-07-10 12:06:49,954 DEBUG [nioEventLoopGroup-3-1] DataConverter: Encode:{head=78B6, data={controllerNo=GTLAND, heartBeatSeq=8}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=01}
+to:78b64c5a0101000a47544c414e44000000081721d3
+2020-07-10 12:06:49,955 DEBUG [nioEventLoopGroup-2-1] DataConverter: Decode:
+to:{head=78B6, data={controllerNo=GTLAND, heartBeatSeq=8}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=01}
+2020-07-10 12:06:49,955 DEBUG [nioEventLoopGroup-2-1] DefaultChannelPipeline: Discarded inbound message {head=78B6, data={controllerNo=GTLAND, heartBeatSeq=8}, answer=59, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=01} that reached at the tail of the pipeline. Please check your pipeline configuration.
+2020-07-10 12:06:49,955 DEBUG [nioEventLoopGroup-2-1] DefaultChannelPipeline: Discarded message pipeline : [PacketDecoder#0, HeartBeatRespondHandler#0, PacketEncoder#0, DefaultChannelPipeline$TailContext#0]. Channel : [id: 0x710ff7e7, L:/127.0.0.1:59026 - R:localhost/127.0.0.1:6001].
+2020-07-10 12:07:04,957 DEBUG [nioEventLoopGroup-3-1] DataConverter: Encode:{head=78B6, data={controllerNo=GTLAND, heartBeatSeq=9}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=01}
+to:78b64c5a0101000a47544c414e44000000091721d3
+2020-07-10 12:07:04,961 DEBUG [nioEventLoopGroup-2-1] DataConverter: Decode:
+to:{head=78B6, data={controllerNo=GTLAND, heartBeatSeq=9}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=01}
+2020-07-10 12:07:04,962 DEBUG [nioEventLoopGroup-2-1] DefaultChannelPipeline: Discarded inbound message {head=78B6, data={controllerNo=GTLAND, heartBeatSeq=9}, answer=59, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=01} that reached at the tail of the pipeline. Please check your pipeline configuration.
+2020-07-10 12:07:04,962 DEBUG [nioEventLoopGroup-2-1] DefaultChannelPipeline: Discarded message pipeline : [PacketDecoder#0, HeartBeatRespondHandler#0, PacketEncoder#0, DefaultChannelPipeline$TailContext#0]. Channel : [id: 0x710ff7e7, L:/127.0.0.1:59026 - R:localhost/127.0.0.1:6001].
+2020-07-10 12:07:19,959 DEBUG [nioEventLoopGroup-3-1] DataConverter: Encode:{head=78B6, data={controllerNo=GTLAND, heartBeatSeq=10}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=01}
+to:78b64c5a0101000a47544c414e440000000a1721d3
+2020-07-10 12:07:19,960 DEBUG [nioEventLoopGroup-2-1] DataConverter: Decode:
+to:{head=78B6, data={controllerNo=GTLAND, heartBeatSeq=10}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=01}
+2020-07-10 12:07:19,961 DEBUG [nioEventLoopGroup-2-1] DefaultChannelPipeline: Discarded inbound message {head=78B6, data={controllerNo=GTLAND, heartBeatSeq=10}, answer=59, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=01} that reached at the tail of the pipeline. Please check your pipeline configuration.
+2020-07-10 12:07:19,961 DEBUG [nioEventLoopGroup-2-1] DefaultChannelPipeline: Discarded message pipeline : [PacketDecoder#0, HeartBeatRespondHandler#0, PacketEncoder#0, DefaultChannelPipeline$TailContext#0]. Channel : [id: 0x710ff7e7, L:/127.0.0.1:59026 - R:localhost/127.0.0.1:6001].
+2020-07-10 12:07:34,961 DEBUG [nioEventLoopGroup-3-1] DataConverter: Encode:{head=78B6, data={controllerNo=GTLAND, heartBeatSeq=11}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=01}
+to:78b64c5a0101000a47544c414e440000000b1721d3
+2020-07-10 12:07:34,962 DEBUG [nioEventLoopGroup-2-1] DataConverter: Decode:
+to:{head=78B6, data={controllerNo=GTLAND, heartBeatSeq=11}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=01}
+2020-07-10 12:07:34,962 DEBUG [nioEventLoopGroup-2-1] DefaultChannelPipeline: Discarded inbound message {head=78B6, data={controllerNo=GTLAND, heartBeatSeq=11}, answer=59, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=01} that reached at the tail of the pipeline. Please check your pipeline configuration.
+2020-07-10 12:07:34,963 DEBUG [nioEventLoopGroup-2-1] DefaultChannelPipeline: Discarded message pipeline : [PacketDecoder#0, HeartBeatRespondHandler#0, PacketEncoder#0, DefaultChannelPipeline$TailContext#0]. Channel : [id: 0x710ff7e7, L:/127.0.0.1:59026 - R:localhost/127.0.0.1:6001].
+2020-07-10 12:07:49,964 DEBUG [nioEventLoopGroup-3-1] DataConverter: Encode:{head=78B6, data={controllerNo=GTLAND, heartBeatSeq=12}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=01}
+to:78b64c5a0101000a47544c414e440000000c1721d3
+2020-07-10 12:07:49,965 DEBUG [nioEventLoopGroup-2-1] DataConverter: Decode:
+to:{head=78B6, data={controllerNo=GTLAND, heartBeatSeq=12}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=01}
+2020-07-10 12:07:49,966 DEBUG [nioEventLoopGroup-2-1] DefaultChannelPipeline: Discarded inbound message {head=78B6, data={controllerNo=GTLAND, heartBeatSeq=12}, answer=59, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=01} that reached at the tail of the pipeline. Please check your pipeline configuration.
+2020-07-10 12:07:49,966 DEBUG [nioEventLoopGroup-2-1] DefaultChannelPipeline: Discarded message pipeline : [PacketDecoder#0, HeartBeatRespondHandler#0, PacketEncoder#0, DefaultChannelPipeline$TailContext#0]. Channel : [id: 0x710ff7e7, L:/127.0.0.1:59026 - R:localhost/127.0.0.1:6001].
+2020-07-10 12:11:31,693 DEBUG [main] InternalLoggerFactory: Using SLF4J as the default logging framework
+2020-07-10 12:11:31,698 DEBUG [main] MultithreadEventLoopGroup: -Dio.netty.eventLoopThreads: 16
+2020-07-10 12:11:31,748 DEBUG [main] InternalThreadLocalMap: -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+2020-07-10 12:11:31,748 DEBUG [main] InternalThreadLocalMap: -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+2020-07-10 12:11:31,760 DEBUG [main] NioEventLoop: -Dio.netty.noKeySetOptimization: false
+2020-07-10 12:11:31,761 DEBUG [main] NioEventLoop: -Dio.netty.selectorAutoRebuildThreshold: 512
+2020-07-10 12:11:31,784 DEBUG [main] PlatformDependent: Platform: MacOS
+2020-07-10 12:11:31,786 DEBUG [main] PlatformDependent0: -Dio.netty.noUnsafe: false
+2020-07-10 12:11:31,786 DEBUG [main] PlatformDependent0: Java version: 8
+2020-07-10 12:11:31,788 DEBUG [main] PlatformDependent0: sun.misc.Unsafe.theUnsafe: available
+2020-07-10 12:11:31,790 DEBUG [main] PlatformDependent0: sun.misc.Unsafe.copyMemory: available
+2020-07-10 12:11:31,791 DEBUG [main] PlatformDependent0: java.nio.Buffer.address: available
+2020-07-10 12:11:31,791 DEBUG [main] PlatformDependent0: direct buffer constructor: available
+2020-07-10 12:11:31,792 DEBUG [main] PlatformDependent0: java.nio.Bits.unaligned: available, true
+2020-07-10 12:11:31,792 DEBUG [main] PlatformDependent0: jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9
+2020-07-10 12:11:31,792 DEBUG [main] PlatformDependent0: java.nio.DirectByteBuffer.<init>(long, int): available
+2020-07-10 12:11:31,793 DEBUG [main] PlatformDependent: sun.misc.Unsafe: available
+2020-07-10 12:11:31,793 DEBUG [main] PlatformDependent: -Dio.netty.tmpdir: /var/folders/f1/8c8bz_w13rj684f43n3b4k8w0000gp/T (java.io.tmpdir)
+2020-07-10 12:11:31,793 DEBUG [main] PlatformDependent: -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2020-07-10 12:11:31,795 DEBUG [main] PlatformDependent: -Dio.netty.maxDirectMemory: 3817865216 bytes
+2020-07-10 12:11:31,795 DEBUG [main] PlatformDependent: -Dio.netty.uninitializedArrayAllocationThreshold: -1
+2020-07-10 12:11:31,797 DEBUG [main] CleanerJava6: java.nio.ByteBuffer.cleaner(): available
+2020-07-10 12:11:31,797 DEBUG [main] PlatformDependent: -Dio.netty.noPreferDirect: false
+2020-07-10 12:11:31,808 DEBUG [main] PlatformDependent: org.jctools-core.MpscChunkedArrayQueue: available
+2020-07-10 12:11:31,880 DEBUG [main] DefaultChannelId: -Dio.netty.processId: 62439 (auto-detected)
+2020-07-10 12:11:31,883 DEBUG [main] NetUtil: -Djava.net.preferIPv4Stack: false
+2020-07-10 12:11:31,883 DEBUG [main] NetUtil: -Djava.net.preferIPv6Addresses: false
+2020-07-10 12:11:31,893 DEBUG [main] NetUtil: Loopback interface: lo0 (lo0, 0:0:0:0:0:0:0:1)
+2020-07-10 12:11:31,895 DEBUG [main] NetUtil: Failed to get SOMAXCONN from sysctl and file /proc/sys/net/core/somaxconn. Default: 128
+2020-07-10 12:11:31,902 DEBUG [main] DefaultChannelId: -Dio.netty.machineId: ac:de:48:ff:fe:00:11:22 (auto-detected)
+2020-07-10 12:11:31,920 DEBUG [main] ResourceLeakDetector: -Dio.netty.leakDetection.level: simple
+2020-07-10 12:11:31,920 DEBUG [main] ResourceLeakDetector: -Dio.netty.leakDetection.targetRecords: 4
+2020-07-10 12:11:31,966 DEBUG [main] PooledByteBufAllocator: -Dio.netty.allocator.numHeapArenas: 16
+2020-07-10 12:11:31,966 DEBUG [main] PooledByteBufAllocator: -Dio.netty.allocator.numDirectArenas: 16
+2020-07-10 12:11:31,967 DEBUG [main] PooledByteBufAllocator: -Dio.netty.allocator.pageSize: 8192
+2020-07-10 12:11:31,967 DEBUG [main] PooledByteBufAllocator: -Dio.netty.allocator.maxOrder: 11
+2020-07-10 12:11:31,967 DEBUG [main] PooledByteBufAllocator: -Dio.netty.allocator.chunkSize: 16777216
+2020-07-10 12:11:31,967 DEBUG [main] PooledByteBufAllocator: -Dio.netty.allocator.tinyCacheSize: 512
+2020-07-10 12:11:31,967 DEBUG [main] PooledByteBufAllocator: -Dio.netty.allocator.smallCacheSize: 256
+2020-07-10 12:11:31,967 DEBUG [main] PooledByteBufAllocator: -Dio.netty.allocator.normalCacheSize: 64
+2020-07-10 12:11:31,967 DEBUG [main] PooledByteBufAllocator: -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+2020-07-10 12:11:31,967 DEBUG [main] PooledByteBufAllocator: -Dio.netty.allocator.cacheTrimInterval: 8192
+2020-07-10 12:11:31,967 DEBUG [main] PooledByteBufAllocator: -Dio.netty.allocator.cacheTrimIntervalMillis: 0
+2020-07-10 12:11:31,968 DEBUG [main] PooledByteBufAllocator: -Dio.netty.allocator.useCacheForAllThreads: true
+2020-07-10 12:11:31,968 DEBUG [main] PooledByteBufAllocator: -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+2020-07-10 12:11:31,983 DEBUG [main] ByteBufUtil: -Dio.netty.allocator.type: pooled
+2020-07-10 12:11:31,983 DEBUG [main] ByteBufUtil: -Dio.netty.threadLocalDirectBufferSize: 0
+2020-07-10 12:11:31,984 DEBUG [main] ByteBufUtil: -Dio.netty.maxThreadLocalCharBufferSize: 16384
+2020-07-10 12:11:32,161 DEBUG [nioEventLoopGroup-3-2] HeartBeatTimerHandler: HeartBeat Timer activated
+2020-07-10 12:11:47,165 DEBUG [nioEventLoopGroup-3-2] DataConverter: Encode:{head=78B6, data={controllerNo=GTLAND, heartBeatSeq=1}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=01}
+to:78b64c5a0101000a47544c414e44000000011721d3
+2020-07-10 12:11:47,178 DEBUG [nioEventLoopGroup-2-1] Recycler: -Dio.netty.recycler.maxCapacityPerThread: 4096
+2020-07-10 12:11:47,178 DEBUG [nioEventLoopGroup-2-1] Recycler: -Dio.netty.recycler.maxSharedCapacityFactor: 2
+2020-07-10 12:11:47,178 DEBUG [nioEventLoopGroup-2-1] Recycler: -Dio.netty.recycler.linkCapacity: 16
+2020-07-10 12:11:47,178 DEBUG [nioEventLoopGroup-2-1] Recycler: -Dio.netty.recycler.ratio: 8
+2020-07-10 12:11:47,178 DEBUG [nioEventLoopGroup-2-1] Recycler: -Dio.netty.recycler.delayedQueue.ratio: 8
+2020-07-10 12:11:47,188 DEBUG [nioEventLoopGroup-2-1] AbstractByteBuf: -Dio.netty.buffer.checkAccessible: true
+2020-07-10 12:11:47,188 DEBUG [nioEventLoopGroup-2-1] AbstractByteBuf: -Dio.netty.buffer.checkBounds: true
+2020-07-10 12:11:47,189 DEBUG [nioEventLoopGroup-2-1] ResourceLeakDetectorFactory: Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@4ec08aac
+2020-07-10 12:11:47,451 DEBUG [nioEventLoopGroup-2-1] DataConverter: Command Config finished:{4C5A=io.vantiq.ext.tcp.protocol.CommandDef@32413e9a, 4C5Ass=io.vantiq.ext.tcp.protocol.CommandDef@7ddfc44a, 4CE6=io.vantiq.ext.tcp.protocol.CommandDef@7b68886d, 4CE6ss=io.vantiq.ext.tcp.protocol.CommandDef@b2b5c7a}
+2020-07-10 12:11:47,455 DEBUG [nioEventLoopGroup-2-1] PacketConverter: Package Config finished:[PacketField{field='head', fixCode='78B6', length=2, type='byte'}, PacketField{field='command', fixCode='', length=2, type='byte'}, PacketField{field='direction', fixCode='', length=1, type='byte'}, PacketField{field='location', fixCode='', length=1, type='byte'}, PacketField{field='dataLength', fixCode='', length=2, type='integer'}, PacketField{field='data', fixCode='', length=0, type='data'}, PacketField{field='checkSum', fixCode='', length=1, type='byte'}, PacketField{field='end', fixCode='21D3', length=2, type='byte'}]
+2020-07-10 12:11:47,466 DEBUG [nioEventLoopGroup-2-1] PacketConverter: Decode:
+to:{head=78B6, data={controllerNo=GTLAND, heartBeatSeq=1}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=01}
+2020-07-10 12:11:54,577 DEBUG [nioEventLoopGroup-2-1] DefaultChannelPipeline: Discarded inbound message {head=78B6, data={answer=59, controllerNo=GTLAND, heartBeatSeq=1}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=02} that reached at the tail of the pipeline. Please check your pipeline configuration.
+2020-07-10 12:11:54,577 DEBUG [nioEventLoopGroup-2-1] DefaultChannelPipeline: Discarded message pipeline : [PacketDecoder#0, HeartBeatRespondHandler#0, PacketEncoder#0, DefaultChannelPipeline$TailContext#0]. Channel : [id: 0xaffaf316, L:/127.0.0.1:60095 - R:localhost/127.0.0.1:6001].
+2020-07-10 12:12:02,168 DEBUG [nioEventLoopGroup-3-2] DataConverter: Encode:{head=78B6, data={controllerNo=GTLAND, heartBeatSeq=2}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=01}
+to:78b64c5a0101000a47544c414e44000000021721d3
+2020-07-10 12:12:02,172 DEBUG [nioEventLoopGroup-2-1] PacketConverter: Decode:
+to:{head=78B6, data={controllerNo=GTLAND, heartBeatSeq=2}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=01}
+2020-07-10 12:12:05,817 DEBUG [nioEventLoopGroup-2-1] DefaultChannelPipeline: Discarded inbound message {head=78B6, data={answer=59, controllerNo=GTLAND, heartBeatSeq=2}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=02} that reached at the tail of the pipeline. Please check your pipeline configuration.
+2020-07-10 12:12:05,817 DEBUG [nioEventLoopGroup-2-1] DefaultChannelPipeline: Discarded message pipeline : [PacketDecoder#0, HeartBeatRespondHandler#0, PacketEncoder#0, DefaultChannelPipeline$TailContext#0]. Channel : [id: 0xaffaf316, L:/127.0.0.1:60095 - R:localhost/127.0.0.1:6001].
+2020-07-10 12:12:17,170 DEBUG [nioEventLoopGroup-3-2] DataConverter: Encode:{head=78B6, data={controllerNo=GTLAND, heartBeatSeq=3}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=01}
+to:78b64c5a0101000a47544c414e44000000031721d3
+2020-07-10 12:12:17,171 DEBUG [nioEventLoopGroup-2-1] PacketConverter: Decode:
+to:{head=78B6, data={controllerNo=GTLAND, heartBeatSeq=3}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=01}
+2020-07-10 12:12:17,171 DEBUG [nioEventLoopGroup-2-1] DefaultChannelPipeline: Discarded inbound message {head=78B6, data={answer=59, controllerNo=GTLAND, heartBeatSeq=3}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=02} that reached at the tail of the pipeline. Please check your pipeline configuration.
+2020-07-10 12:12:17,171 DEBUG [nioEventLoopGroup-2-1] DefaultChannelPipeline: Discarded message pipeline : [PacketDecoder#0, HeartBeatRespondHandler#0, PacketEncoder#0, DefaultChannelPipeline$TailContext#0]. Channel : [id: 0xaffaf316, L:/127.0.0.1:60095 - R:localhost/127.0.0.1:6001].
+2020-07-10 12:12:32,173 DEBUG [nioEventLoopGroup-3-2] DataConverter: Encode:{head=78B6, data={controllerNo=GTLAND, heartBeatSeq=4}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=01}
+to:78b64c5a0101000a47544c414e44000000041721d3
+2020-07-10 12:12:32,174 DEBUG [nioEventLoopGroup-2-1] PacketConverter: Decode:
+to:{head=78B6, data={controllerNo=GTLAND, heartBeatSeq=4}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=01}
+2020-07-10 12:12:32,174 DEBUG [nioEventLoopGroup-2-1] DefaultChannelPipeline: Discarded inbound message {head=78B6, data={answer=59, controllerNo=GTLAND, heartBeatSeq=4}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=02} that reached at the tail of the pipeline. Please check your pipeline configuration.
+2020-07-10 12:12:32,174 DEBUG [nioEventLoopGroup-2-1] DefaultChannelPipeline: Discarded message pipeline : [PacketDecoder#0, HeartBeatRespondHandler#0, PacketEncoder#0, DefaultChannelPipeline$TailContext#0]. Channel : [id: 0xaffaf316, L:/127.0.0.1:60095 - R:localhost/127.0.0.1:6001].
+2020-07-10 12:12:38,439 DEBUG [main] InternalLoggerFactory: Using SLF4J as the default logging framework
+2020-07-10 12:12:38,444 DEBUG [main] MultithreadEventLoopGroup: -Dio.netty.eventLoopThreads: 16
+2020-07-10 12:12:38,496 DEBUG [main] InternalThreadLocalMap: -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+2020-07-10 12:12:38,496 DEBUG [main] InternalThreadLocalMap: -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+2020-07-10 12:12:38,507 DEBUG [main] NioEventLoop: -Dio.netty.noKeySetOptimization: false
+2020-07-10 12:12:38,507 DEBUG [main] NioEventLoop: -Dio.netty.selectorAutoRebuildThreshold: 512
+2020-07-10 12:12:38,528 DEBUG [main] PlatformDependent: Platform: MacOS
+2020-07-10 12:12:38,530 DEBUG [main] PlatformDependent0: -Dio.netty.noUnsafe: false
+2020-07-10 12:12:38,530 DEBUG [main] PlatformDependent0: Java version: 8
+2020-07-10 12:12:38,532 DEBUG [main] PlatformDependent0: sun.misc.Unsafe.theUnsafe: available
+2020-07-10 12:12:38,533 DEBUG [main] PlatformDependent0: sun.misc.Unsafe.copyMemory: available
+2020-07-10 12:12:38,534 DEBUG [main] PlatformDependent0: java.nio.Buffer.address: available
+2020-07-10 12:12:38,534 DEBUG [main] PlatformDependent0: direct buffer constructor: available
+2020-07-10 12:12:38,535 DEBUG [main] PlatformDependent0: java.nio.Bits.unaligned: available, true
+2020-07-10 12:12:38,536 DEBUG [main] PlatformDependent0: jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9
+2020-07-10 12:12:38,536 DEBUG [main] PlatformDependent0: java.nio.DirectByteBuffer.<init>(long, int): available
+2020-07-10 12:12:38,536 DEBUG [main] PlatformDependent: sun.misc.Unsafe: available
+2020-07-10 12:12:38,536 DEBUG [main] PlatformDependent: -Dio.netty.tmpdir: /var/folders/f1/8c8bz_w13rj684f43n3b4k8w0000gp/T (java.io.tmpdir)
+2020-07-10 12:12:38,536 DEBUG [main] PlatformDependent: -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2020-07-10 12:12:38,539 DEBUG [main] PlatformDependent: -Dio.netty.maxDirectMemory: 3817865216 bytes
+2020-07-10 12:12:38,539 DEBUG [main] PlatformDependent: -Dio.netty.uninitializedArrayAllocationThreshold: -1
+2020-07-10 12:12:38,541 DEBUG [main] CleanerJava6: java.nio.ByteBuffer.cleaner(): available
+2020-07-10 12:12:38,541 DEBUG [main] PlatformDependent: -Dio.netty.noPreferDirect: false
+2020-07-10 12:12:38,552 DEBUG [main] PlatformDependent: org.jctools-core.MpscChunkedArrayQueue: available
+2020-07-10 12:12:38,625 DEBUG [main] DefaultChannelId: -Dio.netty.processId: 62448 (auto-detected)
+2020-07-10 12:12:38,628 DEBUG [main] NetUtil: -Djava.net.preferIPv4Stack: false
+2020-07-10 12:12:38,628 DEBUG [main] NetUtil: -Djava.net.preferIPv6Addresses: false
+2020-07-10 12:12:38,637 DEBUG [main] NetUtil: Loopback interface: lo0 (lo0, 0:0:0:0:0:0:0:1)
+2020-07-10 12:12:38,639 DEBUG [main] NetUtil: Failed to get SOMAXCONN from sysctl and file /proc/sys/net/core/somaxconn. Default: 128
+2020-07-10 12:12:38,646 DEBUG [main] DefaultChannelId: -Dio.netty.machineId: ac:de:48:ff:fe:00:11:22 (auto-detected)
+2020-07-10 12:12:38,668 DEBUG [main] ResourceLeakDetector: -Dio.netty.leakDetection.level: simple
+2020-07-10 12:12:38,669 DEBUG [main] ResourceLeakDetector: -Dio.netty.leakDetection.targetRecords: 4
+2020-07-10 12:12:38,710 DEBUG [main] PooledByteBufAllocator: -Dio.netty.allocator.numHeapArenas: 16
+2020-07-10 12:12:38,711 DEBUG [main] PooledByteBufAllocator: -Dio.netty.allocator.numDirectArenas: 16
+2020-07-10 12:12:38,711 DEBUG [main] PooledByteBufAllocator: -Dio.netty.allocator.pageSize: 8192
+2020-07-10 12:12:38,711 DEBUG [main] PooledByteBufAllocator: -Dio.netty.allocator.maxOrder: 11
+2020-07-10 12:12:38,711 DEBUG [main] PooledByteBufAllocator: -Dio.netty.allocator.chunkSize: 16777216
+2020-07-10 12:12:38,711 DEBUG [main] PooledByteBufAllocator: -Dio.netty.allocator.tinyCacheSize: 512
+2020-07-10 12:12:38,711 DEBUG [main] PooledByteBufAllocator: -Dio.netty.allocator.smallCacheSize: 256
+2020-07-10 12:12:38,711 DEBUG [main] PooledByteBufAllocator: -Dio.netty.allocator.normalCacheSize: 64
+2020-07-10 12:12:38,712 DEBUG [main] PooledByteBufAllocator: -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+2020-07-10 12:12:38,712 DEBUG [main] PooledByteBufAllocator: -Dio.netty.allocator.cacheTrimInterval: 8192
+2020-07-10 12:12:38,712 DEBUG [main] PooledByteBufAllocator: -Dio.netty.allocator.cacheTrimIntervalMillis: 0
+2020-07-10 12:12:38,712 DEBUG [main] PooledByteBufAllocator: -Dio.netty.allocator.useCacheForAllThreads: true
+2020-07-10 12:12:38,712 DEBUG [main] PooledByteBufAllocator: -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+2020-07-10 12:12:38,726 DEBUG [main] ByteBufUtil: -Dio.netty.allocator.type: pooled
+2020-07-10 12:12:38,726 DEBUG [main] ByteBufUtil: -Dio.netty.threadLocalDirectBufferSize: 0
+2020-07-10 12:12:38,726 DEBUG [main] ByteBufUtil: -Dio.netty.maxThreadLocalCharBufferSize: 16384
+2020-07-10 12:12:38,861 DEBUG [nioEventLoopGroup-3-3] HeartBeatTimerHandler: HeartBeat Timer activated
+2020-07-10 12:12:53,865 DEBUG [nioEventLoopGroup-3-3] DataConverter: Encode:{head=78B6, data={controllerNo=GTLAND, heartBeatSeq=1}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=01}
+to:78b64c5a0101000a47544c414e44000000011721d3
+2020-07-10 12:12:53,878 DEBUG [nioEventLoopGroup-2-1] Recycler: -Dio.netty.recycler.maxCapacityPerThread: 4096
+2020-07-10 12:12:53,878 DEBUG [nioEventLoopGroup-2-1] Recycler: -Dio.netty.recycler.maxSharedCapacityFactor: 2
+2020-07-10 12:12:53,878 DEBUG [nioEventLoopGroup-2-1] Recycler: -Dio.netty.recycler.linkCapacity: 16
+2020-07-10 12:12:53,878 DEBUG [nioEventLoopGroup-2-1] Recycler: -Dio.netty.recycler.ratio: 8
+2020-07-10 12:12:53,878 DEBUG [nioEventLoopGroup-2-1] Recycler: -Dio.netty.recycler.delayedQueue.ratio: 8
+2020-07-10 12:12:53,889 DEBUG [nioEventLoopGroup-2-1] AbstractByteBuf: -Dio.netty.buffer.checkAccessible: true
+2020-07-10 12:12:53,890 DEBUG [nioEventLoopGroup-2-1] AbstractByteBuf: -Dio.netty.buffer.checkBounds: true
+2020-07-10 12:12:53,891 DEBUG [nioEventLoopGroup-2-1] ResourceLeakDetectorFactory: Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@4ec08aac
+2020-07-10 12:12:54,216 DEBUG [nioEventLoopGroup-2-1] DataConverter: Command Config finished:{4C5A=io.vantiq.ext.tcp.protocol.CommandDef@32413e9a, 4C5Ass=io.vantiq.ext.tcp.protocol.CommandDef@7ddfc44a, 4CE6=io.vantiq.ext.tcp.protocol.CommandDef@7b68886d, 4CE6ss=io.vantiq.ext.tcp.protocol.CommandDef@b2b5c7a}
+2020-07-10 12:12:54,222 DEBUG [nioEventLoopGroup-2-1] PacketConverter: Package Config finished:[PacketField{field='head', fixCode='78B6', length=2, type='byte'}, PacketField{field='command', fixCode='', length=2, type='byte'}, PacketField{field='direction', fixCode='', length=1, type='byte'}, PacketField{field='location', fixCode='', length=1, type='byte'}, PacketField{field='dataLength', fixCode='', length=2, type='integer'}, PacketField{field='data', fixCode='', length=0, type='data'}, PacketField{field='checkSum', fixCode='', length=1, type='byte'}, PacketField{field='end', fixCode='21D3', length=2, type='byte'}]
+2020-07-10 12:12:54,236 DEBUG [nioEventLoopGroup-2-1] PacketConverter: Decode:
+to:{head=78B6, data={controllerNo=GTLAND, heartBeatSeq=1}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=01}
+2020-07-10 12:12:54,237 DEBUG [nioEventLoopGroup-2-1] PacketConverter: Encode:{head=78B6, data={answer=59, controllerNo=GTLAND, heartBeatSeq=1}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=02}
+to:78b64c5a0201000a47544c414e44000000011721d3
+2020-07-10 12:12:54,240 DEBUG [nioEventLoopGroup-3-3] DataConverter: Decode:
+to:{head=78B6, data={controllerNo=GTLAND, heartBeatSeq=1}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=02}
+2020-07-10 12:12:54,240 DEBUG [nioEventLoopGroup-2-1] DefaultChannelPipeline: Discarded inbound message {head=78B6, data={answer=59, controllerNo=GTLAND, heartBeatSeq=1}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=02} that reached at the tail of the pipeline. Please check your pipeline configuration.
+2020-07-10 12:12:54,240 DEBUG [nioEventLoopGroup-3-3] DefaultChannelPipeline: Discarded inbound message {head=78B6, data={controllerNo=GTLAND, heartBeatSeq=1}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=02} that reached at the tail of the pipeline. Please check your pipeline configuration.
+2020-07-10 12:12:54,240 DEBUG [nioEventLoopGroup-2-1] DefaultChannelPipeline: Discarded message pipeline : [PacketDecoder#0, HeartBeatRespondHandler#0, PacketEncoder#0, DefaultChannelPipeline$TailContext#0]. Channel : [id: 0xbee56181, L:/127.0.0.1:60275 - R:localhost/127.0.0.1:6001].
+2020-07-10 12:12:54,240 DEBUG [nioEventLoopGroup-3-3] DefaultChannelPipeline: Discarded message pipeline : [HeartBeatTimerHandler#0, PacketDecoder#0, PacketEncoder#0, DefaultChannelPipeline$TailContext#0]. Channel : [id: 0xa47be41e, L:/127.0.0.1:6001 - R:/127.0.0.1:60275].
+2020-07-10 12:13:08,871 DEBUG [nioEventLoopGroup-3-3] DataConverter: Encode:{head=78B6, data={controllerNo=GTLAND, heartBeatSeq=2}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=01}
+to:78b64c5a0101000a47544c414e44000000021721d3
+2020-07-10 12:13:08,872 DEBUG [nioEventLoopGroup-2-1] PacketConverter: Decode:
+to:{head=78B6, data={controllerNo=GTLAND, heartBeatSeq=2}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=01}
+2020-07-10 12:13:08,873 DEBUG [nioEventLoopGroup-2-1] PacketConverter: Encode:{head=78B6, data={answer=59, controllerNo=GTLAND, heartBeatSeq=2}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=02}
+to:78b64c5a0201000a47544c414e44000000021721d3
+2020-07-10 12:13:08,873 DEBUG [nioEventLoopGroup-2-1] DefaultChannelPipeline: Discarded inbound message {head=78B6, data={answer=59, controllerNo=GTLAND, heartBeatSeq=2}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=02} that reached at the tail of the pipeline. Please check your pipeline configuration.
+2020-07-10 12:13:08,874 DEBUG [nioEventLoopGroup-2-1] DefaultChannelPipeline: Discarded message pipeline : [PacketDecoder#0, HeartBeatRespondHandler#0, PacketEncoder#0, DefaultChannelPipeline$TailContext#0]. Channel : [id: 0xbee56181, L:/127.0.0.1:60275 - R:localhost/127.0.0.1:6001].
+2020-07-10 12:13:08,874 DEBUG [nioEventLoopGroup-3-3] DataConverter: Decode:
+to:{head=78B6, data={controllerNo=GTLAND, heartBeatSeq=2}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=02}
+2020-07-10 12:13:08,874 DEBUG [nioEventLoopGroup-3-3] DefaultChannelPipeline: Discarded inbound message {head=78B6, data={controllerNo=GTLAND, heartBeatSeq=2}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=02} that reached at the tail of the pipeline. Please check your pipeline configuration.
+2020-07-10 12:13:08,874 DEBUG [nioEventLoopGroup-3-3] DefaultChannelPipeline: Discarded message pipeline : [HeartBeatTimerHandler#0, PacketDecoder#0, PacketEncoder#0, DefaultChannelPipeline$TailContext#0]. Channel : [id: 0xa47be41e, L:/127.0.0.1:6001 - R:/127.0.0.1:60275].
+2020-07-10 12:13:23,875 DEBUG [nioEventLoopGroup-3-3] DataConverter: Encode:{head=78B6, data={controllerNo=GTLAND, heartBeatSeq=3}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=01}
+to:78b64c5a0101000a47544c414e44000000031721d3
+2020-07-10 12:13:23,876 DEBUG [nioEventLoopGroup-2-1] PacketConverter: Decode:
+to:{head=78B6, data={controllerNo=GTLAND, heartBeatSeq=3}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=01}
+2020-07-10 12:13:23,877 DEBUG [nioEventLoopGroup-2-1] PacketConverter: Encode:{head=78B6, data={answer=59, controllerNo=GTLAND, heartBeatSeq=3}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=02}
+to:78b64c5a0201000a47544c414e44000000031721d3
+2020-07-10 12:13:23,877 DEBUG [nioEventLoopGroup-2-1] DefaultChannelPipeline: Discarded inbound message {head=78B6, data={answer=59, controllerNo=GTLAND, heartBeatSeq=3}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=02} that reached at the tail of the pipeline. Please check your pipeline configuration.
+2020-07-10 12:13:23,877 DEBUG [nioEventLoopGroup-2-1] DefaultChannelPipeline: Discarded message pipeline : [PacketDecoder#0, HeartBeatRespondHandler#0, PacketEncoder#0, DefaultChannelPipeline$TailContext#0]. Channel : [id: 0xbee56181, L:/127.0.0.1:60275 - R:localhost/127.0.0.1:6001].
+2020-07-10 12:13:23,877 DEBUG [nioEventLoopGroup-3-3] DataConverter: Decode:
+to:{head=78B6, data={controllerNo=GTLAND, heartBeatSeq=3}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=02}
+2020-07-10 12:13:23,878 DEBUG [nioEventLoopGroup-3-3] DefaultChannelPipeline: Discarded inbound message {head=78B6, data={controllerNo=GTLAND, heartBeatSeq=3}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=02} that reached at the tail of the pipeline. Please check your pipeline configuration.
+2020-07-10 12:13:23,878 DEBUG [nioEventLoopGroup-3-3] DefaultChannelPipeline: Discarded message pipeline : [HeartBeatTimerHandler#0, PacketDecoder#0, PacketEncoder#0, DefaultChannelPipeline$TailContext#0]. Channel : [id: 0xa47be41e, L:/127.0.0.1:6001 - R:/127.0.0.1:60275].
+2020-07-10 12:13:38,880 DEBUG [nioEventLoopGroup-3-3] DataConverter: Encode:{head=78B6, data={controllerNo=GTLAND, heartBeatSeq=4}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=01}
+to:78b64c5a0101000a47544c414e44000000041721d3
+2020-07-10 12:13:38,881 DEBUG [nioEventLoopGroup-2-1] PacketConverter: Decode:
+to:{head=78B6, data={controllerNo=GTLAND, heartBeatSeq=4}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=01}
+2020-07-10 12:13:38,881 DEBUG [nioEventLoopGroup-2-1] PacketConverter: Encode:{head=78B6, data={answer=59, controllerNo=GTLAND, heartBeatSeq=4}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=02}
+to:78b64c5a0201000a47544c414e44000000041721d3
+2020-07-10 12:13:38,882 DEBUG [nioEventLoopGroup-2-1] DefaultChannelPipeline: Discarded inbound message {head=78B6, data={answer=59, controllerNo=GTLAND, heartBeatSeq=4}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=02} that reached at the tail of the pipeline. Please check your pipeline configuration.
+2020-07-10 12:13:38,882 DEBUG [nioEventLoopGroup-2-1] DefaultChannelPipeline: Discarded message pipeline : [PacketDecoder#0, HeartBeatRespondHandler#0, PacketEncoder#0, DefaultChannelPipeline$TailContext#0]. Channel : [id: 0xbee56181, L:/127.0.0.1:60275 - R:localhost/127.0.0.1:6001].
+2020-07-10 12:13:38,882 DEBUG [nioEventLoopGroup-3-3] DataConverter: Decode:
+to:{head=78B6, data={controllerNo=GTLAND, heartBeatSeq=4}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=02}
+2020-07-10 12:13:38,882 DEBUG [nioEventLoopGroup-3-3] DefaultChannelPipeline: Discarded inbound message {head=78B6, data={controllerNo=GTLAND, heartBeatSeq=4}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=02} that reached at the tail of the pipeline. Please check your pipeline configuration.
+2020-07-10 12:13:38,882 DEBUG [nioEventLoopGroup-3-3] DefaultChannelPipeline: Discarded message pipeline : [HeartBeatTimerHandler#0, PacketDecoder#0, PacketEncoder#0, DefaultChannelPipeline$TailContext#0]. Channel : [id: 0xa47be41e, L:/127.0.0.1:6001 - R:/127.0.0.1:60275].
+2020-07-10 12:13:53,886 DEBUG [nioEventLoopGroup-3-3] DataConverter: Encode:{head=78B6, data={controllerNo=GTLAND, heartBeatSeq=5}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=01}
+to:78b64c5a0101000a47544c414e44000000051721d3
+2020-07-10 12:13:53,887 DEBUG [nioEventLoopGroup-2-1] PacketConverter: Decode:
+to:{head=78B6, data={controllerNo=GTLAND, heartBeatSeq=5}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=01}
+2020-07-10 12:13:53,887 DEBUG [nioEventLoopGroup-2-1] PacketConverter: Encode:{head=78B6, data={answer=59, controllerNo=GTLAND, heartBeatSeq=5}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=02}
+to:78b64c5a0201000a47544c414e44000000051721d3
+2020-07-10 12:13:53,888 DEBUG [nioEventLoopGroup-2-1] DefaultChannelPipeline: Discarded inbound message {head=78B6, data={answer=59, controllerNo=GTLAND, heartBeatSeq=5}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=02} that reached at the tail of the pipeline. Please check your pipeline configuration.
+2020-07-10 12:13:53,888 DEBUG [nioEventLoopGroup-2-1] DefaultChannelPipeline: Discarded message pipeline : [PacketDecoder#0, HeartBeatRespondHandler#0, PacketEncoder#0, DefaultChannelPipeline$TailContext#0]. Channel : [id: 0xbee56181, L:/127.0.0.1:60275 - R:localhost/127.0.0.1:6001].
+2020-07-10 12:13:53,888 DEBUG [nioEventLoopGroup-3-3] DataConverter: Decode:
+to:{head=78B6, data={controllerNo=GTLAND, heartBeatSeq=5}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=02}
+2020-07-10 12:13:53,888 DEBUG [nioEventLoopGroup-3-3] DefaultChannelPipeline: Discarded inbound message {head=78B6, data={controllerNo=GTLAND, heartBeatSeq=5}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=02} that reached at the tail of the pipeline. Please check your pipeline configuration.
+2020-07-10 12:13:53,888 DEBUG [nioEventLoopGroup-3-3] DefaultChannelPipeline: Discarded message pipeline : [HeartBeatTimerHandler#0, PacketDecoder#0, PacketEncoder#0, DefaultChannelPipeline$TailContext#0]. Channel : [id: 0xa47be41e, L:/127.0.0.1:6001 - R:/127.0.0.1:60275].
+2020-07-10 12:14:08,890 DEBUG [nioEventLoopGroup-3-3] DataConverter: Encode:{head=78B6, data={controllerNo=GTLAND, heartBeatSeq=6}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=01}
+to:78b64c5a0101000a47544c414e44000000061721d3
+2020-07-10 12:14:08,891 DEBUG [nioEventLoopGroup-2-1] PacketConverter: Decode:
+to:{head=78B6, data={controllerNo=GTLAND, heartBeatSeq=6}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=01}
+2020-07-10 12:14:11,950 DEBUG [nioEventLoopGroup-2-1] PacketConverter: Encode:{head=78B6, data={answer=59, controllerNo=GTLAND, heartBeatSeq=6}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=02}
+to:78b64c5a0201000a47544c414e44000000061721d3
+2020-07-10 12:14:11,950 DEBUG [nioEventLoopGroup-2-1] DefaultChannelPipeline: Discarded inbound message {head=78B6, data={answer=59, controllerNo=GTLAND, heartBeatSeq=6}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=02} that reached at the tail of the pipeline. Please check your pipeline configuration.
+2020-07-10 12:14:11,950 DEBUG [nioEventLoopGroup-2-1] DefaultChannelPipeline: Discarded message pipeline : [PacketDecoder#0, HeartBeatRespondHandler#0, PacketEncoder#0, DefaultChannelPipeline$TailContext#0]. Channel : [id: 0xbee56181, L:/127.0.0.1:60275 - R:localhost/127.0.0.1:6001].
+2020-07-10 12:14:11,951 DEBUG [nioEventLoopGroup-3-3] DataConverter: Decode:
+to:{head=78B6, data={controllerNo=GTLAND, heartBeatSeq=6}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=02}
+2020-07-10 12:14:11,951 DEBUG [nioEventLoopGroup-3-3] DefaultChannelPipeline: Discarded inbound message {head=78B6, data={controllerNo=GTLAND, heartBeatSeq=6}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=02} that reached at the tail of the pipeline. Please check your pipeline configuration.
+2020-07-10 12:14:11,951 DEBUG [nioEventLoopGroup-3-3] DefaultChannelPipeline: Discarded message pipeline : [HeartBeatTimerHandler#0, PacketDecoder#0, PacketEncoder#0, DefaultChannelPipeline$TailContext#0]. Channel : [id: 0xa47be41e, L:/127.0.0.1:6001 - R:/127.0.0.1:60275].
+2020-07-10 12:14:23,894 DEBUG [nioEventLoopGroup-3-3] DataConverter: Encode:{head=78B6, data={controllerNo=GTLAND, heartBeatSeq=7}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=01}
+to:78b64c5a0101000a47544c414e44000000071721d3
+2020-07-10 12:14:23,896 DEBUG [nioEventLoopGroup-2-1] PacketConverter: Decode:
+to:{head=78B6, data={controllerNo=GTLAND, heartBeatSeq=7}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=01}
+2020-07-10 12:14:23,897 DEBUG [nioEventLoopGroup-2-1] PacketConverter: Encode:{head=78B6, data={answer=59, controllerNo=GTLAND, heartBeatSeq=7}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=02}
+to:78b64c5a0201000a47544c414e44000000071721d3
+2020-07-10 12:14:23,897 DEBUG [nioEventLoopGroup-2-1] DefaultChannelPipeline: Discarded inbound message {head=78B6, data={answer=59, controllerNo=GTLAND, heartBeatSeq=7}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=02} that reached at the tail of the pipeline. Please check your pipeline configuration.
+2020-07-10 12:14:23,897 DEBUG [nioEventLoopGroup-2-1] DefaultChannelPipeline: Discarded message pipeline : [PacketDecoder#0, HeartBeatRespondHandler#0, PacketEncoder#0, DefaultChannelPipeline$TailContext#0]. Channel : [id: 0xbee56181, L:/127.0.0.1:60275 - R:localhost/127.0.0.1:6001].
+2020-07-10 12:14:23,897 DEBUG [nioEventLoopGroup-3-3] DataConverter: Decode:
+to:{head=78B6, data={controllerNo=GTLAND, heartBeatSeq=7}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=02}
+2020-07-10 12:14:23,898 DEBUG [nioEventLoopGroup-3-3] DefaultChannelPipeline: Discarded inbound message {head=78B6, data={controllerNo=GTLAND, heartBeatSeq=7}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=02} that reached at the tail of the pipeline. Please check your pipeline configuration.
+2020-07-10 12:14:23,898 DEBUG [nioEventLoopGroup-3-3] DefaultChannelPipeline: Discarded message pipeline : [HeartBeatTimerHandler#0, PacketDecoder#0, PacketEncoder#0, DefaultChannelPipeline$TailContext#0]. Channel : [id: 0xa47be41e, L:/127.0.0.1:6001 - R:/127.0.0.1:60275].
+2020-07-10 12:14:38,900 DEBUG [nioEventLoopGroup-3-3] DataConverter: Encode:{head=78B6, data={controllerNo=GTLAND, heartBeatSeq=8}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=01}
+to:78b64c5a0101000a47544c414e44000000081721d3
+2020-07-10 12:14:38,901 DEBUG [nioEventLoopGroup-2-1] PacketConverter: Decode:
+to:{head=78B6, data={controllerNo=GTLAND, heartBeatSeq=8}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=01}
+2020-07-10 12:14:38,901 DEBUG [nioEventLoopGroup-2-1] PacketConverter: Encode:{head=78B6, data={answer=59, controllerNo=GTLAND, heartBeatSeq=8}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=02}
+to:78b64c5a0201000a47544c414e44000000081721d3
+2020-07-10 12:14:38,902 DEBUG [nioEventLoopGroup-2-1] DefaultChannelPipeline: Discarded inbound message {head=78B6, data={answer=59, controllerNo=GTLAND, heartBeatSeq=8}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=02} that reached at the tail of the pipeline. Please check your pipeline configuration.
+2020-07-10 12:14:38,902 DEBUG [nioEventLoopGroup-2-1] DefaultChannelPipeline: Discarded message pipeline : [PacketDecoder#0, HeartBeatRespondHandler#0, PacketEncoder#0, DefaultChannelPipeline$TailContext#0]. Channel : [id: 0xbee56181, L:/127.0.0.1:60275 - R:localhost/127.0.0.1:6001].
+2020-07-10 12:14:38,902 DEBUG [nioEventLoopGroup-3-3] DataConverter: Decode:
+to:{head=78B6, data={controllerNo=GTLAND, heartBeatSeq=8}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=02}
+2020-07-10 12:14:38,902 DEBUG [nioEventLoopGroup-3-3] DefaultChannelPipeline: Discarded inbound message {head=78B6, data={controllerNo=GTLAND, heartBeatSeq=8}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=02} that reached at the tail of the pipeline. Please check your pipeline configuration.
+2020-07-10 12:14:38,902 DEBUG [nioEventLoopGroup-3-3] DefaultChannelPipeline: Discarded message pipeline : [HeartBeatTimerHandler#0, PacketDecoder#0, PacketEncoder#0, DefaultChannelPipeline$TailContext#0]. Channel : [id: 0xa47be41e, L:/127.0.0.1:6001 - R:/127.0.0.1:60275].
+2020-07-10 12:14:56,962 DEBUG [nioEventLoopGroup-3-3] DataConverter: Encode:{head=78B6, data={controllerNo=GTLAND, heartBeatSeq=9}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=01}
+to:78b64c5a0101000a47544c414e44000000091721d3
+2020-07-10 12:14:58,817 DEBUG [nioEventLoopGroup-2-1] PacketConverter: Decode:
+to:{head=78B6, data={controllerNo=GTLAND, heartBeatSeq=9}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=01}
+2020-07-10 12:15:02,415 DEBUG [nioEventLoopGroup-2-1] PacketConverter: Encode:{head=78B6, data={answer=59, controllerNo=GTLAND, heartBeatSeq=9}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=02}
+to:78b64c5a0201000a47544c414e44000000091721d3
+2020-07-10 12:15:02,416 DEBUG [nioEventLoopGroup-2-1] DefaultChannelPipeline: Discarded inbound message {head=78B6, data={answer=59, controllerNo=GTLAND, heartBeatSeq=9}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=02} that reached at the tail of the pipeline. Please check your pipeline configuration.
+2020-07-10 12:15:02,417 DEBUG [nioEventLoopGroup-2-1] DefaultChannelPipeline: Discarded message pipeline : [PacketDecoder#0, HeartBeatRespondHandler#0, PacketEncoder#0, DefaultChannelPipeline$TailContext#0]. Channel : [id: 0xbee56181, L:/127.0.0.1:60275 - R:localhost/127.0.0.1:6001].
+2020-07-10 12:15:02,417 DEBUG [nioEventLoopGroup-3-3] DataConverter: Decode:
+to:{head=78B6, data={controllerNo=GTLAND, heartBeatSeq=9}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=02}
+2020-07-10 12:15:02,418 DEBUG [nioEventLoopGroup-3-3] DefaultChannelPipeline: Discarded inbound message {head=78B6, data={controllerNo=GTLAND, heartBeatSeq=9}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=02} that reached at the tail of the pipeline. Please check your pipeline configuration.
+2020-07-10 12:15:02,418 DEBUG [nioEventLoopGroup-3-3] DefaultChannelPipeline: Discarded message pipeline : [HeartBeatTimerHandler#0, PacketDecoder#0, PacketEncoder#0, DefaultChannelPipeline$TailContext#0]. Channel : [id: 0xa47be41e, L:/127.0.0.1:6001 - R:/127.0.0.1:60275].
+2020-07-10 12:15:16,681 DEBUG [nioEventLoopGroup-3-3] DataConverter: Encode:{head=78B6, data={controllerNo=GTLAND, heartBeatSeq=10}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=01}
+to:78b64c5a0101000a47544c414e440000000a1721d3
+2020-07-10 12:15:16,682 DEBUG [nioEventLoopGroup-2-1] PacketConverter: Decode:
+to:{head=78B6, data={controllerNo=GTLAND, heartBeatSeq=10}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=01}
+2020-07-10 12:15:23,443 DEBUG [nioEventLoopGroup-2-1] PacketConverter: Encode:{head=78B6, data={answer=59, controllerNo=GTLAND, heartBeatSeq=10}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=02}
+to:78b64c5a0201000a47544c414e440000000a1721d3
+2020-07-10 12:15:23,447 DEBUG [nioEventLoopGroup-2-1] DefaultChannelPipeline: Discarded inbound message {head=78B6, data={answer=59, controllerNo=GTLAND, heartBeatSeq=10}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=02} that reached at the tail of the pipeline. Please check your pipeline configuration.
+2020-07-10 12:15:23,448 DEBUG [nioEventLoopGroup-3-3] DataConverter: Decode:
+to:{head=78B6, data={controllerNo=GTLAND, heartBeatSeq=10}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=02}
+2020-07-10 12:15:23,448 DEBUG [nioEventLoopGroup-3-3] DefaultChannelPipeline: Discarded inbound message {head=78B6, data={controllerNo=GTLAND, heartBeatSeq=10}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=02} that reached at the tail of the pipeline. Please check your pipeline configuration.
+2020-07-10 12:15:23,448 DEBUG [nioEventLoopGroup-2-1] DefaultChannelPipeline: Discarded message pipeline : [PacketDecoder#0, HeartBeatRespondHandler#0, PacketEncoder#0, DefaultChannelPipeline$TailContext#0]. Channel : [id: 0xbee56181, L:/127.0.0.1:60275 - R:localhost/127.0.0.1:6001].
+2020-07-10 12:15:23,449 DEBUG [nioEventLoopGroup-3-3] DefaultChannelPipeline: Discarded message pipeline : [HeartBeatTimerHandler#0, PacketDecoder#0, PacketEncoder#0, DefaultChannelPipeline$TailContext#0]. Channel : [id: 0xa47be41e, L:/127.0.0.1:6001 - R:/127.0.0.1:60275].
+2020-07-10 12:15:56,099 DEBUG [nioEventLoopGroup-3-3] DataConverter: Encode:{head=78B6, data={controllerNo=GTLAND, heartBeatSeq=11}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=01}
+to:78b64c5a0101000a47544c414e440000000b1721d3
+2020-07-10 12:15:56,100 DEBUG [nioEventLoopGroup-2-1] PacketConverter: Decode:
+to:{head=78B6, data={controllerNo=GTLAND, heartBeatSeq=11}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=01}
+2020-07-10 12:16:00,424 DEBUG [main] InternalLoggerFactory: Using SLF4J as the default logging framework
+2020-07-10 12:16:00,432 DEBUG [main] MultithreadEventLoopGroup: -Dio.netty.eventLoopThreads: 16
+2020-07-10 12:16:00,501 DEBUG [main] InternalThreadLocalMap: -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+2020-07-10 12:16:00,501 DEBUG [main] InternalThreadLocalMap: -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+2020-07-10 12:16:00,516 DEBUG [main] NioEventLoop: -Dio.netty.noKeySetOptimization: false
+2020-07-10 12:16:00,517 DEBUG [main] NioEventLoop: -Dio.netty.selectorAutoRebuildThreshold: 512
+2020-07-10 12:16:00,542 DEBUG [main] PlatformDependent: Platform: MacOS
+2020-07-10 12:16:00,545 DEBUG [main] PlatformDependent0: -Dio.netty.noUnsafe: false
+2020-07-10 12:16:00,545 DEBUG [main] PlatformDependent0: Java version: 8
+2020-07-10 12:16:00,547 DEBUG [main] PlatformDependent0: sun.misc.Unsafe.theUnsafe: available
+2020-07-10 12:16:00,548 DEBUG [main] PlatformDependent0: sun.misc.Unsafe.copyMemory: available
+2020-07-10 12:16:00,549 DEBUG [main] PlatformDependent0: java.nio.Buffer.address: available
+2020-07-10 12:16:00,550 DEBUG [main] PlatformDependent0: direct buffer constructor: available
+2020-07-10 12:16:00,551 DEBUG [main] PlatformDependent0: java.nio.Bits.unaligned: available, true
+2020-07-10 12:16:00,551 DEBUG [main] PlatformDependent0: jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9
+2020-07-10 12:16:00,551 DEBUG [main] PlatformDependent0: java.nio.DirectByteBuffer.<init>(long, int): available
+2020-07-10 12:16:00,551 DEBUG [main] PlatformDependent: sun.misc.Unsafe: available
+2020-07-10 12:16:00,552 DEBUG [main] PlatformDependent: -Dio.netty.tmpdir: /var/folders/f1/8c8bz_w13rj684f43n3b4k8w0000gp/T (java.io.tmpdir)
+2020-07-10 12:16:00,552 DEBUG [main] PlatformDependent: -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2020-07-10 12:16:00,554 DEBUG [main] PlatformDependent: -Dio.netty.maxDirectMemory: 3817865216 bytes
+2020-07-10 12:16:00,554 DEBUG [main] PlatformDependent: -Dio.netty.uninitializedArrayAllocationThreshold: -1
+2020-07-10 12:16:00,556 DEBUG [main] CleanerJava6: java.nio.ByteBuffer.cleaner(): available
+2020-07-10 12:16:00,557 DEBUG [main] PlatformDependent: -Dio.netty.noPreferDirect: false
+2020-07-10 12:16:00,575 DEBUG [main] PlatformDependent: org.jctools-core.MpscChunkedArrayQueue: available
+2020-07-10 12:16:00,670 DEBUG [main] DefaultChannelId: -Dio.netty.processId: 62484 (auto-detected)
+2020-07-10 12:16:00,674 DEBUG [main] NetUtil: -Djava.net.preferIPv4Stack: false
+2020-07-10 12:16:00,674 DEBUG [main] NetUtil: -Djava.net.preferIPv6Addresses: false
+2020-07-10 12:16:00,686 DEBUG [main] NetUtil: Loopback interface: lo0 (lo0, 0:0:0:0:0:0:0:1)
+2020-07-10 12:16:00,687 DEBUG [main] NetUtil: Failed to get SOMAXCONN from sysctl and file /proc/sys/net/core/somaxconn. Default: 128
+2020-07-10 12:16:00,697 DEBUG [main] DefaultChannelId: -Dio.netty.machineId: ac:de:48:ff:fe:00:11:22 (auto-detected)
+2020-07-10 12:16:00,720 DEBUG [main] ResourceLeakDetector: -Dio.netty.leakDetection.level: simple
+2020-07-10 12:16:00,720 DEBUG [main] ResourceLeakDetector: -Dio.netty.leakDetection.targetRecords: 4
+2020-07-10 12:16:00,761 DEBUG [main] PooledByteBufAllocator: -Dio.netty.allocator.numHeapArenas: 16
+2020-07-10 12:16:00,761 DEBUG [main] PooledByteBufAllocator: -Dio.netty.allocator.numDirectArenas: 16
+2020-07-10 12:16:00,762 DEBUG [main] PooledByteBufAllocator: -Dio.netty.allocator.pageSize: 8192
+2020-07-10 12:16:00,762 DEBUG [main] PooledByteBufAllocator: -Dio.netty.allocator.maxOrder: 11
+2020-07-10 12:16:00,762 DEBUG [main] PooledByteBufAllocator: -Dio.netty.allocator.chunkSize: 16777216
+2020-07-10 12:16:00,762 DEBUG [main] PooledByteBufAllocator: -Dio.netty.allocator.tinyCacheSize: 512
+2020-07-10 12:16:00,762 DEBUG [main] PooledByteBufAllocator: -Dio.netty.allocator.smallCacheSize: 256
+2020-07-10 12:16:00,762 DEBUG [main] PooledByteBufAllocator: -Dio.netty.allocator.normalCacheSize: 64
+2020-07-10 12:16:00,762 DEBUG [main] PooledByteBufAllocator: -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+2020-07-10 12:16:00,762 DEBUG [main] PooledByteBufAllocator: -Dio.netty.allocator.cacheTrimInterval: 8192
+2020-07-10 12:16:00,762 DEBUG [main] PooledByteBufAllocator: -Dio.netty.allocator.cacheTrimIntervalMillis: 0
+2020-07-10 12:16:00,763 DEBUG [main] PooledByteBufAllocator: -Dio.netty.allocator.useCacheForAllThreads: true
+2020-07-10 12:16:00,763 DEBUG [main] PooledByteBufAllocator: -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+2020-07-10 12:16:00,777 DEBUG [main] ByteBufUtil: -Dio.netty.allocator.type: pooled
+2020-07-10 12:16:00,778 DEBUG [main] ByteBufUtil: -Dio.netty.threadLocalDirectBufferSize: 0
+2020-07-10 12:16:00,778 DEBUG [main] ByteBufUtil: -Dio.netty.maxThreadLocalCharBufferSize: 16384
+2020-07-10 12:16:00,924 DEBUG [nioEventLoopGroup-3-4] HeartBeatTimerHandler: HeartBeat Timer activated
+2020-07-10 12:16:07,265 DEBUG [main] InternalLoggerFactory: Using SLF4J as the default logging framework
+2020-07-10 12:16:07,271 DEBUG [main] MultithreadEventLoopGroup: -Dio.netty.eventLoopThreads: 16
+2020-07-10 12:16:07,326 DEBUG [main] InternalThreadLocalMap: -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+2020-07-10 12:16:07,326 DEBUG [main] InternalThreadLocalMap: -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+2020-07-10 12:16:07,337 DEBUG [main] NioEventLoop: -Dio.netty.noKeySetOptimization: false
+2020-07-10 12:16:07,337 DEBUG [main] NioEventLoop: -Dio.netty.selectorAutoRebuildThreshold: 512
+2020-07-10 12:16:07,358 DEBUG [main] PlatformDependent: Platform: MacOS
+2020-07-10 12:16:07,360 DEBUG [main] PlatformDependent0: -Dio.netty.noUnsafe: false
+2020-07-10 12:16:07,361 DEBUG [main] PlatformDependent0: Java version: 8
+2020-07-10 12:16:07,362 DEBUG [main] PlatformDependent0: sun.misc.Unsafe.theUnsafe: available
+2020-07-10 12:16:07,364 DEBUG [main] PlatformDependent0: sun.misc.Unsafe.copyMemory: available
+2020-07-10 12:16:07,365 DEBUG [main] PlatformDependent0: java.nio.Buffer.address: available
+2020-07-10 12:16:07,365 DEBUG [main] PlatformDependent0: direct buffer constructor: available
+2020-07-10 12:16:07,366 DEBUG [main] PlatformDependent0: java.nio.Bits.unaligned: available, true
+2020-07-10 12:16:07,366 DEBUG [main] PlatformDependent0: jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9
+2020-07-10 12:16:07,366 DEBUG [main] PlatformDependent0: java.nio.DirectByteBuffer.<init>(long, int): available
+2020-07-10 12:16:07,366 DEBUG [main] PlatformDependent: sun.misc.Unsafe: available
+2020-07-10 12:16:07,367 DEBUG [main] PlatformDependent: -Dio.netty.tmpdir: /var/folders/f1/8c8bz_w13rj684f43n3b4k8w0000gp/T (java.io.tmpdir)
+2020-07-10 12:16:07,367 DEBUG [main] PlatformDependent: -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2020-07-10 12:16:07,368 DEBUG [main] PlatformDependent: -Dio.netty.maxDirectMemory: 3817865216 bytes
+2020-07-10 12:16:07,369 DEBUG [main] PlatformDependent: -Dio.netty.uninitializedArrayAllocationThreshold: -1
+2020-07-10 12:16:07,370 DEBUG [main] CleanerJava6: java.nio.ByteBuffer.cleaner(): available
+2020-07-10 12:16:07,370 DEBUG [main] PlatformDependent: -Dio.netty.noPreferDirect: false
+2020-07-10 12:16:07,381 DEBUG [main] PlatformDependent: org.jctools-core.MpscChunkedArrayQueue: available
+2020-07-10 12:16:07,454 DEBUG [main] DefaultChannelId: -Dio.netty.processId: 62486 (auto-detected)
+2020-07-10 12:16:07,457 DEBUG [main] NetUtil: -Djava.net.preferIPv4Stack: false
+2020-07-10 12:16:07,457 DEBUG [main] NetUtil: -Djava.net.preferIPv6Addresses: false
+2020-07-10 12:16:07,469 DEBUG [main] NetUtil: Loopback interface: lo0 (lo0, 0:0:0:0:0:0:0:1)
+2020-07-10 12:16:07,471 DEBUG [main] NetUtil: Failed to get SOMAXCONN from sysctl and file /proc/sys/net/core/somaxconn. Default: 128
+2020-07-10 12:16:07,483 DEBUG [main] DefaultChannelId: -Dio.netty.machineId: ac:de:48:ff:fe:00:11:22 (auto-detected)
+2020-07-10 12:16:07,511 DEBUG [main] ResourceLeakDetector: -Dio.netty.leakDetection.level: simple
+2020-07-10 12:16:07,511 DEBUG [main] ResourceLeakDetector: -Dio.netty.leakDetection.targetRecords: 4
+2020-07-10 12:16:07,560 DEBUG [main] PooledByteBufAllocator: -Dio.netty.allocator.numHeapArenas: 16
+2020-07-10 12:16:07,560 DEBUG [main] PooledByteBufAllocator: -Dio.netty.allocator.numDirectArenas: 16
+2020-07-10 12:16:07,560 DEBUG [main] PooledByteBufAllocator: -Dio.netty.allocator.pageSize: 8192
+2020-07-10 12:16:07,560 DEBUG [main] PooledByteBufAllocator: -Dio.netty.allocator.maxOrder: 11
+2020-07-10 12:16:07,560 DEBUG [main] PooledByteBufAllocator: -Dio.netty.allocator.chunkSize: 16777216
+2020-07-10 12:16:07,560 DEBUG [main] PooledByteBufAllocator: -Dio.netty.allocator.tinyCacheSize: 512
+2020-07-10 12:16:07,560 DEBUG [main] PooledByteBufAllocator: -Dio.netty.allocator.smallCacheSize: 256
+2020-07-10 12:16:07,561 DEBUG [main] PooledByteBufAllocator: -Dio.netty.allocator.normalCacheSize: 64
+2020-07-10 12:16:07,561 DEBUG [main] PooledByteBufAllocator: -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+2020-07-10 12:16:07,561 DEBUG [main] PooledByteBufAllocator: -Dio.netty.allocator.cacheTrimInterval: 8192
+2020-07-10 12:16:07,562 DEBUG [main] PooledByteBufAllocator: -Dio.netty.allocator.cacheTrimIntervalMillis: 0
+2020-07-10 12:16:07,562 DEBUG [main] PooledByteBufAllocator: -Dio.netty.allocator.useCacheForAllThreads: true
+2020-07-10 12:16:07,562 DEBUG [main] PooledByteBufAllocator: -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+2020-07-10 12:16:07,579 DEBUG [main] ByteBufUtil: -Dio.netty.allocator.type: pooled
+2020-07-10 12:16:07,579 DEBUG [main] ByteBufUtil: -Dio.netty.threadLocalDirectBufferSize: 0
+2020-07-10 12:16:07,579 DEBUG [main] ByteBufUtil: -Dio.netty.maxThreadLocalCharBufferSize: 16384
+2020-07-10 12:16:07,742 DEBUG [nioEventLoopGroup-3-5] HeartBeatTimerHandler: HeartBeat Timer activated
+2020-07-10 12:16:12,934 DEBUG [nioEventLoopGroup-3-3] DataConverter: Encode:{head=78B6, data={controllerNo=GTLAND, heartBeatSeq=12}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=01}
+to:78b64c5a0101000a47544c414e440000000c1721d3
+2020-07-10 12:16:13,420 DEBUG [nioEventLoopGroup-2-1] Recycler: -Dio.netty.recycler.maxCapacityPerThread: 4096
+2020-07-10 12:16:13,420 DEBUG [nioEventLoopGroup-2-1] Recycler: -Dio.netty.recycler.maxCapacityPerThread: 4096
+2020-07-10 12:16:13,421 DEBUG [nioEventLoopGroup-2-1] Recycler: -Dio.netty.recycler.maxSharedCapacityFactor: 2
+2020-07-10 12:16:13,422 DEBUG [nioEventLoopGroup-2-1] Recycler: -Dio.netty.recycler.maxSharedCapacityFactor: 2
+2020-07-10 12:16:13,422 DEBUG [nioEventLoopGroup-2-1] Recycler: -Dio.netty.recycler.linkCapacity: 16
+2020-07-10 12:16:13,422 DEBUG [nioEventLoopGroup-2-1] Recycler: -Dio.netty.recycler.linkCapacity: 16
+2020-07-10 12:16:13,422 DEBUG [nioEventLoopGroup-2-1] Recycler: -Dio.netty.recycler.ratio: 8
+2020-07-10 12:16:13,423 DEBUG [nioEventLoopGroup-2-1] Recycler: -Dio.netty.recycler.delayedQueue.ratio: 8
+2020-07-10 12:16:13,423 DEBUG [nioEventLoopGroup-2-1] Recycler: -Dio.netty.recycler.ratio: 8
+2020-07-10 12:16:13,423 DEBUG [nioEventLoopGroup-2-1] Recycler: -Dio.netty.recycler.delayedQueue.ratio: 8
+2020-07-10 12:16:13,445 DEBUG [nioEventLoopGroup-2-1] AbstractByteBuf: -Dio.netty.buffer.checkAccessible: true
+2020-07-10 12:16:13,445 DEBUG [nioEventLoopGroup-2-1] AbstractByteBuf: -Dio.netty.buffer.checkAccessible: true
+2020-07-10 12:16:13,445 DEBUG [nioEventLoopGroup-2-1] AbstractByteBuf: -Dio.netty.buffer.checkBounds: true
+2020-07-10 12:16:13,445 DEBUG [nioEventLoopGroup-2-1] AbstractByteBuf: -Dio.netty.buffer.checkBounds: true
+2020-07-10 12:16:13,447 DEBUG [nioEventLoopGroup-2-1] ResourceLeakDetectorFactory: Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@6f113346
+2020-07-10 12:16:13,447 DEBUG [nioEventLoopGroup-2-1] ResourceLeakDetectorFactory: Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@6f113346
+2020-07-10 12:16:15,626 DEBUG [nioEventLoopGroup-2-1] PacketConverter: Encode:{head=78B6, data={answer=59, controllerNo=GTLAND, heartBeatSeq=11}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=02}
+to:78b64c5a0201000a47544c414e440000000b1721d3
+2020-07-10 12:16:15,627 DEBUG [nioEventLoopGroup-2-1] DefaultChannelPipeline: Discarded inbound message {head=78B6, data={answer=59, controllerNo=GTLAND, heartBeatSeq=11}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=02} that reached at the tail of the pipeline. Please check your pipeline configuration.
+2020-07-10 12:16:15,627 DEBUG [nioEventLoopGroup-2-1] DefaultChannelPipeline: Discarded message pipeline : [PacketDecoder#0, HeartBeatRespondHandler#0, PacketEncoder#0, DefaultChannelPipeline$TailContext#0]. Channel : [id: 0xbee56181, L:/127.0.0.1:60275 - R:localhost/127.0.0.1:6001].
+2020-07-10 12:16:15,628 DEBUG [nioEventLoopGroup-2-1] PacketConverter: Decode:
+to:{head=78B6, data={controllerNo=GTLAND, heartBeatSeq=12}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=01}
+2020-07-10 12:16:15,628 DEBUG [nioEventLoopGroup-2-1] PacketConverter: Encode:{head=78B6, data={answer=59, controllerNo=GTLAND, heartBeatSeq=12}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=02}
+to:78b64c5a0201000a47544c414e440000000c1721d3
+2020-07-10 12:16:15,630 DEBUG [nioEventLoopGroup-2-1] DefaultChannelPipeline: Discarded inbound message {head=78B6, data={answer=59, controllerNo=GTLAND, heartBeatSeq=12}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=02} that reached at the tail of the pipeline. Please check your pipeline configuration.
+2020-07-10 12:16:15,631 DEBUG [nioEventLoopGroup-2-1] DefaultChannelPipeline: Discarded message pipeline : [PacketDecoder#0, HeartBeatRespondHandler#0, PacketEncoder#0, DefaultChannelPipeline$TailContext#0]. Channel : [id: 0xbee56181, L:/127.0.0.1:60275 ! R:localhost/127.0.0.1:6001].
+2020-07-10 13:54:54,374 DEBUG [main] ConnectorConfig: Connector Config finish for name: test_connector
+2020-07-10 13:54:55,780 INFO  [OkHttp https://dev.vantiq.com.cn/...] ExtensionWebSocketListener#test_connector: WebSocket open
+2020-07-10 13:54:55,938 DEBUG [OkHttp https://dev.vantiq.com.cn/...] ExtensionWebSocketListener#test_connector: Auth received with no handler set
+2020-07-10 13:54:56,248 DEBUG [OkHttp https://dev.vantiq.com.cn/...] ExtensionWebSocketListener#test_connector: Http response received with no handler set
+2020-07-10 13:54:56,334 DEBUG [OkHttp https://dev.vantiq.com.cn/...] ExtensionWebSocketListener#test_connector: Map of the received message: {op=configureExtension, resourceName=sources, isSystemResource=true, resourceId=test_connector, parameters={}, object={mapId=3044892b-3a8f-49aa-8871-88a19b48e4ab, config={tcp_server_port=6001}}, sessionId=45cdd97243cb37dabad519182272dde0, contentType=application/json, responseType=application/json, skipMonitoring=false, isExternal=false, address=3468df86-f959-49bc-ab0b-8f9d1dce7b63, messageHeaders={}}
+2020-07-10 13:54:56,334 INFO  [OkHttp https://dev.vantiq.com.cn/...] ExtensionWebSocketListener#test_connector: Successful connection to test_connector
+2020-07-10 13:54:56,334 INFO  [OkHttp https://dev.vantiq.com.cn/...] ConfigHandler: Configuration for source:test_connector
+2020-07-10 13:54:56,353 DEBUG [OkHttp https://dev.vantiq.com.cn/...] InternalLoggerFactory: Using SLF4J as the default logging framework
+2020-07-10 13:54:56,355 DEBUG [OkHttp https://dev.vantiq.com.cn/...] MultithreadEventLoopGroup: -Dio.netty.eventLoopThreads: 16
+2020-07-10 13:54:56,381 DEBUG [OkHttp https://dev.vantiq.com.cn/...] InternalThreadLocalMap: -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+2020-07-10 13:54:56,381 DEBUG [OkHttp https://dev.vantiq.com.cn/...] InternalThreadLocalMap: -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+2020-07-10 13:54:56,393 DEBUG [OkHttp https://dev.vantiq.com.cn/...] NioEventLoop: -Dio.netty.noKeySetOptimization: false
+2020-07-10 13:54:56,393 DEBUG [OkHttp https://dev.vantiq.com.cn/...] NioEventLoop: -Dio.netty.selectorAutoRebuildThreshold: 512
+2020-07-10 13:54:56,415 DEBUG [OkHttp https://dev.vantiq.com.cn/...] PlatformDependent: Platform: MacOS
+2020-07-10 13:54:56,417 DEBUG [OkHttp https://dev.vantiq.com.cn/...] PlatformDependent0: -Dio.netty.noUnsafe: false
+2020-07-10 13:54:56,417 DEBUG [OkHttp https://dev.vantiq.com.cn/...] PlatformDependent0: Java version: 8
+2020-07-10 13:54:56,419 DEBUG [OkHttp https://dev.vantiq.com.cn/...] PlatformDependent0: sun.misc.Unsafe.theUnsafe: available
+2020-07-10 13:54:56,420 DEBUG [OkHttp https://dev.vantiq.com.cn/...] PlatformDependent0: sun.misc.Unsafe.copyMemory: available
+2020-07-10 13:54:56,421 DEBUG [OkHttp https://dev.vantiq.com.cn/...] PlatformDependent0: java.nio.Buffer.address: available
+2020-07-10 13:54:56,421 DEBUG [OkHttp https://dev.vantiq.com.cn/...] PlatformDependent0: direct buffer constructor: available
+2020-07-10 13:54:56,422 DEBUG [OkHttp https://dev.vantiq.com.cn/...] PlatformDependent0: java.nio.Bits.unaligned: available, true
+2020-07-10 13:54:56,422 DEBUG [OkHttp https://dev.vantiq.com.cn/...] PlatformDependent0: jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9
+2020-07-10 13:54:56,423 DEBUG [OkHttp https://dev.vantiq.com.cn/...] PlatformDependent0: java.nio.DirectByteBuffer.<init>(long, int): available
+2020-07-10 13:54:56,423 DEBUG [OkHttp https://dev.vantiq.com.cn/...] PlatformDependent: sun.misc.Unsafe: available
+2020-07-10 13:54:56,423 DEBUG [OkHttp https://dev.vantiq.com.cn/...] PlatformDependent: -Dio.netty.tmpdir: /var/folders/f1/8c8bz_w13rj684f43n3b4k8w0000gp/T (java.io.tmpdir)
+2020-07-10 13:54:56,423 DEBUG [OkHttp https://dev.vantiq.com.cn/...] PlatformDependent: -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2020-07-10 13:54:56,425 DEBUG [OkHttp https://dev.vantiq.com.cn/...] PlatformDependent: -Dio.netty.maxDirectMemory: 3817865216 bytes
+2020-07-10 13:54:56,425 DEBUG [OkHttp https://dev.vantiq.com.cn/...] PlatformDependent: -Dio.netty.uninitializedArrayAllocationThreshold: -1
+2020-07-10 13:54:56,427 DEBUG [OkHttp https://dev.vantiq.com.cn/...] CleanerJava6: java.nio.ByteBuffer.cleaner(): available
+2020-07-10 13:54:56,427 DEBUG [OkHttp https://dev.vantiq.com.cn/...] PlatformDependent: -Dio.netty.noPreferDirect: false
+2020-07-10 13:54:56,439 DEBUG [OkHttp https://dev.vantiq.com.cn/...] PlatformDependent: org.jctools-core.MpscChunkedArrayQueue: available
+2020-07-10 13:54:56,566 DEBUG [OkHttp https://dev.vantiq.com.cn/...] DefaultChannelId: -Dio.netty.processId: 63335 (auto-detected)
+2020-07-10 13:54:56,575 DEBUG [OkHttp https://dev.vantiq.com.cn/...] NetUtil: -Djava.net.preferIPv4Stack: false
+2020-07-10 13:54:56,576 DEBUG [OkHttp https://dev.vantiq.com.cn/...] NetUtil: -Djava.net.preferIPv6Addresses: false
+2020-07-10 13:54:56,585 DEBUG [OkHttp https://dev.vantiq.com.cn/...] NetUtil: Loopback interface: lo0 (lo0, 0:0:0:0:0:0:0:1)
+2020-07-10 13:54:56,589 DEBUG [OkHttp https://dev.vantiq.com.cn/...] NetUtil: Failed to get SOMAXCONN from sysctl and file /proc/sys/net/core/somaxconn. Default: 128
+2020-07-10 13:54:56,595 DEBUG [OkHttp https://dev.vantiq.com.cn/...] DefaultChannelId: -Dio.netty.machineId: ac:de:48:ff:fe:00:11:22 (auto-detected)
+2020-07-10 13:54:56,632 DEBUG [OkHttp https://dev.vantiq.com.cn/...] ResourceLeakDetector: -Dio.netty.leakDetection.level: simple
+2020-07-10 13:54:56,633 DEBUG [OkHttp https://dev.vantiq.com.cn/...] ResourceLeakDetector: -Dio.netty.leakDetection.targetRecords: 4
+2020-07-10 13:54:56,688 DEBUG [OkHttp https://dev.vantiq.com.cn/...] PooledByteBufAllocator: -Dio.netty.allocator.numHeapArenas: 16
+2020-07-10 13:54:56,688 DEBUG [OkHttp https://dev.vantiq.com.cn/...] PooledByteBufAllocator: -Dio.netty.allocator.numDirectArenas: 16
+2020-07-10 13:54:56,689 DEBUG [OkHttp https://dev.vantiq.com.cn/...] PooledByteBufAllocator: -Dio.netty.allocator.pageSize: 8192
+2020-07-10 13:54:56,689 DEBUG [OkHttp https://dev.vantiq.com.cn/...] PooledByteBufAllocator: -Dio.netty.allocator.maxOrder: 11
+2020-07-10 13:54:56,689 DEBUG [OkHttp https://dev.vantiq.com.cn/...] PooledByteBufAllocator: -Dio.netty.allocator.chunkSize: 16777216
+2020-07-10 13:54:56,689 DEBUG [OkHttp https://dev.vantiq.com.cn/...] PooledByteBufAllocator: -Dio.netty.allocator.tinyCacheSize: 512
+2020-07-10 13:54:56,689 DEBUG [OkHttp https://dev.vantiq.com.cn/...] PooledByteBufAllocator: -Dio.netty.allocator.smallCacheSize: 256
+2020-07-10 13:54:56,689 DEBUG [OkHttp https://dev.vantiq.com.cn/...] PooledByteBufAllocator: -Dio.netty.allocator.normalCacheSize: 64
+2020-07-10 13:54:56,689 DEBUG [OkHttp https://dev.vantiq.com.cn/...] PooledByteBufAllocator: -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+2020-07-10 13:54:56,689 DEBUG [OkHttp https://dev.vantiq.com.cn/...] PooledByteBufAllocator: -Dio.netty.allocator.cacheTrimInterval: 8192
+2020-07-10 13:54:56,689 DEBUG [OkHttp https://dev.vantiq.com.cn/...] PooledByteBufAllocator: -Dio.netty.allocator.cacheTrimIntervalMillis: 0
+2020-07-10 13:54:56,689 DEBUG [OkHttp https://dev.vantiq.com.cn/...] PooledByteBufAllocator: -Dio.netty.allocator.useCacheForAllThreads: true
+2020-07-10 13:54:56,689 DEBUG [OkHttp https://dev.vantiq.com.cn/...] PooledByteBufAllocator: -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+2020-07-10 13:54:56,701 DEBUG [OkHttp https://dev.vantiq.com.cn/...] ByteBufUtil: -Dio.netty.allocator.type: pooled
+2020-07-10 13:54:56,702 DEBUG [OkHttp https://dev.vantiq.com.cn/...] ByteBufUtil: -Dio.netty.threadLocalDirectBufferSize: 0
+2020-07-10 13:54:56,702 DEBUG [OkHttp https://dev.vantiq.com.cn/...] ByteBufUtil: -Dio.netty.maxThreadLocalCharBufferSize: 16384
+2020-07-10 13:54:56,713 DEBUG [OkHttp https://dev.vantiq.com.cn/...] ConfigHandler: TCP Server started on port:6001
+2020-07-10 13:55:08,387 DEBUG [main] InternalLoggerFactory: Using SLF4J as the default logging framework
+2020-07-10 13:55:08,394 DEBUG [main] MultithreadEventLoopGroup: -Dio.netty.eventLoopThreads: 16
+2020-07-10 13:55:08,445 DEBUG [main] InternalThreadLocalMap: -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+2020-07-10 13:55:08,446 DEBUG [main] InternalThreadLocalMap: -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+2020-07-10 13:55:08,456 DEBUG [main] NioEventLoop: -Dio.netty.noKeySetOptimization: false
+2020-07-10 13:55:08,456 DEBUG [main] NioEventLoop: -Dio.netty.selectorAutoRebuildThreshold: 512
+2020-07-10 13:55:08,474 DEBUG [main] PlatformDependent: Platform: MacOS
+2020-07-10 13:55:08,476 DEBUG [main] PlatformDependent0: -Dio.netty.noUnsafe: false
+2020-07-10 13:55:08,476 DEBUG [main] PlatformDependent0: Java version: 8
+2020-07-10 13:55:08,477 DEBUG [main] PlatformDependent0: sun.misc.Unsafe.theUnsafe: available
+2020-07-10 13:55:08,479 DEBUG [main] PlatformDependent0: sun.misc.Unsafe.copyMemory: available
+2020-07-10 13:55:08,479 DEBUG [main] PlatformDependent0: java.nio.Buffer.address: available
+2020-07-10 13:55:08,480 DEBUG [main] PlatformDependent0: direct buffer constructor: available
+2020-07-10 13:55:08,481 DEBUG [main] PlatformDependent0: java.nio.Bits.unaligned: available, true
+2020-07-10 13:55:08,481 DEBUG [main] PlatformDependent0: jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9
+2020-07-10 13:55:08,481 DEBUG [main] PlatformDependent0: java.nio.DirectByteBuffer.<init>(long, int): available
+2020-07-10 13:55:08,481 DEBUG [main] PlatformDependent: sun.misc.Unsafe: available
+2020-07-10 13:55:08,482 DEBUG [main] PlatformDependent: -Dio.netty.tmpdir: /var/folders/f1/8c8bz_w13rj684f43n3b4k8w0000gp/T (java.io.tmpdir)
+2020-07-10 13:55:08,482 DEBUG [main] PlatformDependent: -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2020-07-10 13:55:08,485 DEBUG [main] PlatformDependent: -Dio.netty.maxDirectMemory: 3817865216 bytes
+2020-07-10 13:55:08,486 DEBUG [main] PlatformDependent: -Dio.netty.uninitializedArrayAllocationThreshold: -1
+2020-07-10 13:55:08,488 DEBUG [main] CleanerJava6: java.nio.ByteBuffer.cleaner(): available
+2020-07-10 13:55:08,488 DEBUG [main] PlatformDependent: -Dio.netty.noPreferDirect: false
+2020-07-10 13:55:08,501 DEBUG [main] PlatformDependent: org.jctools-core.MpscChunkedArrayQueue: available
+2020-07-10 13:55:08,569 DEBUG [main] DefaultChannelId: -Dio.netty.processId: 63344 (auto-detected)
+2020-07-10 13:55:08,572 DEBUG [main] NetUtil: -Djava.net.preferIPv4Stack: false
+2020-07-10 13:55:08,572 DEBUG [main] NetUtil: -Djava.net.preferIPv6Addresses: false
+2020-07-10 13:55:08,579 DEBUG [main] NetUtil: Loopback interface: lo0 (lo0, 0:0:0:0:0:0:0:1)
+2020-07-10 13:55:08,580 DEBUG [main] NetUtil: Failed to get SOMAXCONN from sysctl and file /proc/sys/net/core/somaxconn. Default: 128
+2020-07-10 13:55:08,588 DEBUG [main] DefaultChannelId: -Dio.netty.machineId: ac:de:48:ff:fe:00:11:22 (auto-detected)
+2020-07-10 13:55:08,610 DEBUG [main] ResourceLeakDetector: -Dio.netty.leakDetection.level: simple
+2020-07-10 13:55:08,611 DEBUG [main] ResourceLeakDetector: -Dio.netty.leakDetection.targetRecords: 4
+2020-07-10 13:55:08,658 DEBUG [main] PooledByteBufAllocator: -Dio.netty.allocator.numHeapArenas: 16
+2020-07-10 13:55:08,659 DEBUG [main] PooledByteBufAllocator: -Dio.netty.allocator.numDirectArenas: 16
+2020-07-10 13:55:08,659 DEBUG [main] PooledByteBufAllocator: -Dio.netty.allocator.pageSize: 8192
+2020-07-10 13:55:08,659 DEBUG [main] PooledByteBufAllocator: -Dio.netty.allocator.maxOrder: 11
+2020-07-10 13:55:08,659 DEBUG [main] PooledByteBufAllocator: -Dio.netty.allocator.chunkSize: 16777216
+2020-07-10 13:55:08,660 DEBUG [main] PooledByteBufAllocator: -Dio.netty.allocator.tinyCacheSize: 512
+2020-07-10 13:55:08,660 DEBUG [main] PooledByteBufAllocator: -Dio.netty.allocator.smallCacheSize: 256
+2020-07-10 13:55:08,660 DEBUG [main] PooledByteBufAllocator: -Dio.netty.allocator.normalCacheSize: 64
+2020-07-10 13:55:08,660 DEBUG [main] PooledByteBufAllocator: -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+2020-07-10 13:55:08,661 DEBUG [main] PooledByteBufAllocator: -Dio.netty.allocator.cacheTrimInterval: 8192
+2020-07-10 13:55:08,661 DEBUG [main] PooledByteBufAllocator: -Dio.netty.allocator.cacheTrimIntervalMillis: 0
+2020-07-10 13:55:08,661 DEBUG [main] PooledByteBufAllocator: -Dio.netty.allocator.useCacheForAllThreads: true
+2020-07-10 13:55:08,661 DEBUG [main] PooledByteBufAllocator: -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+2020-07-10 13:55:08,682 DEBUG [main] ByteBufUtil: -Dio.netty.allocator.type: pooled
+2020-07-10 13:55:08,683 DEBUG [main] ByteBufUtil: -Dio.netty.threadLocalDirectBufferSize: 0
+2020-07-10 13:55:08,683 DEBUG [main] ByteBufUtil: -Dio.netty.maxThreadLocalCharBufferSize: 16384
+2020-07-10 13:55:08,917 DEBUG [nioEventLoopGroup-3-1] HeartBeatTimerHandler: HeartBeat Timer activated
+2020-07-10 13:55:23,931 DEBUG [nioEventLoopGroup-3-1] Recycler: -Dio.netty.recycler.maxCapacityPerThread: 4096
+2020-07-10 13:55:23,931 DEBUG [nioEventLoopGroup-3-1] Recycler: -Dio.netty.recycler.maxSharedCapacityFactor: 2
+2020-07-10 13:55:23,931 DEBUG [nioEventLoopGroup-3-1] Recycler: -Dio.netty.recycler.linkCapacity: 16
+2020-07-10 13:55:23,931 DEBUG [nioEventLoopGroup-3-1] Recycler: -Dio.netty.recycler.ratio: 8
+2020-07-10 13:55:23,932 DEBUG [nioEventLoopGroup-3-1] Recycler: -Dio.netty.recycler.delayedQueue.ratio: 8
+2020-07-10 13:55:23,941 DEBUG [nioEventLoopGroup-3-1] AbstractByteBuf: -Dio.netty.buffer.checkAccessible: true
+2020-07-10 13:55:23,941 DEBUG [nioEventLoopGroup-3-1] AbstractByteBuf: -Dio.netty.buffer.checkBounds: true
+2020-07-10 13:55:23,942 DEBUG [nioEventLoopGroup-3-1] ResourceLeakDetectorFactory: Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@4d90bc5a
+2020-07-10 13:55:28,169 DEBUG [nioEventLoopGroup-3-1] DataConverter: Command Config finished:{4C5A=io.vantiq.ext.tcp.protocol.CommandDef@3a63ca8f, 4C5Ass=io.vantiq.ext.tcp.protocol.CommandDef@33a34998, 4CE6=io.vantiq.ext.tcp.protocol.CommandDef@926a547, 4CE6ss=io.vantiq.ext.tcp.protocol.CommandDef@1f3018f7}
+2020-07-10 13:55:28,175 DEBUG [nioEventLoopGroup-3-1] PacketConverter: Package Config finished:[PacketField{field='head', fixCode='78B6', length=2, type='byte'}, PacketField{field='command', fixCode='', length=2, type='byte'}, PacketField{field='direction', fixCode='', length=1, type='byte'}, PacketField{field='location', fixCode='', length=1, type='byte'}, PacketField{field='dataLength', fixCode='', length=2, type='integer'}, PacketField{field='data', fixCode='', length=0, type='data'}, PacketField{field='checkSum', fixCode='', length=1, type='byte'}, PacketField{field='end', fixCode='21D3', length=2, type='byte'}]
+2020-07-10 13:55:28,183 DEBUG [nioEventLoopGroup-3-1] PacketConverter: Encode:{head=78B6, data={controllerNo=GTLAND, heartBeatSeq=1}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=01}
+to:78b64c5a0101000a47544c414e44000000011721d3
+2020-07-10 13:55:28,207 DEBUG [nioEventLoopGroup-2-1] Recycler: -Dio.netty.recycler.maxCapacityPerThread: 4096
+2020-07-10 13:55:28,207 DEBUG [nioEventLoopGroup-2-1] Recycler: -Dio.netty.recycler.maxSharedCapacityFactor: 2
+2020-07-10 13:55:28,207 DEBUG [nioEventLoopGroup-2-1] Recycler: -Dio.netty.recycler.linkCapacity: 16
+2020-07-10 13:55:28,207 DEBUG [nioEventLoopGroup-2-1] Recycler: -Dio.netty.recycler.ratio: 8
+2020-07-10 13:55:28,207 DEBUG [nioEventLoopGroup-2-1] Recycler: -Dio.netty.recycler.delayedQueue.ratio: 8
+2020-07-10 13:55:28,218 DEBUG [nioEventLoopGroup-2-1] AbstractByteBuf: -Dio.netty.buffer.checkAccessible: true
+2020-07-10 13:55:28,218 DEBUG [nioEventLoopGroup-2-1] AbstractByteBuf: -Dio.netty.buffer.checkBounds: true
+2020-07-10 13:55:28,219 DEBUG [nioEventLoopGroup-2-1] ResourceLeakDetectorFactory: Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@6b48905d
+2020-07-10 13:55:28,526 DEBUG [nioEventLoopGroup-2-1] DataConverter: Command Config finished:{4C5A=io.vantiq.ext.tcp.protocol.CommandDef@24b08271, 4C5Ass=io.vantiq.ext.tcp.protocol.CommandDef@1e7c9588, 4CE6=io.vantiq.ext.tcp.protocol.CommandDef@7c46aefc, 4CE6ss=io.vantiq.ext.tcp.protocol.CommandDef@2592d790}
+2020-07-10 13:55:28,530 DEBUG [nioEventLoopGroup-2-1] PacketConverter: Package Config finished:[PacketField{field='head', fixCode='78B6', length=2, type='byte'}, PacketField{field='command', fixCode='', length=2, type='byte'}, PacketField{field='direction', fixCode='', length=1, type='byte'}, PacketField{field='location', fixCode='', length=1, type='byte'}, PacketField{field='dataLength', fixCode='', length=2, type='integer'}, PacketField{field='data', fixCode='', length=0, type='data'}, PacketField{field='checkSum', fixCode='', length=1, type='byte'}, PacketField{field='end', fixCode='21D3', length=2, type='byte'}]
+2020-07-10 13:55:28,541 DEBUG [nioEventLoopGroup-2-1] PacketConverter: Decode:
+to:{head=78B6, data={controllerNo=GTLAND, heartBeatSeq=1}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=01}
+2020-07-10 13:55:28,543 DEBUG [nioEventLoopGroup-2-1] PacketConverter: Encode:{head=78B6, data={answer=59, controllerNo=GTLAND, heartBeatSeq=1}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=02}
+to:78b64c5a0201000a47544c414e44000000011721d3
+2020-07-10 13:55:28,545 DEBUG [nioEventLoopGroup-2-1] DefaultChannelPipeline: Discarded inbound message {head=78B6, data={answer=59, controllerNo=GTLAND, heartBeatSeq=1}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=02} that reached at the tail of the pipeline. Please check your pipeline configuration.
+2020-07-10 13:55:28,545 DEBUG [nioEventLoopGroup-2-1] DefaultChannelPipeline: Discarded message pipeline : [PacketDecoder#0, HeartBeatRespondHandler#0, PacketEncoder#0, DefaultChannelPipeline$TailContext#0]. Channel : [id: 0x267cc43f, L:/127.0.0.1:59552 - R:localhost/127.0.0.1:6001].
+2020-07-10 13:55:28,552 DEBUG [nioEventLoopGroup-3-1] PacketConverter: Decode:
+to:{head=78B6, data={controllerNo=GTLAND, heartBeatSeq=1}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=02}
+2020-07-10 13:55:28,553 INFO  [nioEventLoopGroup-3-1] ProcessingHandler: Got client side msg to send t o VANTIQ:{head=78B6, data={controllerNo=GTLAND, heartBeatSeq=1}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=02}
+2020-07-10 13:55:28,553 INFO  [nioEventLoopGroup-3-1] ProcessingHandler: Got heart beat response:{head=78B6, data={controllerNo=GTLAND, heartBeatSeq=1}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=02}
+2020-07-10 13:55:28,553 DEBUG [nioEventLoopGroup-3-1] DefaultChannelPipeline: Discarded inbound message {head=78B6, data={controllerNo=GTLAND, heartBeatSeq=1}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=02} that reached at the tail of the pipeline. Please check your pipeline configuration.
+2020-07-10 13:55:28,553 DEBUG [nioEventLoopGroup-3-1] DefaultChannelPipeline: Discarded message pipeline : [PacketDecoder#0, HeartBeatTimerHandler#0, ProcessingHandler#0, PacketEncoder#0, DefaultChannelPipeline$TailContext#0]. Channel : [id: 0x3b4a7ddf, L:/127.0.0.1:6001 - R:/127.0.0.1:59552].
+2020-07-10 13:55:43,197 DEBUG [nioEventLoopGroup-3-1] PacketConverter: Encode:{head=78B6, data={controllerNo=GTLAND, heartBeatSeq=2}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=01}
+to:78b64c5a0101000a47544c414e44000000021721d3
+2020-07-10 13:55:43,198 DEBUG [nioEventLoopGroup-2-1] PacketConverter: Decode:
+to:{head=78B6, data={controllerNo=GTLAND, heartBeatSeq=2}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=01}
+2020-07-10 13:55:43,199 DEBUG [nioEventLoopGroup-2-1] PacketConverter: Encode:{head=78B6, data={answer=59, controllerNo=GTLAND, heartBeatSeq=2}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=02}
+to:78b64c5a0201000a47544c414e44000000021721d3
+2020-07-10 13:55:43,199 DEBUG [nioEventLoopGroup-2-1] DefaultChannelPipeline: Discarded inbound message {head=78B6, data={answer=59, controllerNo=GTLAND, heartBeatSeq=2}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=02} that reached at the tail of the pipeline. Please check your pipeline configuration.
+2020-07-10 13:55:43,199 DEBUG [nioEventLoopGroup-2-1] DefaultChannelPipeline: Discarded message pipeline : [PacketDecoder#0, HeartBeatRespondHandler#0, PacketEncoder#0, DefaultChannelPipeline$TailContext#0]. Channel : [id: 0x267cc43f, L:/127.0.0.1:59552 - R:localhost/127.0.0.1:6001].
+2020-07-10 13:55:43,200 DEBUG [nioEventLoopGroup-3-1] PacketConverter: Decode:
+to:{head=78B6, data={controllerNo=GTLAND, heartBeatSeq=2}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=02}
+2020-07-10 13:55:43,200 INFO  [nioEventLoopGroup-3-1] ProcessingHandler: Got client side msg to send t o VANTIQ:{head=78B6, data={controllerNo=GTLAND, heartBeatSeq=2}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=02}
+2020-07-10 13:55:43,200 INFO  [nioEventLoopGroup-3-1] ProcessingHandler: Got heart beat response:{head=78B6, data={controllerNo=GTLAND, heartBeatSeq=2}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=02}
+2020-07-10 13:55:43,200 DEBUG [nioEventLoopGroup-3-1] DefaultChannelPipeline: Discarded inbound message {head=78B6, data={controllerNo=GTLAND, heartBeatSeq=2}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=02} that reached at the tail of the pipeline. Please check your pipeline configuration.
+2020-07-10 13:55:43,200 DEBUG [nioEventLoopGroup-3-1] DefaultChannelPipeline: Discarded message pipeline : [PacketDecoder#0, HeartBeatTimerHandler#0, ProcessingHandler#0, PacketEncoder#0, DefaultChannelPipeline$TailContext#0]. Channel : [id: 0x3b4a7ddf, L:/127.0.0.1:6001 - R:/127.0.0.1:59552].
+2020-07-10 13:55:58,200 DEBUG [nioEventLoopGroup-3-1] PacketConverter: Encode:{head=78B6, data={controllerNo=GTLAND, heartBeatSeq=3}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=01}
+to:78b64c5a0101000a47544c414e44000000031721d3
+2020-07-10 13:55:58,200 DEBUG [nioEventLoopGroup-2-1] PacketConverter: Decode:
+to:{head=78B6, data={controllerNo=GTLAND, heartBeatSeq=3}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=01}
+2020-07-10 13:55:58,201 DEBUG [nioEventLoopGroup-2-1] PacketConverter: Encode:{head=78B6, data={answer=59, controllerNo=GTLAND, heartBeatSeq=3}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=02}
+to:78b64c5a0201000a47544c414e44000000031721d3
+2020-07-10 13:55:58,201 DEBUG [nioEventLoopGroup-2-1] DefaultChannelPipeline: Discarded inbound message {head=78B6, data={answer=59, controllerNo=GTLAND, heartBeatSeq=3}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=02} that reached at the tail of the pipeline. Please check your pipeline configuration.
+2020-07-10 13:55:58,201 DEBUG [nioEventLoopGroup-2-1] DefaultChannelPipeline: Discarded message pipeline : [PacketDecoder#0, HeartBeatRespondHandler#0, PacketEncoder#0, DefaultChannelPipeline$TailContext#0]. Channel : [id: 0x267cc43f, L:/127.0.0.1:59552 - R:localhost/127.0.0.1:6001].
+2020-07-10 13:55:58,201 DEBUG [nioEventLoopGroup-3-1] PacketConverter: Decode:
+to:{head=78B6, data={controllerNo=GTLAND, heartBeatSeq=3}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=02}
+2020-07-10 13:55:58,202 INFO  [nioEventLoopGroup-3-1] ProcessingHandler: Got client side msg to send t o VANTIQ:{head=78B6, data={controllerNo=GTLAND, heartBeatSeq=3}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=02}
+2020-07-10 13:55:58,202 INFO  [nioEventLoopGroup-3-1] ProcessingHandler: Got heart beat response:{head=78B6, data={controllerNo=GTLAND, heartBeatSeq=3}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=02}
+2020-07-10 13:55:58,202 DEBUG [nioEventLoopGroup-3-1] DefaultChannelPipeline: Discarded inbound message {head=78B6, data={controllerNo=GTLAND, heartBeatSeq=3}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=02} that reached at the tail of the pipeline. Please check your pipeline configuration.
+2020-07-10 13:55:58,202 DEBUG [nioEventLoopGroup-3-1] DefaultChannelPipeline: Discarded message pipeline : [PacketDecoder#0, HeartBeatTimerHandler#0, ProcessingHandler#0, PacketEncoder#0, DefaultChannelPipeline$TailContext#0]. Channel : [id: 0x3b4a7ddf, L:/127.0.0.1:6001 - R:/127.0.0.1:59552].
+2020-07-10 13:56:13,205 DEBUG [nioEventLoopGroup-3-1] PacketConverter: Encode:{head=78B6, data={controllerNo=GTLAND, heartBeatSeq=4}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=01}
+to:78b64c5a0101000a47544c414e44000000041721d3
+2020-07-10 13:56:13,205 DEBUG [nioEventLoopGroup-2-1] PacketConverter: Decode:
+to:{head=78B6, data={controllerNo=GTLAND, heartBeatSeq=4}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=01}
+2020-07-10 13:56:13,206 DEBUG [nioEventLoopGroup-2-1] PacketConverter: Encode:{head=78B6, data={answer=59, controllerNo=GTLAND, heartBeatSeq=4}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=02}
+to:78b64c5a0201000a47544c414e44000000041721d3
+2020-07-10 13:56:13,207 DEBUG [nioEventLoopGroup-2-1] DefaultChannelPipeline: Discarded inbound message {head=78B6, data={answer=59, controllerNo=GTLAND, heartBeatSeq=4}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=02} that reached at the tail of the pipeline. Please check your pipeline configuration.
+2020-07-10 13:56:13,207 DEBUG [nioEventLoopGroup-2-1] DefaultChannelPipeline: Discarded message pipeline : [PacketDecoder#0, HeartBeatRespondHandler#0, PacketEncoder#0, DefaultChannelPipeline$TailContext#0]. Channel : [id: 0x267cc43f, L:/127.0.0.1:59552 - R:localhost/127.0.0.1:6001].
+2020-07-10 13:56:13,207 DEBUG [nioEventLoopGroup-3-1] PacketConverter: Decode:
+to:{head=78B6, data={controllerNo=GTLAND, heartBeatSeq=4}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=02}
+2020-07-10 13:56:13,207 INFO  [nioEventLoopGroup-3-1] ProcessingHandler: Got client side msg to send t o VANTIQ:{head=78B6, data={controllerNo=GTLAND, heartBeatSeq=4}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=02}
+2020-07-10 13:56:13,208 INFO  [nioEventLoopGroup-3-1] ProcessingHandler: Got heart beat response:{head=78B6, data={controllerNo=GTLAND, heartBeatSeq=4}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=02}
+2020-07-10 13:56:13,208 DEBUG [nioEventLoopGroup-3-1] DefaultChannelPipeline: Discarded inbound message {head=78B6, data={controllerNo=GTLAND, heartBeatSeq=4}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=02} that reached at the tail of the pipeline. Please check your pipeline configuration.
+2020-07-10 13:56:13,208 DEBUG [nioEventLoopGroup-3-1] DefaultChannelPipeline: Discarded message pipeline : [PacketDecoder#0, HeartBeatTimerHandler#0, ProcessingHandler#0, PacketEncoder#0, DefaultChannelPipeline$TailContext#0]. Channel : [id: 0x3b4a7ddf, L:/127.0.0.1:6001 - R:/127.0.0.1:59552].
+2020-07-10 13:56:28,210 DEBUG [nioEventLoopGroup-3-1] PacketConverter: Encode:{head=78B6, data={controllerNo=GTLAND, heartBeatSeq=5}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=01}
+to:78b64c5a0101000a47544c414e44000000051721d3
+2020-07-10 13:56:28,212 DEBUG [nioEventLoopGroup-2-1] PacketConverter: Decode:
+to:{head=78B6, data={controllerNo=GTLAND, heartBeatSeq=5}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=01}
+2020-07-10 13:56:28,212 DEBUG [nioEventLoopGroup-2-1] PacketConverter: Encode:{head=78B6, data={answer=59, controllerNo=GTLAND, heartBeatSeq=5}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=02}
+to:78b64c5a0201000a47544c414e44000000051721d3
+2020-07-10 13:56:28,213 DEBUG [nioEventLoopGroup-2-1] DefaultChannelPipeline: Discarded inbound message {head=78B6, data={answer=59, controllerNo=GTLAND, heartBeatSeq=5}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=02} that reached at the tail of the pipeline. Please check your pipeline configuration.
+2020-07-10 13:56:28,213 DEBUG [nioEventLoopGroup-2-1] DefaultChannelPipeline: Discarded message pipeline : [PacketDecoder#0, HeartBeatRespondHandler#0, PacketEncoder#0, DefaultChannelPipeline$TailContext#0]. Channel : [id: 0x267cc43f, L:/127.0.0.1:59552 - R:localhost/127.0.0.1:6001].
+2020-07-10 13:56:28,213 DEBUG [nioEventLoopGroup-3-1] PacketConverter: Decode:
+to:{head=78B6, data={controllerNo=GTLAND, heartBeatSeq=5}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=02}
+2020-07-10 13:56:28,213 INFO  [nioEventLoopGroup-3-1] ProcessingHandler: Got client side msg to send t o VANTIQ:{head=78B6, data={controllerNo=GTLAND, heartBeatSeq=5}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=02}
+2020-07-10 13:56:28,214 INFO  [nioEventLoopGroup-3-1] ProcessingHandler: Got heart beat response:{head=78B6, data={controllerNo=GTLAND, heartBeatSeq=5}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=02}
+2020-07-10 13:56:28,214 DEBUG [nioEventLoopGroup-3-1] DefaultChannelPipeline: Discarded inbound message {head=78B6, data={controllerNo=GTLAND, heartBeatSeq=5}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=02} that reached at the tail of the pipeline. Please check your pipeline configuration.
+2020-07-10 13:56:28,214 DEBUG [nioEventLoopGroup-3-1] DefaultChannelPipeline: Discarded message pipeline : [PacketDecoder#0, HeartBeatTimerHandler#0, ProcessingHandler#0, PacketEncoder#0, DefaultChannelPipeline$TailContext#0]. Channel : [id: 0x3b4a7ddf, L:/127.0.0.1:6001 - R:/127.0.0.1:59552].
+2020-07-10 13:56:43,213 DEBUG [nioEventLoopGroup-3-1] PacketConverter: Encode:{head=78B6, data={controllerNo=GTLAND, heartBeatSeq=6}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=01}
+to:78b64c5a0101000a47544c414e44000000061721d3
+2020-07-10 13:56:43,214 DEBUG [nioEventLoopGroup-2-1] PacketConverter: Decode:
+to:{head=78B6, data={controllerNo=GTLAND, heartBeatSeq=6}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=01}
+2020-07-10 13:56:43,214 DEBUG [nioEventLoopGroup-2-1] PacketConverter: Encode:{head=78B6, data={answer=59, controllerNo=GTLAND, heartBeatSeq=6}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=02}
+to:78b64c5a0201000a47544c414e44000000061721d3
+2020-07-10 13:56:43,214 DEBUG [nioEventLoopGroup-2-1] DefaultChannelPipeline: Discarded inbound message {head=78B6, data={answer=59, controllerNo=GTLAND, heartBeatSeq=6}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=02} that reached at the tail of the pipeline. Please check your pipeline configuration.
+2020-07-10 13:56:43,214 DEBUG [nioEventLoopGroup-2-1] DefaultChannelPipeline: Discarded message pipeline : [PacketDecoder#0, HeartBeatRespondHandler#0, PacketEncoder#0, DefaultChannelPipeline$TailContext#0]. Channel : [id: 0x267cc43f, L:/127.0.0.1:59552 - R:localhost/127.0.0.1:6001].
+2020-07-10 13:56:43,215 DEBUG [nioEventLoopGroup-3-1] PacketConverter: Decode:
+to:{head=78B6, data={controllerNo=GTLAND, heartBeatSeq=6}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=02}
+2020-07-10 13:56:43,215 INFO  [nioEventLoopGroup-3-1] ProcessingHandler: Got client side msg to send t o VANTIQ:{head=78B6, data={controllerNo=GTLAND, heartBeatSeq=6}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=02}
+2020-07-10 13:56:43,215 INFO  [nioEventLoopGroup-3-1] ProcessingHandler: Got heart beat response:{head=78B6, data={controllerNo=GTLAND, heartBeatSeq=6}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=02}
+2020-07-10 13:56:43,215 DEBUG [nioEventLoopGroup-3-1] DefaultChannelPipeline: Discarded inbound message {head=78B6, data={controllerNo=GTLAND, heartBeatSeq=6}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=02} that reached at the tail of the pipeline. Please check your pipeline configuration.
+2020-07-10 13:56:43,215 DEBUG [nioEventLoopGroup-3-1] DefaultChannelPipeline: Discarded message pipeline : [PacketDecoder#0, HeartBeatTimerHandler#0, ProcessingHandler#0, PacketEncoder#0, DefaultChannelPipeline$TailContext#0]. Channel : [id: 0x3b4a7ddf, L:/127.0.0.1:6001 - R:/127.0.0.1:59552].
+2020-07-10 13:56:58,215 DEBUG [nioEventLoopGroup-3-1] PacketConverter: Encode:{head=78B6, data={controllerNo=GTLAND, heartBeatSeq=7}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=01}
+to:78b64c5a0101000a47544c414e44000000071721d3
+2020-07-10 13:56:58,217 DEBUG [nioEventLoopGroup-2-1] PacketConverter: Decode:
+to:{head=78B6, data={controllerNo=GTLAND, heartBeatSeq=7}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=01}
+2020-07-10 13:56:58,217 DEBUG [nioEventLoopGroup-2-1] PacketConverter: Encode:{head=78B6, data={answer=59, controllerNo=GTLAND, heartBeatSeq=7}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=02}
+to:78b64c5a0201000a47544c414e44000000071721d3
+2020-07-10 13:56:58,218 DEBUG [nioEventLoopGroup-2-1] DefaultChannelPipeline: Discarded inbound message {head=78B6, data={answer=59, controllerNo=GTLAND, heartBeatSeq=7}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=02} that reached at the tail of the pipeline. Please check your pipeline configuration.
+2020-07-10 13:56:58,218 DEBUG [nioEventLoopGroup-2-1] DefaultChannelPipeline: Discarded message pipeline : [PacketDecoder#0, HeartBeatRespondHandler#0, PacketEncoder#0, DefaultChannelPipeline$TailContext#0]. Channel : [id: 0x267cc43f, L:/127.0.0.1:59552 - R:localhost/127.0.0.1:6001].
+2020-07-10 13:56:58,218 DEBUG [nioEventLoopGroup-3-1] PacketConverter: Decode:
+to:{head=78B6, data={controllerNo=GTLAND, heartBeatSeq=7}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=02}
+2020-07-10 13:56:58,219 INFO  [nioEventLoopGroup-3-1] ProcessingHandler: Got client side msg to send t o VANTIQ:{head=78B6, data={controllerNo=GTLAND, heartBeatSeq=7}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=02}
+2020-07-10 13:56:58,219 INFO  [nioEventLoopGroup-3-1] ProcessingHandler: Got heart beat response:{head=78B6, data={controllerNo=GTLAND, heartBeatSeq=7}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=02}
+2020-07-10 13:56:58,219 DEBUG [nioEventLoopGroup-3-1] DefaultChannelPipeline: Discarded inbound message {head=78B6, data={controllerNo=GTLAND, heartBeatSeq=7}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=02} that reached at the tail of the pipeline. Please check your pipeline configuration.
+2020-07-10 13:56:58,219 DEBUG [nioEventLoopGroup-3-1] DefaultChannelPipeline: Discarded message pipeline : [PacketDecoder#0, HeartBeatTimerHandler#0, ProcessingHandler#0, PacketEncoder#0, DefaultChannelPipeline$TailContext#0]. Channel : [id: 0x3b4a7ddf, L:/127.0.0.1:6001 - R:/127.0.0.1:59552].
+2020-07-10 13:57:13,222 DEBUG [nioEventLoopGroup-3-1] PacketConverter: Encode:{head=78B6, data={controllerNo=GTLAND, heartBeatSeq=8}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=01}
+to:78b64c5a0101000a47544c414e44000000081721d3
+2020-07-10 13:57:13,222 DEBUG [nioEventLoopGroup-2-1] PacketConverter: Decode:
+to:{head=78B6, data={controllerNo=GTLAND, heartBeatSeq=8}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=01}
+2020-07-10 13:57:13,223 DEBUG [nioEventLoopGroup-2-1] PacketConverter: Encode:{head=78B6, data={answer=59, controllerNo=GTLAND, heartBeatSeq=8}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=02}
+to:78b64c5a0201000a47544c414e44000000081721d3
+2020-07-10 13:57:13,223 DEBUG [nioEventLoopGroup-2-1] DefaultChannelPipeline: Discarded inbound message {head=78B6, data={answer=59, controllerNo=GTLAND, heartBeatSeq=8}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=02} that reached at the tail of the pipeline. Please check your pipeline configuration.
+2020-07-10 13:57:13,223 DEBUG [nioEventLoopGroup-2-1] DefaultChannelPipeline: Discarded message pipeline : [PacketDecoder#0, HeartBeatRespondHandler#0, PacketEncoder#0, DefaultChannelPipeline$TailContext#0]. Channel : [id: 0x267cc43f, L:/127.0.0.1:59552 - R:localhost/127.0.0.1:6001].
+2020-07-10 13:57:13,224 DEBUG [nioEventLoopGroup-3-1] PacketConverter: Decode:
+to:{head=78B6, data={controllerNo=GTLAND, heartBeatSeq=8}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=02}
+2020-07-10 13:57:13,224 INFO  [nioEventLoopGroup-3-1] ProcessingHandler: Got client side msg to send t o VANTIQ:{head=78B6, data={controllerNo=GTLAND, heartBeatSeq=8}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=02}
+2020-07-10 13:57:13,224 INFO  [nioEventLoopGroup-3-1] ProcessingHandler: Got heart beat response:{head=78B6, data={controllerNo=GTLAND, heartBeatSeq=8}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=02}
+2020-07-10 13:57:13,224 DEBUG [nioEventLoopGroup-3-1] DefaultChannelPipeline: Discarded inbound message {head=78B6, data={controllerNo=GTLAND, heartBeatSeq=8}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=02} that reached at the tail of the pipeline. Please check your pipeline configuration.
+2020-07-10 13:57:13,224 DEBUG [nioEventLoopGroup-3-1] DefaultChannelPipeline: Discarded message pipeline : [PacketDecoder#0, HeartBeatTimerHandler#0, ProcessingHandler#0, PacketEncoder#0, DefaultChannelPipeline$TailContext#0]. Channel : [id: 0x3b4a7ddf, L:/127.0.0.1:6001 - R:/127.0.0.1:59552].
+2020-07-10 13:57:28,228 DEBUG [nioEventLoopGroup-3-1] PacketConverter: Encode:{head=78B6, data={controllerNo=GTLAND, heartBeatSeq=9}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=01}
+to:78b64c5a0101000a47544c414e44000000091721d3
+2020-07-10 13:57:28,229 DEBUG [nioEventLoopGroup-2-1] PacketConverter: Decode:
+to:{head=78B6, data={controllerNo=GTLAND, heartBeatSeq=9}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=01}
+2020-07-10 13:57:28,229 DEBUG [nioEventLoopGroup-2-1] PacketConverter: Encode:{head=78B6, data={answer=59, controllerNo=GTLAND, heartBeatSeq=9}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=02}
+to:78b64c5a0201000a47544c414e44000000091721d3
+2020-07-10 13:57:28,229 DEBUG [nioEventLoopGroup-2-1] DefaultChannelPipeline: Discarded inbound message {head=78B6, data={answer=59, controllerNo=GTLAND, heartBeatSeq=9}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=02} that reached at the tail of the pipeline. Please check your pipeline configuration.
+2020-07-10 13:57:28,229 DEBUG [nioEventLoopGroup-2-1] DefaultChannelPipeline: Discarded message pipeline : [PacketDecoder#0, HeartBeatRespondHandler#0, PacketEncoder#0, DefaultChannelPipeline$TailContext#0]. Channel : [id: 0x267cc43f, L:/127.0.0.1:59552 - R:localhost/127.0.0.1:6001].
+2020-07-10 13:57:28,233 DEBUG [nioEventLoopGroup-3-1] PacketConverter: Decode:
+to:{head=78B6, data={controllerNo=GTLAND, heartBeatSeq=9}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=02}
+2020-07-10 13:57:28,233 INFO  [nioEventLoopGroup-3-1] ProcessingHandler: Got client side msg to send t o VANTIQ:{head=78B6, data={controllerNo=GTLAND, heartBeatSeq=9}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=02}
+2020-07-10 13:57:28,233 INFO  [nioEventLoopGroup-3-1] ProcessingHandler: Got heart beat response:{head=78B6, data={controllerNo=GTLAND, heartBeatSeq=9}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=02}
+2020-07-10 13:57:28,233 DEBUG [nioEventLoopGroup-3-1] DefaultChannelPipeline: Discarded inbound message {head=78B6, data={controllerNo=GTLAND, heartBeatSeq=9}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=02} that reached at the tail of the pipeline. Please check your pipeline configuration.
+2020-07-10 13:57:28,233 DEBUG [nioEventLoopGroup-3-1] DefaultChannelPipeline: Discarded message pipeline : [PacketDecoder#0, HeartBeatTimerHandler#0, ProcessingHandler#0, PacketEncoder#0, DefaultChannelPipeline$TailContext#0]. Channel : [id: 0x3b4a7ddf, L:/127.0.0.1:6001 - R:/127.0.0.1:59552].
+2020-07-10 13:57:43,232 DEBUG [nioEventLoopGroup-3-1] PacketConverter: Encode:{head=78B6, data={controllerNo=GTLAND, heartBeatSeq=10}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=01}
+to:78b64c5a0101000a47544c414e440000000a1721d3
+2020-07-10 13:57:43,233 DEBUG [nioEventLoopGroup-2-1] PacketConverter: Decode:
+to:{head=78B6, data={controllerNo=GTLAND, heartBeatSeq=10}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=01}
+2020-07-10 13:57:43,234 DEBUG [nioEventLoopGroup-2-1] PacketConverter: Encode:{head=78B6, data={answer=59, controllerNo=GTLAND, heartBeatSeq=10}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=02}
+to:78b64c5a0201000a47544c414e440000000a1721d3
+2020-07-10 13:57:43,235 DEBUG [nioEventLoopGroup-2-1] DefaultChannelPipeline: Discarded inbound message {head=78B6, data={answer=59, controllerNo=GTLAND, heartBeatSeq=10}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=02} that reached at the tail of the pipeline. Please check your pipeline configuration.
+2020-07-10 13:57:43,235 DEBUG [nioEventLoopGroup-2-1] DefaultChannelPipeline: Discarded message pipeline : [PacketDecoder#0, HeartBeatRespondHandler#0, PacketEncoder#0, DefaultChannelPipeline$TailContext#0]. Channel : [id: 0x267cc43f, L:/127.0.0.1:59552 - R:localhost/127.0.0.1:6001].
+2020-07-10 13:57:43,235 DEBUG [nioEventLoopGroup-3-1] PacketConverter: Decode:
+to:{head=78B6, data={controllerNo=GTLAND, heartBeatSeq=10}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=02}
+2020-07-10 13:57:43,235 INFO  [nioEventLoopGroup-3-1] ProcessingHandler: Got client side msg to send t o VANTIQ:{head=78B6, data={controllerNo=GTLAND, heartBeatSeq=10}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=02}
+2020-07-10 13:57:43,235 INFO  [nioEventLoopGroup-3-1] ProcessingHandler: Got heart beat response:{head=78B6, data={controllerNo=GTLAND, heartBeatSeq=10}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=02}
+2020-07-10 13:57:43,235 DEBUG [nioEventLoopGroup-3-1] DefaultChannelPipeline: Discarded inbound message {head=78B6, data={controllerNo=GTLAND, heartBeatSeq=10}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=02} that reached at the tail of the pipeline. Please check your pipeline configuration.
+2020-07-10 13:57:43,236 DEBUG [nioEventLoopGroup-3-1] DefaultChannelPipeline: Discarded message pipeline : [PacketDecoder#0, HeartBeatTimerHandler#0, ProcessingHandler#0, PacketEncoder#0, DefaultChannelPipeline$TailContext#0]. Channel : [id: 0x3b4a7ddf, L:/127.0.0.1:6001 - R:/127.0.0.1:59552].
+2020-07-10 13:57:58,239 DEBUG [nioEventLoopGroup-3-1] PacketConverter: Encode:{head=78B6, data={controllerNo=GTLAND, heartBeatSeq=11}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=01}
+to:78b64c5a0101000a47544c414e440000000b1721d3
+2020-07-10 13:57:58,240 DEBUG [nioEventLoopGroup-2-1] PacketConverter: Decode:
+to:{head=78B6, data={controllerNo=GTLAND, heartBeatSeq=11}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=01}
+2020-07-10 13:57:58,240 DEBUG [nioEventLoopGroup-2-1] PacketConverter: Encode:{head=78B6, data={answer=59, controllerNo=GTLAND, heartBeatSeq=11}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=02}
+to:78b64c5a0201000a47544c414e440000000b1721d3
+2020-07-10 13:57:58,241 DEBUG [nioEventLoopGroup-2-1] DefaultChannelPipeline: Discarded inbound message {head=78B6, data={answer=59, controllerNo=GTLAND, heartBeatSeq=11}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=02} that reached at the tail of the pipeline. Please check your pipeline configuration.
+2020-07-10 13:57:58,241 DEBUG [nioEventLoopGroup-2-1] DefaultChannelPipeline: Discarded message pipeline : [PacketDecoder#0, HeartBeatRespondHandler#0, PacketEncoder#0, DefaultChannelPipeline$TailContext#0]. Channel : [id: 0x267cc43f, L:/127.0.0.1:59552 - R:localhost/127.0.0.1:6001].
+2020-07-10 13:57:58,241 DEBUG [nioEventLoopGroup-3-1] PacketConverter: Decode:
+to:{head=78B6, data={controllerNo=GTLAND, heartBeatSeq=11}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=02}
+2020-07-10 13:57:58,241 INFO  [nioEventLoopGroup-3-1] ProcessingHandler: Got client side msg to send t o VANTIQ:{head=78B6, data={controllerNo=GTLAND, heartBeatSeq=11}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=02}
+2020-07-10 13:57:58,241 INFO  [nioEventLoopGroup-3-1] ProcessingHandler: Got heart beat response:{head=78B6, data={controllerNo=GTLAND, heartBeatSeq=11}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=02}
+2020-07-10 13:57:58,241 DEBUG [nioEventLoopGroup-3-1] DefaultChannelPipeline: Discarded inbound message {head=78B6, data={controllerNo=GTLAND, heartBeatSeq=11}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=02} that reached at the tail of the pipeline. Please check your pipeline configuration.
+2020-07-10 13:57:58,242 DEBUG [nioEventLoopGroup-3-1] DefaultChannelPipeline: Discarded message pipeline : [PacketDecoder#0, HeartBeatTimerHandler#0, ProcessingHandler#0, PacketEncoder#0, DefaultChannelPipeline$TailContext#0]. Channel : [id: 0x3b4a7ddf, L:/127.0.0.1:6001 - R:/127.0.0.1:59552].
+2020-07-10 13:58:13,241 DEBUG [nioEventLoopGroup-3-1] PacketConverter: Encode:{head=78B6, data={controllerNo=GTLAND, heartBeatSeq=12}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=01}
+to:78b64c5a0101000a47544c414e440000000c1721d3
+2020-07-10 13:58:13,242 DEBUG [nioEventLoopGroup-2-1] PacketConverter: Decode:
+to:{head=78B6, data={controllerNo=GTLAND, heartBeatSeq=12}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=01}
+2020-07-10 13:58:13,243 DEBUG [nioEventLoopGroup-2-1] PacketConverter: Encode:{head=78B6, data={answer=59, controllerNo=GTLAND, heartBeatSeq=12}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=02}
+to:78b64c5a0201000a47544c414e440000000c1721d3
+2020-07-10 13:58:13,243 DEBUG [nioEventLoopGroup-2-1] DefaultChannelPipeline: Discarded inbound message {head=78B6, data={answer=59, controllerNo=GTLAND, heartBeatSeq=12}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=02} that reached at the tail of the pipeline. Please check your pipeline configuration.
+2020-07-10 13:58:13,243 DEBUG [nioEventLoopGroup-2-1] DefaultChannelPipeline: Discarded message pipeline : [PacketDecoder#0, HeartBeatRespondHandler#0, PacketEncoder#0, DefaultChannelPipeline$TailContext#0]. Channel : [id: 0x267cc43f, L:/127.0.0.1:59552 - R:localhost/127.0.0.1:6001].
+2020-07-10 13:58:13,243 DEBUG [nioEventLoopGroup-3-1] PacketConverter: Decode:
+to:{head=78B6, data={controllerNo=GTLAND, heartBeatSeq=12}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=02}
+2020-07-10 13:58:13,244 INFO  [nioEventLoopGroup-3-1] ProcessingHandler: Got client side msg to send t o VANTIQ:{head=78B6, data={controllerNo=GTLAND, heartBeatSeq=12}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=02}
+2020-07-10 13:58:13,244 INFO  [nioEventLoopGroup-3-1] ProcessingHandler: Got heart beat response:{head=78B6, data={controllerNo=GTLAND, heartBeatSeq=12}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=02}
+2020-07-10 13:58:13,244 DEBUG [nioEventLoopGroup-3-1] DefaultChannelPipeline: Discarded inbound message {head=78B6, data={controllerNo=GTLAND, heartBeatSeq=12}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=02} that reached at the tail of the pipeline. Please check your pipeline configuration.
+2020-07-10 13:58:13,244 DEBUG [nioEventLoopGroup-3-1] DefaultChannelPipeline: Discarded message pipeline : [PacketDecoder#0, HeartBeatTimerHandler#0, ProcessingHandler#0, PacketEncoder#0, DefaultChannelPipeline$TailContext#0]. Channel : [id: 0x3b4a7ddf, L:/127.0.0.1:6001 - R:/127.0.0.1:59552].
+2020-07-10 13:58:28,246 DEBUG [nioEventLoopGroup-3-1] PacketConverter: Encode:{head=78B6, data={controllerNo=GTLAND, heartBeatSeq=13}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=01}
+to:78b64c5a0101000a47544c414e440000000d1721d3
+2020-07-10 13:58:28,247 DEBUG [nioEventLoopGroup-2-1] PacketConverter: Decode:
+to:{head=78B6, data={controllerNo=GTLAND, heartBeatSeq=13}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=01}
+2020-07-10 13:58:28,247 DEBUG [nioEventLoopGroup-2-1] PacketConverter: Encode:{head=78B6, data={answer=59, controllerNo=GTLAND, heartBeatSeq=13}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=02}
+to:78b64c5a0201000a47544c414e440000000d1721d3
+2020-07-10 13:58:28,248 DEBUG [nioEventLoopGroup-2-1] DefaultChannelPipeline: Discarded inbound message {head=78B6, data={answer=59, controllerNo=GTLAND, heartBeatSeq=13}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=02} that reached at the tail of the pipeline. Please check your pipeline configuration.
+2020-07-10 13:58:28,248 DEBUG [nioEventLoopGroup-2-1] DefaultChannelPipeline: Discarded message pipeline : [PacketDecoder#0, HeartBeatRespondHandler#0, PacketEncoder#0, DefaultChannelPipeline$TailContext#0]. Channel : [id: 0x267cc43f, L:/127.0.0.1:59552 - R:localhost/127.0.0.1:6001].
+2020-07-10 13:58:28,248 DEBUG [nioEventLoopGroup-3-1] PacketConverter: Decode:
+to:{head=78B6, data={controllerNo=GTLAND, heartBeatSeq=13}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=02}
+2020-07-10 13:58:28,248 INFO  [nioEventLoopGroup-3-1] ProcessingHandler: Got client side msg to send t o VANTIQ:{head=78B6, data={controllerNo=GTLAND, heartBeatSeq=13}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=02}
+2020-07-10 13:58:28,248 INFO  [nioEventLoopGroup-3-1] ProcessingHandler: Got heart beat response:{head=78B6, data={controllerNo=GTLAND, heartBeatSeq=13}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=02}
+2020-07-10 13:58:28,248 DEBUG [nioEventLoopGroup-3-1] DefaultChannelPipeline: Discarded inbound message {head=78B6, data={controllerNo=GTLAND, heartBeatSeq=13}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=02} that reached at the tail of the pipeline. Please check your pipeline configuration.
+2020-07-10 13:58:28,248 DEBUG [nioEventLoopGroup-3-1] DefaultChannelPipeline: Discarded message pipeline : [PacketDecoder#0, HeartBeatTimerHandler#0, ProcessingHandler#0, PacketEncoder#0, DefaultChannelPipeline$TailContext#0]. Channel : [id: 0x3b4a7ddf, L:/127.0.0.1:6001 - R:/127.0.0.1:59552].
+2020-07-10 13:58:43,252 DEBUG [nioEventLoopGroup-3-1] PacketConverter: Encode:{head=78B6, data={controllerNo=GTLAND, heartBeatSeq=14}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=01}
+to:78b64c5a0101000a47544c414e440000000e1721d3
+2020-07-10 13:58:43,253 DEBUG [nioEventLoopGroup-2-1] PacketConverter: Decode:
+to:{head=78B6, data={controllerNo=GTLAND, heartBeatSeq=14}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=01}
+2020-07-10 13:58:43,254 DEBUG [nioEventLoopGroup-2-1] PacketConverter: Encode:{head=78B6, data={answer=59, controllerNo=GTLAND, heartBeatSeq=14}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=02}
+to:78b64c5a0201000a47544c414e440000000e1721d3
+2020-07-10 13:58:43,254 DEBUG [nioEventLoopGroup-2-1] DefaultChannelPipeline: Discarded inbound message {head=78B6, data={answer=59, controllerNo=GTLAND, heartBeatSeq=14}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=02} that reached at the tail of the pipeline. Please check your pipeline configuration.
+2020-07-10 13:58:43,254 DEBUG [nioEventLoopGroup-2-1] DefaultChannelPipeline: Discarded message pipeline : [PacketDecoder#0, HeartBeatRespondHandler#0, PacketEncoder#0, DefaultChannelPipeline$TailContext#0]. Channel : [id: 0x267cc43f, L:/127.0.0.1:59552 - R:localhost/127.0.0.1:6001].
+2020-07-10 13:58:43,255 DEBUG [nioEventLoopGroup-3-1] PacketConverter: Decode:
+to:{head=78B6, data={controllerNo=GTLAND, heartBeatSeq=14}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=02}
+2020-07-10 13:58:43,255 INFO  [nioEventLoopGroup-3-1] ProcessingHandler: Got client side msg to send t o VANTIQ:{head=78B6, data={controllerNo=GTLAND, heartBeatSeq=14}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=02}
+2020-07-10 13:58:43,255 INFO  [nioEventLoopGroup-3-1] ProcessingHandler: Got heart beat response:{head=78B6, data={controllerNo=GTLAND, heartBeatSeq=14}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=02}
+2020-07-10 13:58:43,255 DEBUG [nioEventLoopGroup-3-1] DefaultChannelPipeline: Discarded inbound message {head=78B6, data={controllerNo=GTLAND, heartBeatSeq=14}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=02} that reached at the tail of the pipeline. Please check your pipeline configuration.
+2020-07-10 13:58:43,255 DEBUG [nioEventLoopGroup-3-1] DefaultChannelPipeline: Discarded message pipeline : [PacketDecoder#0, HeartBeatTimerHandler#0, ProcessingHandler#0, PacketEncoder#0, DefaultChannelPipeline$TailContext#0]. Channel : [id: 0x3b4a7ddf, L:/127.0.0.1:6001 - R:/127.0.0.1:59552].
+2020-07-10 13:58:58,256 DEBUG [nioEventLoopGroup-3-1] PacketConverter: Encode:{head=78B6, data={controllerNo=GTLAND, heartBeatSeq=15}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=01}
+to:78b64c5a0101000a47544c414e440000000f1721d3
+2020-07-10 13:58:58,257 DEBUG [nioEventLoopGroup-2-1] PacketConverter: Decode:
+to:{head=78B6, data={controllerNo=GTLAND, heartBeatSeq=15}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=01}
+2020-07-10 13:58:58,257 DEBUG [nioEventLoopGroup-2-1] PacketConverter: Encode:{head=78B6, data={answer=59, controllerNo=GTLAND, heartBeatSeq=15}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=02}
+to:78b64c5a0201000a47544c414e440000000f1721d3
+2020-07-10 13:58:58,257 DEBUG [nioEventLoopGroup-2-1] DefaultChannelPipeline: Discarded inbound message {head=78B6, data={answer=59, controllerNo=GTLAND, heartBeatSeq=15}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=02} that reached at the tail of the pipeline. Please check your pipeline configuration.
+2020-07-10 13:58:58,258 DEBUG [nioEventLoopGroup-2-1] DefaultChannelPipeline: Discarded message pipeline : [PacketDecoder#0, HeartBeatRespondHandler#0, PacketEncoder#0, DefaultChannelPipeline$TailContext#0]. Channel : [id: 0x267cc43f, L:/127.0.0.1:59552 - R:localhost/127.0.0.1:6001].
+2020-07-10 13:58:58,258 DEBUG [nioEventLoopGroup-3-1] PacketConverter: Decode:
+to:{head=78B6, data={controllerNo=GTLAND, heartBeatSeq=15}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=02}
+2020-07-10 13:58:58,258 INFO  [nioEventLoopGroup-3-1] ProcessingHandler: Got client side msg to send t o VANTIQ:{head=78B6, data={controllerNo=GTLAND, heartBeatSeq=15}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=02}
+2020-07-10 13:58:58,258 INFO  [nioEventLoopGroup-3-1] ProcessingHandler: Got heart beat response:{head=78B6, data={controllerNo=GTLAND, heartBeatSeq=15}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=02}
+2020-07-10 13:58:58,258 DEBUG [nioEventLoopGroup-3-1] DefaultChannelPipeline: Discarded inbound message {head=78B6, data={controllerNo=GTLAND, heartBeatSeq=15}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=02} that reached at the tail of the pipeline. Please check your pipeline configuration.
+2020-07-10 13:58:58,258 DEBUG [nioEventLoopGroup-3-1] DefaultChannelPipeline: Discarded message pipeline : [PacketDecoder#0, HeartBeatTimerHandler#0, ProcessingHandler#0, PacketEncoder#0, DefaultChannelPipeline$TailContext#0]. Channel : [id: 0x3b4a7ddf, L:/127.0.0.1:6001 - R:/127.0.0.1:59552].
+2020-07-10 13:59:13,261 DEBUG [nioEventLoopGroup-3-1] PacketConverter: Encode:{head=78B6, data={controllerNo=GTLAND, heartBeatSeq=16}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=01}
+to:78b64c5a0101000a47544c414e44000000101721d3
+2020-07-10 13:59:13,262 DEBUG [nioEventLoopGroup-2-1] PacketConverter: Decode:
+to:{head=78B6, data={controllerNo=GTLAND, heartBeatSeq=16}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=01}
+2020-07-10 13:59:13,263 DEBUG [nioEventLoopGroup-2-1] PacketConverter: Encode:{head=78B6, data={answer=59, controllerNo=GTLAND, heartBeatSeq=16}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=02}
+to:78b64c5a0201000a47544c414e44000000101721d3
+2020-07-10 13:59:13,263 DEBUG [nioEventLoopGroup-2-1] DefaultChannelPipeline: Discarded inbound message {head=78B6, data={answer=59, controllerNo=GTLAND, heartBeatSeq=16}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=02} that reached at the tail of the pipeline. Please check your pipeline configuration.
+2020-07-10 13:59:13,263 DEBUG [nioEventLoopGroup-2-1] DefaultChannelPipeline: Discarded message pipeline : [PacketDecoder#0, HeartBeatRespondHandler#0, PacketEncoder#0, DefaultChannelPipeline$TailContext#0]. Channel : [id: 0x267cc43f, L:/127.0.0.1:59552 - R:localhost/127.0.0.1:6001].
+2020-07-10 13:59:13,263 DEBUG [nioEventLoopGroup-3-1] PacketConverter: Decode:
+to:{head=78B6, data={controllerNo=GTLAND, heartBeatSeq=16}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=02}
+2020-07-10 13:59:13,264 INFO  [nioEventLoopGroup-3-1] ProcessingHandler: Got client side msg to send t o VANTIQ:{head=78B6, data={controllerNo=GTLAND, heartBeatSeq=16}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=02}
+2020-07-10 13:59:13,264 INFO  [nioEventLoopGroup-3-1] ProcessingHandler: Got heart beat response:{head=78B6, data={controllerNo=GTLAND, heartBeatSeq=16}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=02}
+2020-07-10 13:59:13,264 DEBUG [nioEventLoopGroup-3-1] DefaultChannelPipeline: Discarded inbound message {head=78B6, data={controllerNo=GTLAND, heartBeatSeq=16}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=02} that reached at the tail of the pipeline. Please check your pipeline configuration.
+2020-07-10 13:59:13,264 DEBUG [nioEventLoopGroup-3-1] DefaultChannelPipeline: Discarded message pipeline : [PacketDecoder#0, HeartBeatTimerHandler#0, ProcessingHandler#0, PacketEncoder#0, DefaultChannelPipeline$TailContext#0]. Channel : [id: 0x3b4a7ddf, L:/127.0.0.1:6001 - R:/127.0.0.1:59552].
+2020-07-10 13:59:28,263 DEBUG [nioEventLoopGroup-3-1] PacketConverter: Encode:{head=78B6, data={controllerNo=GTLAND, heartBeatSeq=17}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=01}
+to:78b64c5a0101000a47544c414e44000000111721d3
+2020-07-10 13:59:28,264 DEBUG [nioEventLoopGroup-2-1] PacketConverter: Decode:
+to:{head=78B6, data={controllerNo=GTLAND, heartBeatSeq=17}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=01}
+2020-07-10 13:59:28,264 DEBUG [nioEventLoopGroup-2-1] PacketConverter: Encode:{head=78B6, data={answer=59, controllerNo=GTLAND, heartBeatSeq=17}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=02}
+to:78b64c5a0201000a47544c414e44000000111721d3
+2020-07-10 13:59:28,264 DEBUG [nioEventLoopGroup-2-1] DefaultChannelPipeline: Discarded inbound message {head=78B6, data={answer=59, controllerNo=GTLAND, heartBeatSeq=17}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=02} that reached at the tail of the pipeline. Please check your pipeline configuration.
+2020-07-10 13:59:28,264 DEBUG [nioEventLoopGroup-2-1] DefaultChannelPipeline: Discarded message pipeline : [PacketDecoder#0, HeartBeatRespondHandler#0, PacketEncoder#0, DefaultChannelPipeline$TailContext#0]. Channel : [id: 0x267cc43f, L:/127.0.0.1:59552 - R:localhost/127.0.0.1:6001].
+2020-07-10 13:59:28,265 DEBUG [nioEventLoopGroup-3-1] PacketConverter: Decode:
+to:{head=78B6, data={controllerNo=GTLAND, heartBeatSeq=17}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=02}
+2020-07-10 13:59:28,265 INFO  [nioEventLoopGroup-3-1] ProcessingHandler: Got client side msg to send t o VANTIQ:{head=78B6, data={controllerNo=GTLAND, heartBeatSeq=17}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=02}
+2020-07-10 13:59:28,265 INFO  [nioEventLoopGroup-3-1] ProcessingHandler: Got heart beat response:{head=78B6, data={controllerNo=GTLAND, heartBeatSeq=17}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=02}
+2020-07-10 13:59:28,265 DEBUG [nioEventLoopGroup-3-1] DefaultChannelPipeline: Discarded inbound message {head=78B6, data={controllerNo=GTLAND, heartBeatSeq=17}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=02} that reached at the tail of the pipeline. Please check your pipeline configuration.
+2020-07-10 13:59:28,265 DEBUG [nioEventLoopGroup-3-1] DefaultChannelPipeline: Discarded message pipeline : [PacketDecoder#0, HeartBeatTimerHandler#0, ProcessingHandler#0, PacketEncoder#0, DefaultChannelPipeline$TailContext#0]. Channel : [id: 0x3b4a7ddf, L:/127.0.0.1:6001 - R:/127.0.0.1:59552].
+2020-07-10 13:59:43,268 DEBUG [nioEventLoopGroup-3-1] PacketConverter: Encode:{head=78B6, data={controllerNo=GTLAND, heartBeatSeq=18}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=01}
+to:78b64c5a0101000a47544c414e44000000121721d3
+2020-07-10 13:59:43,269 DEBUG [nioEventLoopGroup-2-1] PacketConverter: Decode:
+to:{head=78B6, data={controllerNo=GTLAND, heartBeatSeq=18}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=01}
+2020-07-10 13:59:43,270 DEBUG [nioEventLoopGroup-2-1] PacketConverter: Encode:{head=78B6, data={answer=59, controllerNo=GTLAND, heartBeatSeq=18}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=02}
+to:78b64c5a0201000a47544c414e44000000121721d3
+2020-07-10 13:59:43,270 DEBUG [nioEventLoopGroup-2-1] DefaultChannelPipeline: Discarded inbound message {head=78B6, data={answer=59, controllerNo=GTLAND, heartBeatSeq=18}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=02} that reached at the tail of the pipeline. Please check your pipeline configuration.
+2020-07-10 13:59:43,270 DEBUG [nioEventLoopGroup-2-1] DefaultChannelPipeline: Discarded message pipeline : [PacketDecoder#0, HeartBeatRespondHandler#0, PacketEncoder#0, DefaultChannelPipeline$TailContext#0]. Channel : [id: 0x267cc43f, L:/127.0.0.1:59552 - R:localhost/127.0.0.1:6001].
+2020-07-10 13:59:43,270 DEBUG [nioEventLoopGroup-3-1] PacketConverter: Decode:
+to:{head=78B6, data={controllerNo=GTLAND, heartBeatSeq=18}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=02}
+2020-07-10 13:59:43,270 INFO  [nioEventLoopGroup-3-1] ProcessingHandler: Got client side msg to send t o VANTIQ:{head=78B6, data={controllerNo=GTLAND, heartBeatSeq=18}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=02}
+2020-07-10 13:59:43,270 INFO  [nioEventLoopGroup-3-1] ProcessingHandler: Got heart beat response:{head=78B6, data={controllerNo=GTLAND, heartBeatSeq=18}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=02}
+2020-07-10 13:59:43,270 DEBUG [nioEventLoopGroup-3-1] DefaultChannelPipeline: Discarded inbound message {head=78B6, data={controllerNo=GTLAND, heartBeatSeq=18}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=02} that reached at the tail of the pipeline. Please check your pipeline configuration.
+2020-07-10 13:59:43,271 DEBUG [nioEventLoopGroup-3-1] DefaultChannelPipeline: Discarded message pipeline : [PacketDecoder#0, HeartBeatTimerHandler#0, ProcessingHandler#0, PacketEncoder#0, DefaultChannelPipeline$TailContext#0]. Channel : [id: 0x3b4a7ddf, L:/127.0.0.1:6001 - R:/127.0.0.1:59552].
+2020-07-10 13:59:58,275 DEBUG [nioEventLoopGroup-3-1] PacketConverter: Encode:{head=78B6, data={controllerNo=GTLAND, heartBeatSeq=19}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=01}
+to:78b64c5a0101000a47544c414e44000000131721d3
+2020-07-10 13:59:58,276 DEBUG [nioEventLoopGroup-2-1] PacketConverter: Decode:
+to:{head=78B6, data={controllerNo=GTLAND, heartBeatSeq=19}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=01}
+2020-07-10 13:59:58,277 DEBUG [nioEventLoopGroup-2-1] PacketConverter: Encode:{head=78B6, data={answer=59, controllerNo=GTLAND, heartBeatSeq=19}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=02}
+to:78b64c5a0201000a47544c414e44000000131721d3
+2020-07-10 13:59:58,277 DEBUG [nioEventLoopGroup-2-1] DefaultChannelPipeline: Discarded inbound message {head=78B6, data={answer=59, controllerNo=GTLAND, heartBeatSeq=19}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=02} that reached at the tail of the pipeline. Please check your pipeline configuration.
+2020-07-10 13:59:58,277 DEBUG [nioEventLoopGroup-2-1] DefaultChannelPipeline: Discarded message pipeline : [PacketDecoder#0, HeartBeatRespondHandler#0, PacketEncoder#0, DefaultChannelPipeline$TailContext#0]. Channel : [id: 0x267cc43f, L:/127.0.0.1:59552 - R:localhost/127.0.0.1:6001].
+2020-07-10 13:59:58,277 DEBUG [nioEventLoopGroup-3-1] PacketConverter: Decode:
+to:{head=78B6, data={controllerNo=GTLAND, heartBeatSeq=19}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=02}
+2020-07-10 13:59:58,278 INFO  [nioEventLoopGroup-3-1] ProcessingHandler: Got client side msg to send t o VANTIQ:{head=78B6, data={controllerNo=GTLAND, heartBeatSeq=19}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=02}
+2020-07-10 13:59:58,278 INFO  [nioEventLoopGroup-3-1] ProcessingHandler: Got heart beat response:{head=78B6, data={controllerNo=GTLAND, heartBeatSeq=19}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=02}
+2020-07-10 13:59:58,278 DEBUG [nioEventLoopGroup-3-1] DefaultChannelPipeline: Discarded inbound message {head=78B6, data={controllerNo=GTLAND, heartBeatSeq=19}, dataLength=10, checkSum=17, location=01, end=21D3, command=4C5A, direction=02} that reached at the tail of the pipeline. Please check your pipeline configuration.
+2020-07-10 13:59:58,278 DEBUG [nioEventLoopGroup-3-1] DefaultChannelPipeline: Discarded message pipeline : [PacketDecoder#0, HeartBeatTimerHandler#0, ProcessingHandler#0, PacketEncoder#0, DefaultChannelPipeline$TailContext#0]. Channel : [id: 0x3b4a7ddf, L:/127.0.0.1:6001 - R:/127.0.0.1:59552].

@@ -1,0 +1,26 @@
+[
+    {
+      "field": "head","fixCode": "78B6","length": 2,"type": "byte"
+    },
+    {
+      "field": "command","fixCode": "","length": 2,"type": "byte"
+    },
+    {
+      "field": "direction","fixCode": "","length": 1,"type": "byte"
+    },
+    {
+      "field": "location","fixCode": "","length": 1,"type": "byte"
+    },
+    {
+      "field": "dataLength","fixCode": "","length": 2,"type": "integer"
+    },
+    {
+      "field": "data","fixCode": "","length": "0","type": "data"
+    },
+    {
+      "field": "checkSum","fixCode": "","length": 1,"type": "byte"
+    },
+    {
+      "field": "end","fixCode": "21D3","length": 2,"type": "byte"
+    }
+  ]
