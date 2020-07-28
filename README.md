@@ -101,3 +101,89 @@ PUBLISH packet TO SOURCE E7TCPSource
 ```
 运行该Procedure，在Connector的日志中查看。这是一个手动开闸的指令，data里面的信息需要正确才能收到回复的报文。
 
+## tcp协议
+Tcp Connector与目标系统进行数据收发，需要对接收到的字节流的数据进行解析，转换成JSON类型的数据，而对于发送到目标系统的数据，又要从JSON格式转换为字节流。而TCP Connector的这个转换的过程，可以通过配置文件进行：
+
+### tcp-packet.json
+`tcp-packet.json`里面是收到的报文的格式，定义的是每个数据包的封装方式：
+```json
+[
+    {
+      "field": "head","fixCode": "78B6","length": 2,"type": "byte"
+    },
+    {
+      "field": "command","fixCode": "","length": 2,"type": "byte"
+    },
+    {
+      "field": "direction","fixCode": "","length": 1,"type": "byte"
+    },
+    {
+      "field": "location","fixCode": "","length": 1,"type": "byte"
+    },
+    {
+      "field": "dataLength","fixCode": "","length": 2,"type": "integer"
+    },
+    {
+      "field": "data","fixCode": "","length": "0","type": "data"
+    },
+    {
+      "field": "checkSum","fixCode": "","length": 1,"type": "byte"
+    },
+    {
+      "field": "end","fixCode": "21D3","length": 2,"type": "byte"
+    }
+  ]
+```
+可以看到，在这个例子中，每个包都有固定的包头包尾，有一个变长的`data`数据，还有相应的`checksum`的校验值。Connector中的`PacketConvertor`会根据这个文件的定义进行转换。
+
+### tcp-command.json
+对于data数据的部分，根据`tcp-command.json`文件里面的配置进行解析：
+```json
+{
+  "4C5A": {
+    "command": "4C5A",
+    "commandName": "HeartBeat",
+    "request": {
+      "length": 10,
+      "fields": [
+        {"field": "controllerNo", "length": 6, "type": "string"},
+        {"field": "heartBeatSeq", "length": 4, "type": "integer"}
+      ]
+    },
+    "response": {
+      "length": 11,
+      "fields": [
+        {"field": "controllerNo", "length": 6, "type": "string"},
+        {"field": "heartBeatSeq", "length": 4, "type": "string"},
+        {"field": "answer", "length": 1, "type": "byte", "match": "59"}
+      ]
+    }
+  },
+  "4CE6": {
+    "command": "4CE6",
+    "commandName": "OpenGate",
+    "request": {
+      "length": 104,
+      "fields": [
+        {"field": "serialNo", "length": 36, "type": "string"},
+        {"field": "projectNo", "length": 36, "type": "string"},
+        {"field": "location", "length": 1, "type": "byte"},
+        {"field": "operationType", "length": 1, "type": "byte"},
+        {"field": "comment", "length": 30, "type": "string"}
+      ]
+    },
+    "response": {
+      "length": 37,
+      "fields": [
+        {"field": "serialNo", "length": 36, "type": "string"},
+        {"field": "answer", "length": 1, "type": "byte", "match": "59"}
+      ]
+    }
+  }
+}
+```
+
+### 转换规则
+除了根据上面的规则进行转换，还有一些固定的规则，如：
+1. 所有的数字都是以字符串类型进行字节转换。长度不够时，数字前面补"0"。
+2. 所有的command都是`hex string`类型的字符串。
