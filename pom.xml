@@ -17,9 +17,8 @@
     <dependencies>
         <dependency>
             <groupId>io.vantiq</groupId>
-            <artifactId>extsdk-new</artifactId>
+            <artifactId>extsdk</artifactId>
             <version>1.0</version>
-            <scope>compile</scope>
         </dependency>
         <dependency>
             <groupId>io.netty</groupId>
